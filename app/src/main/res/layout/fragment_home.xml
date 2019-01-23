@@ -5,12 +5,6 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     android:orientation="vertical">
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="@color/white" />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,227 +13,174 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:weightSum="3">
+            android:orientation="vertical">
 
-            <LinearLayout
+            <RelativeLayout
+                android:id="@+id/llExcerciseGuide"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal"
-                android:weightSum="2">
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
 
-                <LinearLayout
-                    android:id="@+id/llExcerciseGuide"
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="?attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
+                    android:src="@drawable/ic_home_exercise_guide"
+                    />
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:src="@drawable/ic_a"
-                        android:tint="@color/yellow" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:padding="8dp"
-                        android:text="Excercise guide"
-                        android:textColor="@color/lightWhite" />
-                </LinearLayout>
-
-                <View
-                    android:layout_width="0.5dp"
-                    android:layout_height="match_parent"
-                    android:background="@color/white" />
-
-                <LinearLayout
-                    android:id="@+id/llWorkout"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="?attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:src="@drawable/ic_b"
-                        android:tint="@color/dot_dark_screen2" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:padding="8dp"
-                        android:text="Workouts"
-                        android:textColor="@color/lightWhite" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:background="@color/white" />
-
-            <LinearLayout
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Excercise guide"
+                    android:textColor="@color/lightWhite" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/llWorkout"
+                android:layout_marginTop="1dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal"
-                android:weightSum="2">
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
 
-                <LinearLayout
-                    android:id="@+id/llMyWorkOut"
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="?attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:src="@drawable/ic_c"
-                        android:tint="@color/dot_dark_screen4" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:padding="8dp"
-                        android:text="My Workouts"
-                        android:textColor="@color/lightWhite" />
-                </LinearLayout>
-
-                <View
-                    android:layout_width="0.5dp"
-                    android:layout_height="match_parent"
-                    android:background="@color/white" />
-
-                <LinearLayout
-                    android:id="@+id/llNutrition"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="?attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:src="@drawable/ic_d"
-                        android:tint="@color/dot_light_screen1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:padding="8dp"
-                        android:text="Nutrition"
-                        android:textColor="@color/lightWhite" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:background="@color/white" />
-
-            <LinearLayout
+                    android:src="@drawable/ic_home_workout"
+                    />
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Workouts"
+                    android:textColor="@color/lightWhite" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/llMyWorkOut"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal"
-                android:weightSum="2">
+                android:layout_marginTop="1dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
 
-                <LinearLayout
-                    android:id="@+id/llStretching"
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="?attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
+                    android:src="@drawable/ic_home_my_workout" />
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:src="@drawable/ic_e"
-                        android:tint="@color/white" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:padding="8dp"
-                        android:text="Stretching"
-                        android:textColor="@color/lightWhite" />
-                </LinearLayout>
-
-                <View
-                    android:layout_width="0.5dp"
-                    android:layout_height="match_parent"
-                    android:background="@color/white" />
-
-                <LinearLayout
-                    android:id="@+id/llTips"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="?attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:src="@drawable/ic_f"
-                        android:tint="@color/dot_dark_screen1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:padding="8dp"
-                        android:text="Tips"
-                        android:textColor="@color/lightWhite" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <View
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="My Workouts"
+                    android:textColor="@color/lightWhite" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/llNutrition"
                 android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:background="@color/white" />
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_home_nutrition" />
+
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="8dp"
+                    android:text="Nutrition"
+                    android:textColor="@color/lightWhite" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/llStretching"
+                android:layout_width="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_home_stretching" />
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Stretching"
+                    android:textColor="@color/lightWhite" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="1dp"
+                android:id="@+id/llTips"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_home_tips" />
+
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Tips"
+                    android:textColor="@color/lightWhite" />
+            </RelativeLayout>
+            <!--   <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:background="@color/white" />-->
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
