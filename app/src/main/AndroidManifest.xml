@@ -91,10 +91,12 @@
         <activity android:name=".ui.activity.NavigationLibraryActivity" />
         <activity android:name=".NaturalAnabolicsActivity" />
         <activity android:name=".ZmaActivity" />
-        <activity android:name=".ExerciseContentsActiivty"/>
+        <activity android:name=".ExerciseContentsActiivty" />
         <activity android:name=".ui.activity.ToolsActivity" />
         <activity android:name=".ui.activity.home_menu_activities.ExerciseGuideActivity" />
-        <activity android:name=".ui.activity.home_menu_activities.ExerciseDetailActivity" />
+        <activity
+            android:name=".ui.activity.home_menu_activities.ExerciseDetailActivity"
+            android:windowSoftInputMode="adjustNothing" />
         <activity android:name=".ui.activity.home_menu_activities.ExerciseListActivity" />
     </application>
 

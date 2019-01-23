@@ -34,7 +34,8 @@
                     android:layout_marginLeft="16dp"
                     android:text="Title"
                     android:textColor="@color/lightWhite"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:visibility="gone" />
             </LinearLayout>
         </android.support.v7.widget.Toolbar>
 
@@ -65,6 +66,7 @@
                 </RelativeLayout>
 
                 <LinearLayout
+                    android:id="@+id/llData"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/rlImage"
@@ -82,6 +84,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="45dp" />
+
+                    <TextView
+                        android:id="@+id/tvExerciseDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="45dp"
+                        android:textColor="@color/lightWhite"
+                        android:textSize="16sp" />
+
                 </LinearLayout>
 
             </RelativeLayout>
@@ -204,7 +215,7 @@
                         android:visibility="gone" />
 
                     <Button
-                        android:id="@+id/btnLap"
+                        android:id="@+id/btnCancel"
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:background="@color/yellow"

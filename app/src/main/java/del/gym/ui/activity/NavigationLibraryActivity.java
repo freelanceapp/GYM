@@ -152,7 +152,7 @@ public class NavigationLibraryActivity extends BaseActivity implements DrawerAda
         else if (HomeMenuDetailFragment != null)
             setHomePage();
         else
-            super.onBackPressed();
+            finish();
     }
 
     private void changeFragment(String strName, Fragment fragment, String strTag) {
