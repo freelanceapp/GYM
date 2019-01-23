@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="del.gym">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/applogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ui.activity.welcome.SlideViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ui.activity.welcome.SplashScreenActivity" />
+        <activity
+            android:name=".NavigationMainActivity"
+            android:label="@string/title_activity_navigation_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Tips" />
+        <activity android:name=".TipsItemActivity1" />
+        <activity android:name=".StretchingActivity" />
+        <activity android:name=".WorkoutActivity" />
+        <activity android:name=".MyWorkoutActivity" />
+        <activity android:name=".NutritionActivity" />
+        <activity android:name=".ExerciseActivity1" />
+        <activity android:name=".MyWorkoutsDay1" />
+        <activity android:name=".MyWorkoutsDay2" />
+        <activity android:name=".MyWorkoutsDay3" />
+        <activity android:name=".MyWorkoutsDay4" />
+        <activity android:name=".MyWorkoutsDay5" />
+        <activity android:name=".MyWorkoutsDay6" />
+        <activity android:name=".MyWorkoutsDay7" />
+        <activity android:name=".NutritionActivit1" />
+        <activity android:name=".NutritionActivit2" />
+        <activity android:name=".NutritionActivity3" />
+        <activity android:name=".NutritionActivity4" />
+        <activity android:name=".NutritionActivity5" />
+        <activity android:name=".NutritionActivity6" />
+        <activity android:name=".ExerciseActivity2" />
+        <activity android:name=".ExerciseActivity3" />
+        <activity android:name=".ExerciseActivity4" />
+        <activity android:name=".ExerciseActivity5" />
+        <activity android:name=".ExerciseActivity6" />
+        <activity android:name=".ExerciseActivity7" />
+        <activity android:name=".WorkOutActivity1" />
+        <activity android:name=".WorkOutActivity2" />
+        <activity android:name=".WorkOutActivity4" />
+        <activity android:name=".WorkOutActivity5" />
+        <activity android:name=".NutMan4" />
+        <activity android:name=".NutWoman4" />
+        <activity android:name=".NutEndActivity" />
+        <activity android:name=".NutDietA1" />
+        <activity android:name=".ExerciseActivitiesAll6" />
+        <activity android:name=".StretchingActivityAllData" />
+        <activity android:name=".ExgymabdomenActivity" />
+        <activity android:name=".ExgymBackActivity" />
+        <activity android:name=".ExgymShouldersActivity" />
+        <activity android:name=".ExgymFrontLegActiviy" />
+        <activity android:name=".ExgymTricepsActivity" />
+        <activity android:name=".ExgymBacklegActivty" />
+        <activity android:name=".ExgymBicepsActivitity" />
+        <activity android:name=".ExgymButtoocksActivity" />
+        <activity android:name=".ExgymForearmActivity" />
+        <activity android:name=".ExgymChestActivity" />
+        <activity android:name=".WorkoutActivity3" />
+        <activity android:name=".WorkEightMinutesActivity1" />
+        <activity android:name=".WorkFifteenMinutesActiivty" />
+        <activity android:name=".WorkTwoFiveMinutesActivity" />
+        <activity android:name=".WorkSusFullBodyActiivty" />
+        <activity android:name=".WorkSusPushPullActivity" />
+        <activity android:name=".WorkFunFullBodyActiivty" />
+        <activity android:name=".WorkFunPushPullActivity" />
+        <activity android:name=".WorkFunFatBurnerActiivty" />
+        <activity android:name=".WorkFatBurnerActivity" />
+        <activity android:name=".WorkoutBeginnerActivity" />
+        <activity android:name=".BiginnerDay" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".BeginnerMediums" />
+        <activity android:name=".NutritionProductActity" />
+        <activity android:name=".ProteinActivity" />
+        <activity android:name=".CratinineActivity" />
+        <activity android:name=".GeinersActivity" />
+        <activity android:name=".ui.activity.NavigationLibraryActivity" />
+        <activity android:name=".NaturalAnabolicsActivity" />
+        <activity android:name=".ZmaActivity" />
+        <activity android:name=".ExerciseContentsActiivty"/>
+        <activity android:name=".ui.activity.ToolsActivity" />
+        <activity android:name=".ui.activity.home_menu_activities.ExerciseGuideActivity" />
+        <activity android:name=".ui.activity.home_menu_activities.ExerciseDetailActivity" />
+        <activity android:name=".ui.activity.home_menu_activities.ExerciseListActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/slide_background_3"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StretchingActivityAllData">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/st_name_chngs"
+                android:background="@drawable/stratching_layout_border_heding1"
+                android:padding="7dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Retract one leg and advance the hip."
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/st_image_chng"
+                android:layout_width="200dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@drawable/stretchinglayoutborder"
+                android:src="@drawable/meditation1" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="60dp"
+                    android:background="@color/brown"
+                    android:src="@drawable/start" />
+
+                <ImageView
+                    android:id="@+id/pause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/brown"
+                    android:src="@drawable/pause" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/st_image_desc"
+                android:layout_margin="5dp"
+                android:background="@drawable/stratching_layout_color"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Retract one leg and advance the hip."
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:padding="10dp"
+                android:background="@drawable/stratching_layout_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/repetation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_margin="15dp"
+                        android:id="@+id/repetition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:inputType="number"
+                            android:textColor="@color/lightWhite"
+                            android:backgroundTint="@color/maroon_stretcing"
+                            android:textColorHint="@color/lightWhite"
+                            android:id="@+id/input_repetion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:hint="Repetitions" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/setimage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <android.support.design.widget.TextInputLayout
+
+                        android:layout_margin="15dp"
+                        android:id="@+id/set"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:inputType="number"
+                            android:backgroundTint="@color/maroon_stretcing"
+                            android:textColorHint="@color/lightWhite"
+                            android:id="@+id/input_set"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:hint="Set" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <android.support.design.widget.TextInputLayout
+
+                        android:layout_margin="15dp"
+                        android:id="@+id/waiti"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:inputType="number"
+                            android:backgroundTint="@color/maroon_stretcing"
+                            android:textColorHint="@color/lightWhite"
+                            android:id="@+id/input_weighti"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:hint="Weight" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/notes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <android.support.design.widget.TextInputLayout
+
+                        android:layout_margin="15dp"
+                        android:id="@+id/note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:inputType="text"
+                            android:backgroundTint="@color/maroon_stretcing"
+                            android:textColorHint="@color/lightWhite"
+                            android:id="@+id/input_note"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:hint="Notes" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/button"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:text="Save"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/stratching_layout_color"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/watch"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp" />
+                    <EditText
+                        android:inputType="number"
+                        android:backgroundTint="@color/red"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/lightWhite"
+                        android:hint="Seconds!"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_weight="1"
+                        android:text="00:00:00"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:textStyle="bold"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/white"
+                        android:padding="5dp"
+                        android:background="@drawable/stratching_button_border2"
+                        android:text="START TIMER"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/white"
+                        android:padding="5dp"
+                        android:background="@drawable/stratching_button_border2"
+                        android:text="RESET TIMER"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

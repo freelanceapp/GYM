@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/onclickproduct"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/nutrition_activity3_images1"
+        android:src="@drawable/nutrition_protien3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="-10dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/nutrition_activity3_text1"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:background="@color/nutrition_distember3"
+        android:textColor="@color/lightWhite"
+        android:text="Protein jfljsf jklfe jfj  fweifj ;"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

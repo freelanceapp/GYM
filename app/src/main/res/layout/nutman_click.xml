@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/slide_background_3"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Kcal"
+        android:background="@drawable/nutrition_activity_textview_border4"
+        android:textColor="@color/lightWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/lightWhite"
+            android:text="Kcal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/nutrition_distember3"
+            android:textSize="16dp"
+            android:text="Proteina"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginRight="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/lightWhite"
+            android:text="Gramos"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/lightWhite"
+            android:text="Kcal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/lightred"
+            android:textSize="16dp"
+            android:text="Carbohidratos"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginRight="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/lightWhite"
+            android:text="Gramos"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/lightWhite"
+        android:text="Kcal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/yellow"
+        android:textSize="16dp"
+        android:text="Grasas"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/lightWhite"
+        android:text="Gramos"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_margin="15dp"
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:textColorHint="@color/nutrition_distember3"
+            android:id="@+id/input_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="Weight" />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_margin="15dp"
+        android:id="@+id/height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:textColorHint="@color/nutrition_distember3"
+            android:id="@+id/input_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="Height Cm" />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_margin="15dp"
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:textColorHint="@color/nutrition_distember3"
+            android:id="@+id/input_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="Age" />
+    </android.support.design.widget.TextInputLayout>
+    <RelativeLayout
+        android:background="@drawable/nut_man_woman_click_background"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.FloatingActionButton
+            android:backgroundTint="@color/pink"
+            android:tint="@color/lightWhite"
+            android:src="@drawable/ic_checkmark"
+            android:id="@+id/ok_done"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.design.widget.FloatingActionButton
+            android:backgroundTint="@color/pink"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/ok_done"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:textColor="@color/lightWhite"
+                android:text="Poco o Nada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:textColor="@color/lightWhite"
+                android:text="Ejercicio ligero 1 a 3 Dias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:textColor="@color/lightWhite"
+                android:text="Ejercicio Moderado 3 a 5 Dias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:textColor="@color/lightWhite"
+                android:text="Ejercicio Fuerte mas 5 Dias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/myworkoutsOnclick"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_margin="5dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/day1"
+        android:id="@+id/my_workout_images"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:layout_toRightOf="@+id/my_workout_images"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/myworkouts_rclv_border"
+        android:textSize="16dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:text="Monday"
+        android:id="@+id/my_workout_names"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

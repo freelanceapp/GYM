@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/tools"
+            android:icon="@drawable/nav_tools"
+            android:title="Tools" />
+        <item
+            android:id="@+id/exercise"
+            android:icon="@drawable/nav_ic_exercise"
+            android:title="Exercise guide" />
+        <item
+            android:id="@+id/workouts"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Workouts" />
+        <item
+            android:id="@+id/my_workouts"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="My Workouts" />
+        <item
+            android:id="@+id/nutrition"
+            android:icon="@drawable/nav_ic_nutricion"
+            android:title="Nutrition" />
+        <item
+            android:id="@+id/coach"
+            android:icon="@drawable/nav_ic_coach"
+            android:title="Coach" />
+        <item
+            android:id="@+id/challenges"
+            android:icon="@drawable/challenges_ic"
+            android:title="Challenges" />
+        <item
+            android:id="@+id/reminders"
+            android:icon="@drawable/ic_plus"
+            android:title="Reminders" />
+        <item
+            android:id="@+id/stretching"
+            android:icon="@drawable/stretching_ic"
+            android:title="Stretching" />
+
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/get_pro_version"
+                android:icon="@drawable/get_pro_ic"
+                android:title="Get pro version" />
+            <item
+                android:id="@+id/plus"
+                android:icon="@drawable/ic_plus"
+                android:title="Plus" />
+            <item
+                android:id="@+id/language"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Language" />
+
+        </menu>
+    </item>
+
+</menu>

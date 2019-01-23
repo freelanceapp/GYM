@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="10dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/slide_background_3"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkOutActivity1">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/lightWhite"
+            android:text="Man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="@dimen/image_width_height_120dp"
+            android:layout_height="@dimen/image_width_height_120dp" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/lightWhite"
+                android:text="Woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@drawable/workout_logowoman"
+                android:layout_width="@dimen/image_width_height_120dp"
+                android:layout_height="@dimen/image_width_height_120dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/workout_button1"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/lightWhite"
+                android:background="@drawable/workout_activity_button_border1"
+                android:text="BEGINNER"
+                android:layout_width="150dp"
+                android:layout_height="50dp" />
+            <Button
+                android:id="@+id/workout_button2"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/lightWhite"
+                android:background="@drawable/workout_activity_button_border1"
+                android:text="INTERMEDIUM"
+                android:layout_width="150dp"
+                android:layout_height="50dp" />
+            <Button
+                android:id="@+id/workout_button3"
+                android:textColor="@color/lightWhite"
+                android:background="@drawable/workout_activity_button_border1"
+                android:text="ADVANCED"
+                android:layout_width="150dp"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/workout_button4"
+                android:textColor="@color/lightWhite"
+                android:background="@drawable/workout_activity_button_border1"
+                android:text="BEGINNER"
+                android:layout_width="150dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

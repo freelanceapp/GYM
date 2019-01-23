@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/contentsonclick"
+    android:padding="8dp"
+    android:background="@color/transparent_black"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="110dp">
+<ImageView
+    android:layout_marginRight="10dp"
+    android:layout_alignParentRight="true"
+    android:src="@drawable/logo"
+    android:layout_width="40dp"
+    android:layout_height="40dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/contents_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/text"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="-91dp"
+        android:src="@drawable/exercise_activity3_image"
+        android:layout_alignParentLeft="true" />
+    <TextView
+        android:id="@+id/contents_name"
+        android:textStyle="bold"
+        android:textColor="@color/nutrition_distember3"
+        android:text="Repetitios"
+        android:layout_marginLeft="10dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/begginerdatarclv_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textStyle="bold"
+        android:padding="3dp"
+        android:textColor="@color/white"
+        android:text="20"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:layout_below="@id/contents_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/text"
+        android:textColor="@color/maroon_stretcing"
+        android:text="Chest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/begginerdataonclick"
+    android:padding="8dp"
+    android:background="@color/transparent_black"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text"
+        android:textColor="@color/maroon_stretcing"
+        android:text="bodyweight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:src="@drawable/exercise_activitiy4_image5"
+        android:id="@+id/begginerdatarclv_image"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/text"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:id="@+id/textrecpeat"
+        android:textStyle="bold"
+        android:textColor="@color/nutrition_distember3"
+        android:text="Repetitios"
+        android:layout_marginLeft="10dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/begginerdatarclv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textStyle="bold"
+        android:padding="3dp"
+        android:textColor="@color/white"
+        android:text="20"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/textrecpeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/begginerdatarclv_names"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/nutrition_activity_textview_border4"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/begginerdatarclv_image"
+        android:textAlignment="center"
+        android:text="Crunch"
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

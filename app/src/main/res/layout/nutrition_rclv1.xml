@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/transparent_black"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/dietOnclick1"
+        android:background="@drawable/nutrition_rclv_activity_border1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/nutrition_activity1_images"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/nutrition_activity1_images"
+        android:id="@+id/nutrition_activity1_text1"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/lightWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textAlignment="viewEnd"
+        android:id="@+id/nutrition_activity1_tex2"
+        android:textColor="@color/transparent_white"
+        android:text="DIET PLANS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="NotSibling,RtlCompat,UnknownId" />
+    </RelativeLayout>
+</RelativeLayout>

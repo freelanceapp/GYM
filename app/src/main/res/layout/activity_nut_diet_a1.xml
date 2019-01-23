@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/slide_background_3"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NutDietA1">
+ <android.support.design.widget.TabLayout
+     android:background="@color/tablayout_background"
+     android:textAlignment="center"
+     android:layout_marginTop="10dp"
+     android:id="@+id/diet_tabs"
+     app:tabMode="scrollable"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"></android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:padding="15dp"
+        android:id="@+id/diet_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+</LinearLayout>

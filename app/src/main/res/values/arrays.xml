@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ld_activityScreenTitles">
+        <item>Home</item>
+        <item>Tools</item>
+        <item>Exercise guide</item>
+        <item>Workouts</item>
+        <item>My Workouts</item>
+        <item>Nutrition</item>
+        <item>Coach</item>
+        <item>Challenges</item>
+        <item>Reminders</item>
+        <item>Stretching</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/nav_tools</item>
+        <item>@drawable/nav_ic_exercise</item>
+        <item>@drawable/nav_tools</item>
+        <item>@drawable/nav_tools</item>
+        <item>@drawable/nav_ic_nutricion</item>
+        <item>@drawable/nav_ic_coach</item>
+        <item>@drawable/nav_tools</item>
+        <item>@drawable/nav_tools</item>
+        <item>@drawable/nav_tools</item>
+    </array>
+
+</resources>

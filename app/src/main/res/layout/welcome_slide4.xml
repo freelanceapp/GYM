@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/slide_background_4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/image_width_height_120dp"
+            android:layout_height="@dimen/image_width_height_120dp"
+            android:src="@drawable/logo"
+            android:padding="7dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nutrition"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/slide_title_textsize"
+            android:textStyle="bold"
+          />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="@dimen/padding_description"
+            android:paddingRight="@dimen/padding_description"
+            android:text="Diets 1800, 2000,2400,2800,3000,3500 and 4000 calories, foods with their respective calories, proteins, carbohydrate and fats, based on 100 grams. Ketogenic diet. The necessary information about sports supplements"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/slide_description_textsize" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

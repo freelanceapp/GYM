@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#003151</color>
+    <color name="colorPrimaryDark">#ac1817</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#FFB4B2B2</color>
+    <color name="black">#000</color>
+    <color name="excersize">#FF4D6A7E</color>
+    <color name="green_dark">#FF263130</color>
+    <color name="lightWhite">#ffffff</color>
+    <color name="nutrition_distember3">#FF2ECFEC</color>
+    <color name="yellow">#FFF4AC05</color>
+    <color name="pink">#FFDC11D2</color>
+
+    <color name="light_blue_nav_icon">#FF2579B6</color>
+
+    <color name="brown">#FF989A9C</color>
+    <color name="green">#4CAF50</color>
+
+    <color name="transparent_black">#61000000</color>
+
+    <color name="transparent_blue">#6d186c63</color>
+    <color name="transparent_white">#6effffff</color>
+    <color name="transparent_white_b">#6effffff</color>
+    <color name="transparent_white_c">#ECECEC</color>
+    <color name="transparent_red_b">#41AC1817</color>
+    <color name="transparent">#00AC1817</color>
+
+    <color name="maroon_stretcing">#fc5d81</color>
+    <color name="stretching_main_background">#FF1D2930</color>
+    <color name="tablayout_background">#FE243238</color>
+    <color name="dark_exercise">#95304853</color>
+    <color name="transparent_red">#A8830522</color>
+    <color name="red">#F9CE1424</color>
+    <color name="lightred">#FFED0404</color>
+    <color name="medium_black">#fc0d0d0d</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+    <color name="gray_a">#585757</color>
+    <color name="gray_b">#696868</color>
+    <color name="gray_c">#7b7a7a</color>
+    <color name="gray_d">#919090</color>
+    <color name="gray_e">#aeadad</color>
+    <color name="gray_f">#cacaca</color>
+    <color name="gray_g">#dadada</color>
+    <color name="gray_h">#e6e5e5</color>
+    <color name="gray_i">#f2f0f0</color>
+</resources>

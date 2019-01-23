@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/nutritionOnclick"
+        android:layout_margin="5dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="10dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/workout_activity3_images"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:civ_border_color="@color/brown"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/nutrition_rclv_border"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:layout_toRightOf="@+id/workout_activity3_images"
+            android:textColor="@color/white"
+            android:id="@+id/workout_activity3_names"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+</RelativeLayout>
