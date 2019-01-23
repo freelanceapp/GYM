@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import del.gym.R;
 import del.gym.utils.BaseFragment;
@@ -27,12 +28,12 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
 
     private void init() {
         mContext = getActivity();
-        ((LinearLayout) rootView.findViewById(R.id.llExcerciseGuide)).setOnClickListener(this);
-        ((LinearLayout) rootView.findViewById(R.id.llWorkout)).setOnClickListener(this);
-        ((LinearLayout) rootView.findViewById(R.id.llMyWorkOut)).setOnClickListener(this);
-        ((LinearLayout) rootView.findViewById(R.id.llNutrition)).setOnClickListener(this);
-        ((LinearLayout) rootView.findViewById(R.id.llStretching)).setOnClickListener(this);
-        ((LinearLayout) rootView.findViewById(R.id.llTips)).setOnClickListener(this);
+        ((RelativeLayout) rootView.findViewById(R.id.llExcerciseGuide)).setOnClickListener(this);
+        ((RelativeLayout) rootView.findViewById(R.id.llWorkout)).setOnClickListener(this);
+        ((RelativeLayout) rootView.findViewById(R.id.llMyWorkOut)).setOnClickListener(this);
+        ((RelativeLayout) rootView.findViewById(R.id.llNutrition)).setOnClickListener(this);
+        ((RelativeLayout) rootView.findViewById(R.id.llStretching)).setOnClickListener(this);
+        ((RelativeLayout) rootView.findViewById(R.id.llTips)).setOnClickListener(this);
     }
 
     @Override
