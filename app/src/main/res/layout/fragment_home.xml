@@ -23,6 +23,11 @@
                 android:clickable="true"
                 android:gravity="center"
                 android:orientation="vertical">
+                <View
+                    android:elevation="4dp"
+                    android:background="@color/transparent_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
 
                 <ImageView
                     android:scaleType="fitXY"
@@ -50,6 +55,11 @@
                 android:clickable="true"
                 android:gravity="center"
                 android:orientation="vertical">
+                <View
+                    android:elevation="4dp"
+                    android:background="@color/transparent_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
 
                 <ImageView
                     android:scaleType="fitXY"
@@ -77,6 +87,11 @@
                 android:clickable="true"
                 android:gravity="center"
                 android:orientation="vertical">
+                <View
+                    android:elevation="4dp"
+                    android:background="@color/transparent_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
 
                 <ImageView
                     android:scaleType="fitXY"
@@ -104,6 +119,11 @@
                 android:clickable="true"
                 android:gravity="center"
                 android:orientation="vertical">
+                <View
+                    android:elevation="4dp"
+                    android:background="@color/transparent_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
 
                 <ImageView
                     android:scaleType="fitXY"
@@ -132,6 +152,11 @@
                 android:clickable="true"
                 android:gravity="center"
                 android:orientation="vertical">
+                <View
+                    android:elevation="4dp"
+                    android:background="@color/transparent_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
 
                 <ImageView
                     android:scaleType="fitXY"
@@ -160,6 +185,11 @@
                 android:clickable="true"
                 android:gravity="center"
                 android:orientation="vertical">
+                <View
+                    android:elevation="4dp"
+                    android:background="@color/transparent_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
 
                 <ImageView
                     android:scaleType="fitXY"

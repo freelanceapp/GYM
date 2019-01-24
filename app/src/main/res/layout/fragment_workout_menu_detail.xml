@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llExcerciseGuideData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="0dp"
+                    app:contentPadding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/llGym"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/workoutsimage5"
+                            app:civ_border_color="@color/brown"
+                            app:civ_border_width="1dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:paddingLeft="36dp"
+                            android:text="GYM"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <View
+                    android:layout_width="180dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="right"
+                    android:background="@color/gray_b" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="0dp"
+                    app:contentPadding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/llBodyweight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/workoutimage4"
+                            app:civ_border_color="@color/brown"
+                            app:civ_border_width="1dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:paddingLeft="36dp"
+                            android:text="HOME - NO EQUIPMENT"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <View
+                    android:layout_width="180dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="right"
+                    android:background="@color/gray_b" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="0dp"
+                    app:contentPadding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/llBattlerope"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/workoutsimage5"
+                            app:civ_border_color="@color/brown"
+                            app:civ_border_width="1dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:paddingLeft="36dp"
+                            android:text="CALISTHENICS"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <View
+                    android:layout_width="180dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="right"
+                    android:background="@color/gray_b" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="0dp"
+                    app:contentPadding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/llBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_title_box"
+                            app:civ_border_color="@color/brown"
+                            app:civ_border_width="1dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:paddingLeft="36dp"
+                            android:text="FUNCTIONAL TRAINING"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <View
+                    android:layout_width="180dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="right"
+                    android:background="@color/gray_b" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="0dp"
+                    app:contentPadding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/llSuspension"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_title_suspension"
+                            app:civ_border_color="@color/brown"
+                            app:civ_border_width="1dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:paddingLeft="36dp"
+                            android:text="SUSPENSION TRAINING"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <View
+                    android:layout_width="180dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="right"
+                    android:background="@color/gray_b" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

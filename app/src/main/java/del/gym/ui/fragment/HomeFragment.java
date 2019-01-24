@@ -13,8 +13,6 @@ import del.gym.utils.ConstantData;
 
 import static del.gym.ui.activity.NavigationLibraryActivity.fragmentManager;
 import static del.gym.ui.activity.NavigationLibraryActivity.tooltext;
-
-
 public class HomeFragment extends BaseFragment implements View.OnClickListener {
 
     private View rootView;

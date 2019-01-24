@@ -1,13 +1,11 @@
 package del.gym.ui.activity.home_menu_activities;
-
+import del.gym.R;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import del.gym.R;
 import del.gym.utils.BaseActivity;
 
 public class ExerciseListActivity extends BaseActivity implements View.OnClickListener {

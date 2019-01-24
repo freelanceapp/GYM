@@ -8,5 +8,5 @@ public class ConstantData {
     public static final String HOME = "Home";
     public static final String TOOLS = "TOOLS";
     public static final String HomeMenuDetailFragment = "HomeMenuDetailFragment";
-
+    public static final String WorkOutMenuDetailsFragment = "WorkOutMenuDetailsFragment";
 }
