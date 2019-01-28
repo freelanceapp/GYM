@@ -8,6 +8,8 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,6 +18,8 @@ public class NutritionActivity3 extends AppCompatActivity implements View.OnClic
 
     private List<StretcingModel> nuutritionDataA3 = new ArrayList<>();
     private RecyclerView nutritionactivityrecyler3;
+    ImageView tvSupplementBack;
+    ImageView tvTextSup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,39 +27,38 @@ public class NutritionActivity3 extends AppCompatActivity implements View.OnClic
         setContentView(R.layout.activity_nutrition3);
         nutritionactivityrecyler3 = findViewById(R.id.nutrition_activity_rclv3);
 
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"protein"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"Creatine"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"Gainers"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"Amino Acids / BCAAS"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"Natural anabolics"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"ZMA"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"HMB"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"Thermogenic"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"L-Carnitine"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"CLA"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"Green Tea"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"Chromium Picolinate"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"Nitric Oxide"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"Ginseng"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"Beta-Alanine"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"Caffeine"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"Coenzyme Q-10"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"Arginine"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"Multivitamins"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"Glutamine"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"Spirulina"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"Reserveratrol"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"Omega 3"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"Glucomine/ Chondroitin"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"Ginkgo Biloba"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"Acai"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"Alpha lipoic Acid"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"Melatenin"));
-        nuutritionDataA3.add(new StretcingModel(R.drawable.nutrition_protien3,"Goji Barriers"));
+
+        tvSupplementBack = (ImageView)findViewById(R.id.tvSupplementBack);
+        tvSupplementBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+        nuutritionDataA3.add(new StretcingModel(R.drawable.sua,"protein"));
+        nuutritionDataA3.add(new StretcingModel(R.drawable.sub,"Creatine"));
+        nuutritionDataA3.add(new StretcingModel(R.drawable.suc,"Gainers"));
+        nuutritionDataA3.add(new StretcingModel(R.drawable.sud,"Amino Acids / BCAAS"));
+        nuutritionDataA3.add(new StretcingModel(R.drawable.sue,"Natural anabolics"));
+        nuutritionDataA3.add(new StretcingModel(R.drawable.suf,"ZMA"));
+        nuutritionDataA3.add(new StretcingModel(R.drawable.sug,"HMB"));
+        nuutritionDataA3.add(new StretcingModel(R.drawable.suh,"Thermogenic"));
+        nuutritionDataA3.add(new StretcingModel(R.drawable.sui,"L-Carnitine"));
+        nuutritionDataA3.add(new StretcingModel(R.drawable.suj,"CLA"));
+        nuutritionDataA3.add(new StretcingModel(R.drawable.suk,"Green Tea"));
+        nuutritionDataA3.add(new StretcingModel(R.drawable.sul,"Chromium Picolinate"));
+       /* nuutritionDataA3.add(new StretcingModel(R.drawable.sum,"Nitric Oxide"));
+        nuutritionDataA3.add(new StretcingModel(R.drawable.sun,"Ginseng"));
+        nuutritionDataA3.add(new StretcingModel(R.drawable.suo,"Beta-Alanine"));
+        nuutritionDataA3.add(new StretcingModel(R.drawable.sup,"Caffeine"));
+        nuutritionDataA3.add(new StretcingModel(R.drawable.suq,"Coenzyme Q-10"));
+        nuutritionDataA3.add(new StretcingModel(R.drawable.sur,"Arginine"));
+        nuutritionDataA3.add(new StretcingModel(R.drawable.sus,"Multivitamins"));*/
+
 
         NutritionActivityAdapter3 nutritionActivityAdapter3 = new NutritionActivityAdapter3(nuutritionDataA3,this,this);
 
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(NutritionActivity3.this,3);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(NutritionActivity3.this,2);
         nutritionactivityrecyler3.setLayoutManager(gridLayoutManager);
         nutritionactivityrecyler3.setItemAnimator(new DefaultItemAnimator());
         nutritionactivityrecyler3.setAdapter(nutritionActivityAdapter3);

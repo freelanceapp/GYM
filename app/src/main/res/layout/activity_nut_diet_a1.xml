@@ -1,24 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="vertical"
-    android:background="@drawable/slide_background_3"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/slide_background_3"
+    android:orientation="vertical"
     tools:context=".NutDietA1">
- <android.support.design.widget.TabLayout
-     android:background="@color/tablayout_background"
-     android:textAlignment="center"
-     android:layout_marginTop="10dp"
-     android:id="@+id/diet_tabs"
-     app:tabMode="scrollable"
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"></android.support.design.widget.TabLayout>
-    <android.support.v4.view.ViewPager
-        android:padding="15dp"
-        android:id="@+id/diet_viewpager"
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+        android:layout_height="?actionBarSize"
+        android:background="@color/tablayout_background">
+
+        <ImageView
+            android:id="@+id/nutBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="4sp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Gym"
+            android:id="@+id/tvTitle"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/tablayout_background"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nutMonday"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="14sp"
+                android:text="Monday"
+                android:textAllCaps="true"
+                android:textColor="@color/lightWhite"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/nutTuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="14sp"
+                android:text="Tuesday"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/nutWednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="14sp"
+                android:text="Wednesday"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/nutThursday"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="14sp"
+                android:text="Thursday"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/nutFriday"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="14sp"
+                android:text="Friday"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/nutSaturday"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="Saturday"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/nutSunday"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="Sunday"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textDayData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10sp"
+            android:padding="6sp"
+            android:text="ABC"
+            android:textColor="@color/lightWhite" />
+    </ScrollView>
 </LinearLayout>

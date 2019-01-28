@@ -6,6 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import del.gym.NutritionActivit1;
+import del.gym.NutritionActivity3;
+import del.gym.NutritionActivity6;
 import del.gym.R;
 import del.gym.ui.activity.home_menu_activities.ExerciseGuideActivity;
 import del.gym.utils.BaseFragment;
@@ -91,6 +94,14 @@ public class HomeMenuDetailFragment extends BaseFragment implements View.OnClick
         rootView.findViewById(R.id.llCalisthenics).setOnClickListener(this);
         rootView.findViewById(R.id.llFunctionalTraining).setOnClickListener(this);
         rootView.findViewById(R.id.llSuspensionTraining).setOnClickListener(this);
+
+
+        /*Nutrition*/
+        rootView.findViewById(R.id.llNutritionDietPlans).setOnClickListener(this);
+        rootView.findViewById(R.id.llNutritionFoods).setOnClickListener(this);
+        rootView.findViewById(R.id.llNutritionsupplements).setOnClickListener(this);
+        rootView.findViewById(R.id.llNutritionSuspensionTraining).setOnClickListener(this);
+        rootView.findViewById(R.id.llNutritionTips).setOnClickListener(this);
     }
 
     @Override
@@ -132,6 +143,32 @@ public class HomeMenuDetailFragment extends BaseFragment implements View.OnClick
             case R.id.llSuspensionTraining:
                 openDetailActivity("SuspensionTraining");
                 break;
+
+
+            /*Nutrition*/
+            case R.id.llNutritionDietPlans:
+                //openDetailActivity("Home");
+                Intent intent = new Intent(mContext, NutritionActivit1.class);
+                startActivity(intent);
+                break;
+            case R.id.llNutritionFoods:
+                Intent intent2 = new Intent(mContext, NutritionActivity6.class);
+                startActivity(intent2);
+                break;
+            case R.id.llNutritionsupplements:
+                //openDetailActivity("FunctionalTraining");
+                Intent intent1 = new Intent(mContext, NutritionActivity3.class);
+                startActivity(intent1);
+
+                break;
+            case R.id.llNutritionSuspensionTraining:
+                openDetailActivity("SuspensionTraining");
+                break;
+            case R.id.llNutritionTips:
+                openDetailActivity("SuspensionTraining");
+                break;
+
+
         }
     }
 

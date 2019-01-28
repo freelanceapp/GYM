@@ -24,39 +24,25 @@ public class NutritionActivit1 extends AppCompatActivity {
 
 
         nutritionDataA1.add(
-                new StretcingModel(
-                        R.drawable.nutricion1
-                        ,"1800 Calories"
+                new StretcingModel(R.drawable.nutricion1,"1800 Calories"
                 ));
         nutritionDataA1.add(
-                new StretcingModel(
-                        R.drawable.nutricion1
-                        ,"2000 Calories"
+                new StretcingModel(R.drawable.nutricion1,"2000 Calories"
                 ));
         nutritionDataA1.add(
-                new StretcingModel(
-                        R.drawable.nutricion1
-                        ,"2400 Calories"
+                new StretcingModel(R.drawable.nutricion1,"2400 Calories"
                 ));
         nutritionDataA1.add(
-                new StretcingModel(
-                        R.drawable.nutricion1
-                        ,"2800 Calories"
+                new StretcingModel(R.drawable.nutricion1,"2800 Calories"
                 ));
         nutritionDataA1.add(
-                new StretcingModel(
-                        R.drawable.nutricion1
-                        ,"3000 Calories"
+                new StretcingModel(R.drawable.nutricion1,"3000 Calories"
                 ));
         nutritionDataA1.add(
-                new StretcingModel(
-                        R.drawable.nutricion1
-                        ,"3500 Calories"
+                new StretcingModel(R.drawable.nutricion1,"3500 Calories"
                 ));
         nutritionDataA1.add(
-                new StretcingModel(
-                        R.drawable.nutricion1
-                        ,"4000 Calories"
+                new StretcingModel(R.drawable.nutricion1,"4000 Calories"
                 ));
         NutritionActivityAdapter1 nutritionActivityAdapter1 = new NutritionActivityAdapter1(nutritionDataA1, NutritionActivit1.this);
         LinearLayoutManager lm = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);

@@ -15,7 +15,7 @@ public class GeinersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_geiners);
 
-        tabLayout = findViewById(R.id.diet_tabs);
+       /* tabLayout = findViewById(R.id.diet_tabs);
         viewPager = findViewById(R.id.diet_viewpager);
         tabLayout = findViewById(R.id.product_tabs);
         viewPager = findViewById(R.id.product_viewpager);
@@ -48,5 +48,6 @@ public class GeinersActivity extends AppCompatActivity {
 
             }
         });
+    }*/
     }
 }
