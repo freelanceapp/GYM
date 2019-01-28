@@ -18,6 +18,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import del.gym.NavigationMainActivity;
 import del.gym.R;
 
 public class SlideViewActivity extends AppCompatActivity {
@@ -93,7 +94,7 @@ public class SlideViewActivity extends AppCompatActivity {
     }
 
     private void launchHomeScreen() {
-        startActivity(new Intent(SlideViewActivity.this, SplashScreenActivity.class));
+        startActivity(new Intent(SlideViewActivity.this, NavigationMainActivity.class));
         finish();
     }
 
