@@ -28,16 +28,17 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String KEY_REPETITIONS = "repetitions";
     private static final String KEY_SET = "set_a";
     private static final String KEY_WEIGHT = "weight";
+    private static final String KEY_DAYS = "days";
 
-    public DatabaseHandler(Context context) {
-        super(context, DATABASE_NAME, null, DATABASE_VERSION);
+    public DatabaseHandler(Context context, String databaseName) {
+        super(context, databaseName, null, DATABASE_VERSION);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
         String CREATE_URL_TABLE = "CREATE TABLE " + TABLE_URL + "("
                 + KEY_ID + " INTEGER PRIMARY KEY," + KEY_EXERCISE_NAME + " TEXT," + KEY_REPETITIONS + " TEXT," + KEY_SET + " TEXT,"
-                + KEY_WEIGHT + " TEXT " + ")";
+                + KEY_WEIGHT + " TEXT, " + KEY_DAYS + " TEXT " + ")";
         db.execSQL(CREATE_URL_TABLE);
         Log.e("Table", CREATE_URL_TABLE);
     }
@@ -56,6 +57,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         values.put(KEY_REPETITIONS, urlModal.getRepetition());
         values.put(KEY_SET, urlModal.getCountSet());
         values.put(KEY_WEIGHT, urlModal.getWeight());
+        values.put(KEY_DAYS, urlModal.getDays());
 
         // Inserting InstructionsRow
         db.insert(TABLE_URL, null, values);
@@ -65,14 +67,15 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     // Getting single url
     public MyRoutineModal getSingleItem(int id) {
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.query(TABLE_URL, new String[]{KEY_ID, KEY_EXERCISE_NAME, KEY_REPETITIONS, KEY_SET, KEY_WEIGHT},
+        Cursor cursor = db.query(TABLE_URL, new String[]{KEY_ID, KEY_EXERCISE_NAME, KEY_REPETITIONS, KEY_SET, KEY_WEIGHT, KEY_DAYS},
                 KEY_ID + "=?",
                 new String[]{String.valueOf(id)}, null, null, null, null);
         if (cursor != null)
             cursor.moveToFirst();
 
         return new MyRoutineModal(Integer.parseInt(cursor.getString(0)), cursor.getString(1),
-                cursor.getString(2), cursor.getString(3), cursor.getString(4));
+                cursor.getString(2), cursor.getString(3), cursor.getString(4),
+                cursor.getString(5));
     }
 
     //Getting all Url list
@@ -91,6 +94,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 urlModal.setRepetition(cursor.getString(2));
                 urlModal.setCountSet(cursor.getString(3));
                 urlModal.setWeight(cursor.getString(4));
+                urlModal.setDays(cursor.getString(5));
                 urlModalList.add(urlModal);
             } while (cursor.moveToNext());
         }
@@ -108,6 +112,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         values.put(KEY_REPETITIONS, urlModal.getRepetition());
         values.put(KEY_SET, urlModal.getCountSet());
         values.put(KEY_WEIGHT, urlModal.getWeight());
+        values.put(KEY_DAYS, urlModal.getDays());
 
         int updateValue = db.update(TABLE_URL, values, KEY_ID + " = ?", new String[]{String.valueOf(urlModal.get_id())});
         db.close();

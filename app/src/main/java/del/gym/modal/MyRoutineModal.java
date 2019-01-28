@@ -10,26 +10,29 @@ public class MyRoutineModal implements Parcelable {
     private String repetition;
     private String countSet;
     private String weight;
+    private String days;
 
     public MyRoutineModal() {
 
     }
 
     public MyRoutineModal(String exercise, String repetition, String countSet,
-                          String weight) {
+                          String weight, String days) {
         this.exercise = exercise;
         this.repetition = repetition;
         this.countSet = countSet;
         this.weight = weight;
+        this.days = days;
     }
 
     public MyRoutineModal(int _id, String exercise, String repetition, String countSet,
-                          String weight) {
+                          String weight, String days) {
         this._id = _id;
         this.exercise = exercise;
         this.repetition = repetition;
         this.countSet = countSet;
         this.weight = weight;
+        this.days = days;
     }
 
     public int get_id() {
@@ -58,6 +61,14 @@ public class MyRoutineModal implements Parcelable {
             return new MyRoutineModal[size];
         }
     };
+
+    public String getDays() {
+        return days;
+    }
+
+    public void setDays(String days) {
+        this.days = days;
+    }
 
     public String getExercise() {
         return exercise;
@@ -102,5 +113,6 @@ public class MyRoutineModal implements Parcelable {
         dest.writeString(repetition);
         dest.writeString(countSet);
         dest.writeString(weight);
+        dest.writeString(days);
     }
 }

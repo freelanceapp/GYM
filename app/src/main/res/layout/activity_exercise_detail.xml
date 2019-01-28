@@ -62,7 +62,8 @@
                     <pl.droidsonroids.gif.GifImageView
                         android:id="@+id/gifImage"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
+                        android:layout_height="match_parent"
+                        android:padding="8dp" />
 
                     <ImageView
                         android:id="@+id/imgExercise"
@@ -76,8 +77,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
-                        android:padding="4dp"
-                        android:src="@drawable/ic_suspension_biceps" />
+                        android:padding="4dp" />
                 </RelativeLayout>
 
                 <LinearLayout
@@ -86,19 +86,13 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/rlImage"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="38dp"
+                    android:layout_marginLeft="8dp"
                     android:layout_marginTop="-45dp"
-                    android:layout_marginRight="38dp"
+                    android:layout_marginRight="8dp"
                     android:layout_marginBottom="8dp"
                     android:background="@drawable/layout_bg_b"
                     android:orientation="vertical"
-                    android:padding="20dp">
-
-                    <android.support.v7.widget.RecyclerView
-                        android:id="@+id/recyclerViewData"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="45dp" />
+                    android:padding="12dp">
 
                     <TextView
                         android:id="@+id/tvExerciseDetail"
@@ -106,7 +100,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="45dp"
                         android:textColor="@color/lightWhite"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
 
                 </LinearLayout>
 

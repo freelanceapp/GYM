@@ -28,7 +28,6 @@
         <activity android:name=".TipsItemActivity1" />
         <activity android:name=".StretchingActivity" />
         <activity android:name=".WorkoutActivity" />
-        <activity android:name=".MyWorkoutActivity" />
         <activity android:name=".NutritionActivity" />
         <activity android:name=".ExerciseActivity1" />
         <activity android:name=".MyWorkoutsDay1" />
@@ -98,6 +97,7 @@
             android:name=".ui.activity.home_menu_activities.ExerciseDetailActivity"
             android:windowSoftInputMode="adjustNothing" />
         <activity android:name=".ui.activity.home_menu_activities.ExerciseListActivity" />
+        <activity android:name=".ui.activity.MyWorkOutActivity" />
     </application>
 
 </manifest>

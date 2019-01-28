@@ -7,7 +7,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,8 +18,11 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import del.gym.R;
+import del.gym.constant.Constant;
+import del.gym.utils.AppPreference;
+import del.gym.utils.BaseActivity;
 
-public class SlideViewActivity extends AppCompatActivity {
+public class SlideViewActivity extends BaseActivity {
 
     private ViewPager viewPager;
     private MyViewPagerAdapter myViewPagerAdapter;
@@ -34,6 +36,16 @@ public class SlideViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide_view);
 
+        boolean isFirstTime = AppPreference.getBooleanPreference(mContext, Constant.IsFirstTime);
+
+        if (isFirstTime) {
+            launchHomeScreen();
+        } else {
+            init();
+        }
+    }
+
+    private void init() {
         viewPager = findViewById(R.id.view_pager);
         dotsLayout = findViewById(R.id.layoutDots);
         btnSkip = findViewById(R.id.btn_skip);
@@ -93,6 +105,7 @@ public class SlideViewActivity extends AppCompatActivity {
     }
 
     private void launchHomeScreen() {
+        AppPreference.setBooleanPreference(mContext, Constant.IsFirstTime, true);
         startActivity(new Intent(SlideViewActivity.this, SplashScreenActivity.class));
         finish();
     }
@@ -150,11 +163,8 @@ public class SlideViewActivity extends AppCompatActivity {
         public Object instantiateItem(ViewGroup container, int position) {
 
             layoutInflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-
             View view = layoutInflater.inflate(layouts[position], container, false);
-
             container.addView(view);
-
             return view;
         }
 
@@ -167,7 +177,6 @@ public class SlideViewActivity extends AppCompatActivity {
         public boolean isViewFromObject(View view, Object obj) {
             return view == obj;
         }
-
 
         @Override
         public void destroyItem(ViewGroup container, int position, Object object) {

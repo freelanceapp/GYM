@@ -2,21 +2,14 @@ package del.gym.ui.activity.home_menu_activities;
 
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import del.gym.R;
-import del.gym.adapter.ExerciseTextAdapter;
 import del.gym.utils.BaseActivity;
 import pl.droidsonroids.gif.GifImageView;
 
@@ -25,8 +18,6 @@ public class ExerciseDetailActivity extends BaseActivity implements View.OnClick
     private String strName = "";
     private GifImageView gifImage;
     private ImageView imgExercise;
-    private ExerciseTextAdapter exerciseTextAdapter;
-    private List<String> stringList = new ArrayList<>();
     private CountDownTimer cTimer;
     private boolean isTimerStart = false;
     private TextView tvMinute;
@@ -40,8 +31,7 @@ public class ExerciseDetailActivity extends BaseActivity implements View.OnClick
     }
 
     private void getIntentData() {
-        if (getIntent() == null)
-            return;
+        if (getIntent() == null) return;
 
         tvMinute = findViewById(R.id.tvMinute);
         findViewById(R.id.imgBack).setOnClickListener(this);
@@ -50,384 +40,532 @@ public class ExerciseDetailActivity extends BaseActivity implements View.OnClick
         gifImage = findViewById(R.id.gifImage);
         imgExercise = findViewById(R.id.imgExercise);
         strName = getIntent().getStringExtra("name");
-        stringList.clear();
 
         if (strName.equals("FlatChestFly")) {
-            stringList.add("Lying flat on bench, hold dumbbells directly above chest.");
-            stringList.add("Bend elbows slightly and maintain throughout the exercise.");
-            stringList.add("Open arms to sides. Elbows should remain 'locked' in a slightly flexed position.");
-            stringList.add("When upper arms are parallel to floor, return the weights to the starting position and repeat.");
-            gifImage.setImageResource(R.drawable.ic_chest_a);
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.PEC1));
+            gifImage.setImageResource(R.drawable.ic_chest_pechoa);
         } else if (strName.equals("FlatChestPress")) {
-            stringList.add("Lying flat on bench, hold the dumbbells directly above chest, arms extended.");
-            stringList.add("Lower dumbbells to chest in a controlled manner.");
-            stringList.add("Press dumbbells back to starting position and repeat.");
-            stringList.add("Repeat the movement with the left hand. This equals one repetition.");
-            gifImage.setImageResource(R.drawable.ic_chest_b);
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.PEC2));
+            gifImage.setImageResource(R.drawable.ic_chest_pechob);
         } else if (strName.equals("InclineChestFly")) {
-            stringList.add("Adjust bench to an incline of 30 to 45 degrees.");
-            stringList.add("Bend elbows slightly and maintain throughout the exercise.");
-            stringList.add("Open arms to sides. Elbows should remain 'locked' in a slightly flexed position.");
-            stringList.add("When upper arms are parallel to floor, return the weights to the starting position and repeat.");
-            gifImage.setImageResource(R.drawable.ic_chest_c);
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.PEC3));
+            gifImage.setImageResource(R.drawable.ic_chest_pechoc);
         } else if (strName.equals("InclineChestPress")) {
-            stringList.add("Adjust bench to an incline of 30 to 45 degrees.");
-            stringList.add("Lower dumbbells to chest in a controlled manner.");
-            stringList.add("Press dumbbells back to starting position and repeat.");
-            stringList.add("Repeat the movement with the left hand. This equals one repetition.");
-            stringList.add("Avoid locking elbows.");
-            gifImage.setImageResource(R.drawable.ic_chest_d);
-        } else if (strName.equals("SingleArmRow")) {
-            stringList.add("Stand upright next to bench. Place one knee and hand on bench. Upper body should be parallel to floor.");
-            stringList.add("Hold one dumbbell with arm extended.");
-            stringList.add("Raise dumbbell up to your midsection keeping back still throughout movement.");
-            stringList.add("Slowly lower dumbbell to start position and repeat. After desired number of reps repeat for other arm.");
-            gifImage.setImageResource(R.drawable.ic_back_a);
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.PEC4));
+            gifImage.setImageResource(R.drawable.ic_chest_pechod);
+        } else if (strName.equals("llic_chest_pechoe")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.PEC5));
+            gifImage.setImageResource(R.drawable.ic_chest_pechoe);
+        } else if (strName.equals("llic_chest_pechof")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.PEC6));
+            gifImage.setImageResource(R.drawable.ic_chest_pechof);
+        } else if (strName.equals("llic_chest_pechog")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.PEC7));
+            gifImage.setImageResource(R.drawable.ic_chest_pechog);
+        } else if (strName.equals("llic_chest_pechoh")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.PEC8));
+            gifImage.setImageResource(R.drawable.ic_chest_pechoh);
+        } else if (strName.equals("llic_chest_pechoi")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.PEC9));
+            gifImage.setImageResource(R.drawable.ic_chest_pechoi);
+        } else if (strName.equals("llic_chest_pechoj")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.PEC10));
+            gifImage.setImageResource(R.drawable.ic_chest_pechoj);
+        } else if (strName.equals("llic_chest_pechok")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.PEC11));
+            gifImage.setImageResource(R.drawable.ic_chest_pechok);
+        } else if (strName.equals("llic_chest_pechol")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.PEC12));
+            gifImage.setImageResource(R.drawable.ic_chest_pechol);
+        } else if (strName.equals("llic_chest_pechom")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.PEC13));
+            gifImage.setImageResource(R.drawable.ic_chest_pechom);
+        } else if (strName.equals("llic_chest_pechon")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.PEC14));
+            gifImage.setImageResource(R.drawable.ic_chest_pechon);
+        } else if (strName.equals("llic_chest_pechoo")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.PEC15));
+            gifImage.setImageResource(R.drawable.ic_chest_pechoo);
+        }
+
+        /*Back*/
+        else if (strName.equals("SingleArmRow")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.ESP1));
+            gifImage.setImageResource(R.drawable.ic_back_espaldaa);
         } else if (strName.equals("FrenchPress")) {
-            stringList.add("Lie flat on bench. Hold dumbbells directly above chest with palms facing each other. Dumbbells should be just about touching each other.");
-            stringList.add("Keep your shoulders locked and fold your elbows so dumbbells are lowered down to either side of head.");
-            stringList.add("Extend arm back to starting position. Repeat for the desired number of reps and switch arms.");
-            gifImage.setImageResource(R.drawable.ic_back_b);
-        } else if (strName.equals("HammerCurl")) {
-            stringList.add("Stand upright with dumbells at sides.");
-            stringList.add("Turn palms inward so they face body.");
-            stringList.add("Keep elbows close to body and curl weight up by bending elbows.");
-            stringList.add("Curl dumbbells up slowly, keeping your elbows close to sides.");
-            gifImage.setImageResource(R.drawable.ic_bicep_a);
-        } else if (strName.equals("BicepCurl")) {
-            stringList.add("Adjust bench to a 45 degree incline.");
-            stringList.add("Hold dumbbells at sides. Arms should be fully extended.");
-            stringList.add("Keep elbows close to body and curl weight up by bending elbows.");
-            stringList.add("Repeat the movement with the left hand. This equals one repetition.");
-            gifImage.setImageResource(R.drawable.ic_bicep_b);
-        } else if (strName.equals("ConcentrationCurl")) {
-            stringList.add("Holding dumbbell, place elbow on inside of thigh, just above knee.");
-            stringList.add("Turn palms inward so they face body.");
-            stringList.add("Curl dumbbell up towards your face. Do not swing back as you lift the weight.");
-            stringList.add("Slowly lower the weight and repeat for desired number of reps before switching arms.");
-            gifImage.setImageResource(R.drawable.ic_bicep_c);
-        } else if (strName.equals("ShoulderPress")) {
-            stringList.add("Sit upright on bench with dumbbells over head. Make sure back is flat.");
-            stringList.add("Lower dumbbells slowly to shoulders.");
-            stringList.add("When arms are at 90 degrees, press the dumbbells back up and repeat.");
-            gifImage.setImageResource(R.drawable.ic_shoulder_a);
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.ESP2));
+            gifImage.setImageResource(R.drawable.ic_back_espaldab);
+        } else if (strName.equals("llic_back_espaldac")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.ESP3));
+            gifImage.setImageResource(R.drawable.ic_back_espaldac);
+        } else if (strName.equals("llic_back_espaldad")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.ESP4));
+            gifImage.setImageResource(R.drawable.ic_back_espaldad);
+        } else if (strName.equals("llic_back_espaldae")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.ESP5));
+            gifImage.setImageResource(R.drawable.ic_back_espaldae);
+        } else if (strName.equals("llic_back_espaldaf")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.ESP6));
+            gifImage.setImageResource(R.drawable.ic_back_espaldaf);
+        } else if (strName.equals("llic_back_espaldag")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.ESP7));
+            gifImage.setImageResource(R.drawable.ic_back_espaldag);
+        } else if (strName.equals("llic_back_espaldah")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.ESP8));
+            gifImage.setImageResource(R.drawable.ic_back_espaldah);
+        } else if (strName.equals("llic_back_espaldai")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.ESP9));
+            gifImage.setImageResource(R.drawable.ic_back_espaldai);
+        } else if (strName.equals("llic_back_espaldaj")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.ESP10));
+            gifImage.setImageResource(R.drawable.ic_back_espaldaj);
+        } else if (strName.equals("llic_back_espaldak")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.ESP11));
+            gifImage.setImageResource(R.drawable.ic_back_espaldak);
+        } else if (strName.equals("llic_back_espaldal")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.ESP12));
+            gifImage.setImageResource(R.drawable.ic_back_espaldal);
+        }
+
+
+        /*Shoulders*/
+        else if (strName.equals("ShoulderPress")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.HOM1));
+            gifImage.setImageResource(R.drawable.ic_shoulder_hombrosa);
         } else if (strName.equals("LateralRaise")) {
-            stringList.add("Stand upright, knees slightly bent, shoulder width apart, holding dumbbells at sides.");
-            stringList.add("Bend elbows slightly and raise the dumbbells out to sides. Keep elbows slightly bent throughout.");
-            stringList.add("When arms are parallel to floor, slowly lower back and repeat.");
-            gifImage.setImageResource(R.drawable.ic_shoulder_b);
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.HOM2));
+            gifImage.setImageResource(R.drawable.ic_shoulder_hombrosb);
         } else if (strName.equals("ReverseFly")) {
-            stringList.add("Stand upright, knees slightly bent, shoulder width apart, holding dumbbells at sides.");
-            stringList.add("Bend elbows slightly and raise the dumbbells out to sides. Keep elbows slightly bent throughout.");
-            stringList.add("When arms are parallel to floor, slowly lower back and repeat.");
-            gifImage.setImageResource(R.drawable.ic_shoulder_c);
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.HOM3));
+            gifImage.setImageResource(R.drawable.ic_shoulder_hombrosc);
         } else if (strName.equals("FrontRaise")) {
-            stringList.add("Stand upright, knees slightly bent, shoulder width apart. Palms should be towards thighs.");
-            stringList.add("Raise one dumbbell directly in front of you.");
-            stringList.add("When arm is parallel to ground lower dumbbell slowly back. Repeat with the other arm.");
-            gifImage.setImageResource(R.drawable.ic_shoulder_d);
-        } else if (strName.equals("TricepsExtension")) {
-            stringList.add("Stand upright, feet shoulder width apart.");
-            stringList.add("Hold dumbbell directly above head with arm fully extended. Clasp elbow with free hand for support.");
-            stringList.add("Slowly fold elbow so dumbbell is lowered behind head.");
-            stringList.add("Extend arm back to starting position. Repeat for the desired number of reps and switch arms.");
-            gifImage.setImageResource(R.drawable.ic_tricep_a);
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.HOM4));
+            gifImage.setImageResource(R.drawable.ic_shoulder_hombrosd);
+        } else if (strName.equals("llic_shoulder_hombrose")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.HOM5));
+            gifImage.setImageResource(R.drawable.ic_shoulder_hombrose);
+        } else if (strName.equals("llic_shoulder_hombrosf")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.HOM6));
+            gifImage.setImageResource(R.drawable.ic_shoulder_hombrosf);
+        } else if (strName.equals("llic_shoulder_hombrosg")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.HOM7));
+            gifImage.setImageResource(R.drawable.ic_shoulder_hombrosg);
+        } else if (strName.equals("llic_shoulder_hombrosh")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.HOM8));
+            gifImage.setImageResource(R.drawable.ic_shoulder_hombrosh);
+        } else if (strName.equals("llic_shoulder_hombrosi")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.HOM9));
+            gifImage.setImageResource(R.drawable.ic_shoulder_hombrosi);
+        } else if (strName.equals("llic_shoulder_hombrosj")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.HOM10));
+            gifImage.setImageResource(R.drawable.ic_shoulder_hombrosj);
+        } else if (strName.equals("llic_shoulder_hombrosk")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.HOM11));
+            gifImage.setImageResource(R.drawable.ic_shoulder_hombrosk);
+        } else if (strName.equals("llic_shoulder_hombrosl")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.HOM12));
+            gifImage.setImageResource(R.drawable.ic_shoulder_hombrosl);
+        }
+
+        /*Biceps*/
+        else if (strName.equals("HammerCurl")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.BIC1));
+            gifImage.setImageResource(R.drawable.ic_bicepsa);
+        } else if (strName.equals("BicepCurl")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.BIC5));
+            gifImage.setImageResource(R.drawable.ic_bicepsb);
+        } else if (strName.equals("ConcentrationCurl")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.BIC3));
+            gifImage.setImageResource(R.drawable.ic_bicepsc);
+        } else if (strName.equals("llic_bicepsd")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.BIC4));
+            gifImage.setImageResource(R.drawable.ic_bicepsd);
+        } else if (strName.equals("llic_bicepse")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.BIC5));
+            gifImage.setImageResource(R.drawable.ic_bicepse);
+        } else if (strName.equals("llic_bicepsf")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.BIC6));
+            gifImage.setImageResource(R.drawable.ic_bicepsf);
+        } else if (strName.equals("llic_bicepsg")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.BIC7));
+            gifImage.setImageResource(R.drawable.ic_bicepsg);
+        } else if (strName.equals("llic_bicepsh")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.BIC8));
+            gifImage.setImageResource(R.drawable.ic_bicepsh);
+        } else if (strName.equals("llic_bicepsi")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.BIC9));
+            gifImage.setImageResource(R.drawable.ic_bicepsi);
+        } else if (strName.equals("llic_bicepsj")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.BIC10));
+            gifImage.setImageResource(R.drawable.ic_bicepsj);
+        }
+
+        /*Triceps*/
+        else if (strName.equals("TricepsExtension")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.TRI1));
+            gifImage.setImageResource(R.drawable.ic_tricepsa);
         } else if (strName.equals("TricepFrenchPress")) {
-            stringList.add("Lie flat on bench. Hold dumbbells directly above chest with palms facing each other. Dumbbells should be just about touching each other.");
-            stringList.add("Keep your shoulders locked and fold your elbows so dumbbells are lowered down to either side of head.");
-            stringList.add("Extend arm back to starting position. Repeat for the desired number of reps and switch arms.");
-            gifImage.setImageResource(R.drawable.ic_tricep_b);
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.TRI2));
+            gifImage.setImageResource(R.drawable.ic_tricepsb);
         } else if (strName.equals("TricepsKickback")) {
-            stringList.add("Stand upright next to bench. Place one arm and leg on bench. Upper body should be parallel to ground.");
-            stringList.add("Hold dumbbell and raise elbow so upper arm is parallel to ground. Elbow should be bent at right angles.");
-            stringList.add("Extend elbow so entire arm is parallel to ground.");
-            stringList.add("Slowly return to start position and repeat for desired number of reps before changing arms.");
-            gifImage.setImageResource(R.drawable.ic_tricep_c);
-        } else if (strName.equals("HalfSquats")) {
-            stringList.add("Holding dumbbells at sides, stand upright with your feet shoulder width apart.");
-            stringList.add("Bend from knees until thighs are almost parallel to the ground (avoid letting knees turn inwards).");
-            stringList.add("Keep back flat, lower back slightly arched inwards and head up.");
-            stringList.add("Return to upright position and repeat.");
-            gifImage.setImageResource(R.drawable.ic_leg_a);
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.TRI3));
+            gifImage.setImageResource(R.drawable.ic_tricepsc);
+        } else if (strName.equals("llic_tricepsd")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.TRI4));
+            gifImage.setImageResource(R.drawable.ic_tricepsd);
+        } else if (strName.equals("llic_tricepse")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.TRI5));
+            gifImage.setImageResource(R.drawable.ic_tricepse);
+        } else if (strName.equals("llic_tricepsf")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.TRI6));
+            gifImage.setImageResource(R.drawable.ic_tricepsf);
+        } else if (strName.equals("llic_tricepsg")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.TRI7));
+            gifImage.setImageResource(R.drawable.ic_tricepsg);
+        } else if (strName.equals("llic_tricepsh")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.TRI8));
+            gifImage.setImageResource(R.drawable.ic_tricepsh);
+        } else if (strName.equals("llic_tricepsi")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.TRI9));
+            gifImage.setImageResource(R.drawable.ic_tricepsi);
+        } else if (strName.equals("llic_tricepsj")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.TRI10));
+            gifImage.setImageResource(R.drawable.ic_tricepsj);
+        }
+
+        /*Leg*/
+        else if (strName.equals("HalfSquats")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.PIE1));
+            gifImage.setImageResource(R.drawable.ic_leg_piernasa);
         } else if (strName.equals("DumbellLunges")) {
-            stringList.add("Holding dumbbells at sides, stand upright with feet slightly less than shoulder width apart.");
-            stringList.add("Step forward about 2 feet with one foot and bend knee to about 90 degrees. As you plant your foot bend trailing knee so it nearly touches floor.");
-            stringList.add("Push off with front foot to return to starting position.");
-            stringList.add("Repeat for the desired number of reps and change legs.");
-            gifImage.setImageResource(R.drawable.ic_leg_b);
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.PIE2));
+            gifImage.setImageResource(R.drawable.ic_leg_piernasb);
+        } else if (strName.equals("llic_leg_piernasc")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.PIE3));
+            gifImage.setImageResource(R.drawable.ic_leg_piernasc);
+        } else if (strName.equals("llic_leg_piernasd")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.PIE4));
+            gifImage.setImageResource(R.drawable.ic_leg_piernasd);
+        } else if (strName.equals("llic_leg_piernase")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.PIE5));
+            gifImage.setImageResource(R.drawable.ic_leg_piernase);
+        } else if (strName.equals("llic_leg_piernasf")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.PIE6));
+            gifImage.setImageResource(R.drawable.ic_leg_piernasf);
+        } else if (strName.equals("llic_leg_piernasg")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.PIE7));
+            gifImage.setImageResource(R.drawable.ic_leg_piernasg);
+        } else if (strName.equals("llic_leg_piernash")) {
+            ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.PIE8));
+            gifImage.setImageResource(R.drawable.ic_leg_piernash);
         }
 
         /* Bodyweight */
         else if (strName.equals("Squats")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            stringList.clear();
             gifImage.setImageResource(R.drawable.ic_bw_benchdip);
         } else if (strName.equals("Crunch")) {
-            stringList.clear();
             findViewById(R.id.llData).setVisibility(View.GONE);
             gifImage.setImageResource(R.drawable.ic_bw_boxjump);
         } else if (strName.equals("PullUps")) {
-            stringList.clear();
             findViewById(R.id.llData).setVisibility(View.GONE);
             gifImage.setImageResource(R.drawable.ic_bw_jump);
         } else if (strName.equals("ClapPushups")) {
-            stringList.clear();
             findViewById(R.id.llData).setVisibility(View.GONE);
             gifImage.setImageResource(R.drawable.ic_bw_plank);
         } else if (strName.equals("Handstand")) {
-            stringList.clear();
             findViewById(R.id.llData).setVisibility(View.GONE);
             gifImage.setImageResource(R.drawable.ic_bw_pushup);
+        } else if (strName.equals("llic_bw_muscle_up")) {
+            ((RelativeLayout)findViewById(R.id.rlImage)).setBackground(getResources().getDrawable(R.drawable.layout_bg_circle_c));
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_bw_muscle_up);
+        } else if (strName.equals("llic_bw_crunch")) {
+            ((RelativeLayout)findViewById(R.id.rlImage)).setBackground(getResources().getDrawable(R.drawable.layout_bg_circle_c));
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_bw_crunch);
+        } else if (strName.equals("llic_bw_pull_ups")) {
+            ((RelativeLayout)findViewById(R.id.rlImage)).setBackground(getResources().getDrawable(R.drawable.layout_bg_circle_c));
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_bw_pull_ups);
+        } else if (strName.equals("llic_bw_squats")) {
+            ((RelativeLayout)findViewById(R.id.rlImage)).setBackground(getResources().getDrawable(R.drawable.layout_bg_circle_c));
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_bw_squats);
         }
 
         /*Battlerope*/
         else if (strName.equals("AlternatingWaves")) {
-            stringList.clear();
-            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText("");
             gifImage.setImageResource(R.drawable.ic_leg_b);
         } else if (strName.equals("DoubleArmWaves")) {
-            stringList.clear();
-            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText("");
             gifImage.setImageResource(R.drawable.ic_leg_b);
         } else if (strName.equals("DoubleArmSlam")) {
-            stringList.clear();
-            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText("");
             gifImage.setImageResource(R.drawable.ic_leg_b);
         } else if (strName.equals("DoubleArmSlamJump")) {
-            stringList.clear();
-            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText("");
             gifImage.setImageResource(R.drawable.ic_leg_b);
         } else if (strName.equals("Snakes")) {
-            stringList.clear();
-            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText("");
             gifImage.setImageResource(R.drawable.ic_leg_b);
         }
 
         /*Box*/
         else if (strName.equals("StepUpJumps")) {
-            stringList.clear();
-            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.box_string_a));
             gifImage.setImageResource(R.drawable.ic_box_hurdel_jump);
         } else if (strName.equals("SingleLegJumps")) {
-            stringList.clear();
-            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.box_string_b));
             gifImage.setImageResource(R.drawable.ic_box_jump);
         } else if (strName.equals("LateralJumps")) {
-            stringList.clear();
-            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.box_string_c));
             gifImage.setImageResource(R.drawable.ic_box_lateral_jump);
         } else if (strName.equals("DepthJumps")) {
-            stringList.clear();
-            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.box_string_d));
             gifImage.setImageResource(R.drawable.ic_box_depth_jump);
         } else if (strName.equals("StepUps")) {
-            stringList.clear();
-            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.box_string_e));
             gifImage.setImageResource(R.drawable.ic_box_lateral_push_off);
         }
 
         /*Suspension*/
         else if (strName.equals("SuspensionSquat")) {
-            stringList.clear();
             findViewById(R.id.llData).setVisibility(View.GONE);
-            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText("");
             gifImage.setImageResource(R.drawable.ic_suspension_biseps);
         } else if (strName.equals("SuspensionChestPress")) {
-            stringList.clear();
             findViewById(R.id.llData).setVisibility(View.GONE);
-            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText("");
             gifImage.setImageResource(R.drawable.ic_suspension_crossing_balance);
         } else if (strName.equals("SuspensionTricepsPress")) {
-            stringList.clear();
             findViewById(R.id.llData).setVisibility(View.GONE);
-            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText("");
             gifImage.setImageResource(R.drawable.ic_suspension_hamstring_curl);
             gifImage.setImageResource(R.drawable.ic_suspension_hamstring_curl);
         } else if (strName.equals("SuspensionPowerPull")) {
-            stringList.clear();
             findViewById(R.id.llData).setVisibility(View.GONE);
-            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText("");
             gifImage.setImageResource(R.drawable.ic_suspension_legs);
         } else if (strName.equals("SuspensionLunge")) {
-            stringList.clear();
             findViewById(R.id.llData).setVisibility(View.GONE);
-            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText("");
             gifImage.setImageResource(R.drawable.ic_suspension_pendulum);
         }
 
         /*Cardio*/
         else if (strName.equals("CardioClamshell")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
-            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             findViewById(R.id.tvExerciseDetail).setVisibility(View.GONE);
             gifImage.setImageResource(R.drawable.ic_cardio_clamshell);
         } else if (strName.equals("CardioFireHydrant")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
-            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             findViewById(R.id.tvExerciseDetail).setVisibility(View.GONE);
             gifImage.setImageResource(R.drawable.ic_cardio_fire_hydrant);
         } else if (strName.equals("CardioSideKick")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
-            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             findViewById(R.id.tvExerciseDetail).setVisibility(View.GONE);
             gifImage.setImageResource(R.drawable.ic_cardio_side_kick);
         } else if (strName.equals("CardioSidePlankHip")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
-            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             findViewById(R.id.tvExerciseDetail).setVisibility(View.GONE);
             gifImage.setImageResource(R.drawable.ic_cardio_side_plank_hip);
         } else if (strName.equals("CardioStandingOpenGate")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
-            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             findViewById(R.id.tvExerciseDetail).setVisibility(View.GONE);
             gifImage.setImageResource(R.drawable.ic_cardio_standing_open_gate);
         }
 
         /*Home exercise*/
         else if (strName.equals("ScissorCrunches")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
             imgExercise.setImageResource(R.drawable.ic_home_ex_scissors_crunches);
         } else if (strName.equals("RopeJump")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
             imgExercise.setImageResource(R.drawable.ic_home_ex_rope_jump);
         } else if (strName.equals("InclinePushUp")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
             imgExercise.setImageResource(R.drawable.ic_home_ex_push_up);
         } else if (strName.equals("HandstandAssist")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
             imgExercise.setImageResource(R.drawable.ic_home_ex_handstand);
         } else if (strName.equals("MountainClimber")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
             imgExercise.setImageResource(R.drawable.ic_home_ex_mountain_climbing);
         }
 
         /*Calisthenics*/
         else if (strName.equals("CalisthenicsPushUps")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
             imgExercise.setImageResource(R.drawable.ic_calisthenics_push_ups);
         } else if (strName.equals("CalisthenicsBicycleCrunches")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
             imgExercise.setImageResource(R.drawable.ic_calisthenics_bicycle_crunches);
         } else if (strName.equals("CalisthenicsChinUps")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
             imgExercise.setImageResource(R.drawable.ic_calisthenics_chin_ups);
         } else if (strName.equals("CalisthenicsSitUps")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
             imgExercise.setImageResource(R.drawable.ic_calisthenics_sit_ups);
         } else if (strName.equals("CalisthenicsWidePushups")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
             imgExercise.setImageResource(R.drawable.ic_calisthenics_wide_pushups);
         }
 
         /*Calisthenics*/
         else if (strName.equals("CalisthenicsPushUps")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
             imgExercise.setImageResource(R.drawable.ic_calisthenics_push_ups);
         } else if (strName.equals("CalisthenicsBicycleCrunches")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
             imgExercise.setImageResource(R.drawable.ic_calisthenics_bicycle_crunches);
         } else if (strName.equals("CalisthenicsChinUps")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
             imgExercise.setImageResource(R.drawable.ic_calisthenics_chin_ups);
         } else if (strName.equals("CalisthenicsSitUps")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
             imgExercise.setImageResource(R.drawable.ic_calisthenics_sit_ups);
         } else if (strName.equals("CalisthenicsWidePushups")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
             imgExercise.setImageResource(R.drawable.ic_calisthenics_wide_pushups);
         }
 
         /*FunctionalTraining*/
         else if (strName.equals("FunctionalStepsUpJump")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
             imgExercise.setImageResource(R.drawable.ic_functional_step_jumps);
         } else if (strName.equals("FunctionalAlternatingWaves")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
             imgExercise.setImageResource(R.drawable.ic_functional_alternating_waves);
         } else if (strName.equals("FunctionalBurpees")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
             imgExercise.setImageResource(R.drawable.ic_functional_burpees);
         } else if (strName.equals("FunctionalDoubleArmWaves")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
             imgExercise.setImageResource(R.drawable.ic_functional_double_arm_waves);
         } else if (strName.equals("FunctionalJumpingJacks")) {
-            stringList.clear();
+
             findViewById(R.id.llData).setVisibility(View.GONE);
             imgExercise.setImageResource(R.drawable.ic_functional_jumping_jacks);
         }
 
         /*SuspensionTraining*/
         else if (strName.equals("SuspensionTrainPushUp")) {
-            stringList.clear();
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView)findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_suspension_push_up);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_suspension_push_up);
         } else if (strName.equals("SuspensionTrainChestPress")) {
-            stringList.clear();
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView)findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_suspension_chest_press);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_suspension_chest_press);
         } else if (strName.equals("SuspensionTrainLowRow")) {
-            stringList.clear();
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView)findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_suspension_low_row);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_suspension_low_row);
         } else if (strName.equals("SuspensionTrainSingleArmRow")) {
-            stringList.clear();
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView)findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_suspension_single_arm);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_suspension_single_arm);
         } else if (strName.equals("SuspensionTrainBiceps")) {
-            stringList.clear();
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView)findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_suspension_biceps);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_suspension_biceps);
         }
-        setExerciseData();
-    }
 
-    private void setExerciseData() {
-        RecyclerView recyclerViewData = findViewById(R.id.recyclerViewData);
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
-        recyclerViewData.setLayoutManager(mLayoutManager);
-        recyclerViewData.setItemAnimator(new DefaultItemAnimator());
-        recyclerViewData.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
-        exerciseTextAdapter = new ExerciseTextAdapter(mContext, stringList);
-        recyclerViewData.setAdapter(exerciseTextAdapter);
+        /* Stretching */
+        else if (strName.equals("llBackLegA")) {
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_1);
+        } else if (strName.equals("llBackLegB")) {
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_2);
+        } else if (strName.equals("llBackLegC")) {
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_3);
+        } else if (strName.equals("llBackLegD")) {
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_4);
+        } else if (strName.equals("llFrontLegA")) {
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_5);
+        } else if (strName.equals("llBackLegE")) {
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_6);
+        } else if (strName.equals("llFrontLegB")) {
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_7);
+        } else if (strName.equals("llFrontLegC")) {
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_8);
+        } else if (strName.equals("llBackA")) {
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_9);
+        } else if (strName.equals("llBackB")) {
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_10);
+        } else if (strName.equals("llBackC")) {
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_11);
+        } else if (strName.equals("llFrontLegD")) {
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_12);
+        } else if (strName.equals("llFrontLegE")) {
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_13);
+        } else if (strName.equals("llFrontLegF")) {
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_14);
+        } else if (strName.equals("llBicepA")) {
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_15);
+        } else if (strName.equals("llChestA")) {
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_16);
+        } else if (strName.equals("llBackD")) {
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_17);
+        } else if (strName.equals("llTricepsA")) {
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_18);
+        } else if (strName.equals("llShoulderA")) {
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_19);
+        } else if (strName.equals("llShoulderB")) {
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_20);
+        } else if (strName.equals("llShoulderC")) {
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_21);
+        } else if (strName.equals("llBackE")) {
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_22);
+        } else if (strName.equals("llBackF")) {
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_23);
+        } else if (strName.equals("llBackG")) {
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_24);
+        }
     }
 
     @Override
