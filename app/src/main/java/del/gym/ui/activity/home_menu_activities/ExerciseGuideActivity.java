@@ -3,8 +3,6 @@ package del.gym.ui.activity.home_menu_activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import del.gym.R;
@@ -24,98 +22,115 @@ public class ExerciseGuideActivity extends BaseActivity implements View.OnClickL
 
     private void getIntentData() {
         strName = getIntent().getStringExtra("name");
-        ((TextView) findViewById(R.id.tvTitle)).setText(strName);
-
-        if (strName.equals("Gym")) {
-            ((LinearLayout) findViewById(R.id.llGym)).setVisibility(View.VISIBLE);
-            ((LinearLayout) findViewById(R.id.llBodyweight)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llBattlerope)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llBox)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llCardio)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llSuspension)).setVisibility(View.GONE);
-        } else if (strName.equals("Bodyweight")) {
-            ((LinearLayout) findViewById(R.id.llBodyweight)).setVisibility(View.VISIBLE);
-            ((LinearLayout) findViewById(R.id.llGym)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llBattlerope)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llCardio)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llBox)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llSuspension)).setVisibility(View.GONE);
-        } else if (strName.equals("Battlerope")) {
-            ((LinearLayout) findViewById(R.id.llBattlerope)).setVisibility(View.VISIBLE);
-            ((LinearLayout) findViewById(R.id.llBodyweight)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llGym)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llCardio)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llBox)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llSuspension)).setVisibility(View.GONE);
-        } else if (strName.equals("Box")) {
-            ((LinearLayout) findViewById(R.id.llBox)).setVisibility(View.VISIBLE);
-            ((LinearLayout) findViewById(R.id.llBattlerope)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llBodyweight)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llGym)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llCardio)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llSuspension)).setVisibility(View.GONE);
-        } else if (strName.equals("Suspension")) {
-            ((LinearLayout) findViewById(R.id.llSuspension)).setVisibility(View.VISIBLE);
-            ((LinearLayout) findViewById(R.id.llBox)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llCardio)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llBattlerope)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llBodyweight)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llGym)).setVisibility(View.GONE);
-        } else if (strName.equals("Cardio")) {
-            ((LinearLayout) findViewById(R.id.llCardio)).setVisibility(View.VISIBLE);
-            ((LinearLayout) findViewById(R.id.llSuspension)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llBox)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llBattlerope)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llBodyweight)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llGym)).setVisibility(View.GONE);
+        if (strName.equals("Home")) {
+            ((TextView) findViewById(R.id.tvTitle)).setText("Home Exercise");
+        } else {
+            ((TextView) findViewById(R.id.tvTitle)).setText(strName);
         }
 
+        if (strName.equals("Gym")) {
+            findViewById(R.id.llGym).setVisibility(View.VISIBLE);
+        } else if (strName.equals("Bodyweight")) {
+            findViewById(R.id.llBodyweight).setVisibility(View.VISIBLE);
+        } else if (strName.equals("Battlerope")) {
+            findViewById(R.id.llBattlerope).setVisibility(View.VISIBLE);
+        } else if (strName.equals("Box")) {
+            findViewById(R.id.llBox).setVisibility(View.VISIBLE);
+        } else if (strName.equals("Suspension")) {
+            findViewById(R.id.llSuspension).setVisibility(View.VISIBLE);
+        } else if (strName.equals("Cardio")) {
+            findViewById(R.id.llCardio).setVisibility(View.VISIBLE);
+        }
+
+        workoutItemVisibility();
         clickEvent();
+        workoutItemClickEvent();
+    }
+
+    private void workoutItemVisibility() {
+        if (strName.equals("Home")) {
+            findViewById(R.id.llHome).setVisibility(View.VISIBLE);
+        } else if (strName.equals("Calisthenics")) {
+            findViewById(R.id.llCalisthenics).setVisibility(View.VISIBLE);
+        } else if (strName.equals("FunctionalTraining")) {
+            findViewById(R.id.llFunctionalTraining).setVisibility(View.VISIBLE);
+        } else if (strName.equals("SuspensionTraining")) {
+            findViewById(R.id.llSuspensionTraining).setVisibility(View.VISIBLE);
+        }
     }
 
     private void clickEvent() {
-        ((ImageView) findViewById(R.id.imgBack)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llChest)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llBack)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llShoulders)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llFrontLeg)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llTriceps)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llBiceps)).setOnClickListener(this);
+        findViewById(R.id.imgBack).setOnClickListener(this);
+        findViewById(R.id.llChest).setOnClickListener(this);
+        findViewById(R.id.llBack).setOnClickListener(this);
+        findViewById(R.id.llShoulders).setOnClickListener(this);
+        findViewById(R.id.llFrontLeg).setOnClickListener(this);
+        findViewById(R.id.llTriceps).setOnClickListener(this);
+        findViewById(R.id.llBiceps).setOnClickListener(this);
 
         /*Bodyweight*/
-        ((LinearLayout) findViewById(R.id.llSquats)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llCrunch)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llPullUps)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llClapPushups)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llHandstand)).setOnClickListener(this);
+        findViewById(R.id.llSquats).setOnClickListener(this);
+        findViewById(R.id.llCrunch).setOnClickListener(this);
+        findViewById(R.id.llPullUps).setOnClickListener(this);
+        findViewById(R.id.llClapPushups).setOnClickListener(this);
+        findViewById(R.id.llHandstand).setOnClickListener(this);
 
         /*Battlerope*/
-        ((LinearLayout) findViewById(R.id.llAlternatingWaves)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llDoubleArmWaves)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llDoubleArmSlam)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llDoubleArmSlamJump)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llSnakes)).setOnClickListener(this);
+        findViewById(R.id.llAlternatingWaves).setOnClickListener(this);
+        findViewById(R.id.llDoubleArmWaves).setOnClickListener(this);
+        findViewById(R.id.llDoubleArmSlam).setOnClickListener(this);
+        findViewById(R.id.llDoubleArmSlamJump).setOnClickListener(this);
+        findViewById(R.id.llSnakes).setOnClickListener(this);
 
         /*Box*/
-        ((LinearLayout) findViewById(R.id.llStepUpJumps)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llSingleLegJumps)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llLateralJumps)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llDepthJumps)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llStepUps)).setOnClickListener(this);
+        findViewById(R.id.llStepUpJumps).setOnClickListener(this);
+        findViewById(R.id.llSingleLegJumps).setOnClickListener(this);
+        findViewById(R.id.llLateralJumps).setOnClickListener(this);
+        findViewById(R.id.llDepthJumps).setOnClickListener(this);
+        findViewById(R.id.llStepUps).setOnClickListener(this);
 
         /*Suspension*/
-        ((LinearLayout) findViewById(R.id.llSuspensionSquat)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llSuspensionChestPress)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llSuspensionTricepsPress)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llSuspensionPowerPull)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llSuspensionLunge)).setOnClickListener(this);
+        findViewById(R.id.llSuspensionSquat).setOnClickListener(this);
+        findViewById(R.id.llSuspensionChestPress).setOnClickListener(this);
+        findViewById(R.id.llSuspensionTricepsPress).setOnClickListener(this);
+        findViewById(R.id.llSuspensionPowerPull).setOnClickListener(this);
+        findViewById(R.id.llSuspensionLunge).setOnClickListener(this);
 
         /*Cardio*/
-        ((LinearLayout) findViewById(R.id.llCardioClamshell)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llCardioFireHydrant)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llCardioSideKick)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llCardioSidePlankHip)).setOnClickListener(this);
-        ((LinearLayout) findViewById(R.id.llCardioStandingOpenGate)).setOnClickListener(this);
+        findViewById(R.id.llCardioClamshell).setOnClickListener(this);
+        findViewById(R.id.llCardioFireHydrant).setOnClickListener(this);
+        findViewById(R.id.llCardioSideKick).setOnClickListener(this);
+        findViewById(R.id.llCardioSidePlankHip).setOnClickListener(this);
+        findViewById(R.id.llCardioStandingOpenGate).setOnClickListener(this);
+    }
+
+    private void workoutItemClickEvent() {
+        findViewById(R.id.llScissorCrunches).setOnClickListener(this);
+        findViewById(R.id.llRopeJump).setOnClickListener(this);
+        findViewById(R.id.llInclinePushUp).setOnClickListener(this);
+        findViewById(R.id.llHandstandAssist).setOnClickListener(this);
+        findViewById(R.id.llMountainClimber).setOnClickListener(this);
+
+        /*Calisthenics*/
+        findViewById(R.id.llCalisthenicsPushUps).setOnClickListener(this);
+        findViewById(R.id.llCalisthenicsBicycleCrunches).setOnClickListener(this);
+        findViewById(R.id.llCalisthenicsChinUps).setOnClickListener(this);
+        findViewById(R.id.llCalisthenicsSitUps).setOnClickListener(this);
+        findViewById(R.id.llCalisthenicsWidePushups).setOnClickListener(this);
+
+        /*FunctionalTraining*/
+        findViewById(R.id.llFunctionalStepsUpJump).setOnClickListener(this);
+        findViewById(R.id.llFunctionalAlternatingWaves).setOnClickListener(this);
+        findViewById(R.id.llFunctionalBurpees).setOnClickListener(this);
+        findViewById(R.id.llFunctionalDoubleArmWaves).setOnClickListener(this);
+        findViewById(R.id.llFunctionalJumpingJacks).setOnClickListener(this);
+
+        /*Suspension*/
+        findViewById(R.id.llSuspensionTrainPushUp).setOnClickListener(this);
+        findViewById(R.id.llSuspensionTrainChestPress).setOnClickListener(this);
+        findViewById(R.id.llSuspensionTrainLowRow).setOnClickListener(this);
+        findViewById(R.id.llSuspensionTrainSingleArmRow).setOnClickListener(this);
+        findViewById(R.id.llSuspensionTrainBiceps).setOnClickListener(this);
     }
 
     @Override
@@ -227,6 +242,75 @@ public class ExerciseGuideActivity extends BaseActivity implements View.OnClickL
             case R.id.llCardioStandingOpenGate:
                 openExerciseDetail("CardioStandingOpenGate");
                 break;
+
+            /*Home Exercise*/
+            case R.id.llScissorCrunches:
+                openExerciseDetail("ScissorCrunches");
+                break;
+            case R.id.llRopeJump:
+                openExerciseDetail("RopeJump");
+                break;
+            case R.id.llInclinePushUp:
+                openExerciseDetail("InclinePushUp");
+                break;
+            case R.id.llHandstandAssist:
+                openExerciseDetail("HandstandAssist");
+                break;
+            case R.id.llMountainClimber:
+                openExerciseDetail("MountainClimber");
+                break;
+
+            /*Calisthenics*/
+            case R.id.llCalisthenicsPushUps:
+                openExerciseDetail("CalisthenicsPushUps");
+                break;
+            case R.id.llCalisthenicsBicycleCrunches:
+                openExerciseDetail("CalisthenicsBicycleCrunches");
+                break;
+            case R.id.llCalisthenicsChinUps:
+                openExerciseDetail("CalisthenicsChinUps");
+                break;
+            case R.id.llCalisthenicsSitUps:
+                openExerciseDetail("CalisthenicsSitUps");
+                break;
+            case R.id.llCalisthenicsWidePushups:
+                openExerciseDetail("CalisthenicsWidePushups");
+                break;
+
+            /*FunctionalTraining*/
+            case R.id.llFunctionalStepsUpJump:
+                openExerciseDetail("FunctionalStepsUpJump");
+                break;
+            case R.id.llFunctionalAlternatingWaves:
+                openExerciseDetail("FunctionalAlternatingWaves");
+                break;
+            case R.id.llFunctionalBurpees:
+                openExerciseDetail("FunctionalBurpees");
+                break;
+            case R.id.llFunctionalDoubleArmWaves:
+                openExerciseDetail("FunctionalDoubleArmWaves");
+                break;
+            case R.id.llFunctionalJumpingJacks:
+                openExerciseDetail("FunctionalJumpingJacks");
+                break;
+
+            /*Suspension*/
+            case R.id.llSuspensionTrainPushUp:
+                openExerciseDetail("SuspensionTrainPushUp");
+                break;
+            case R.id.llSuspensionTrainChestPress:
+                openExerciseDetail("SuspensionTrainChestPress");
+                break;
+            case R.id.llSuspensionTrainLowRow:
+                openExerciseDetail("SuspensionTrainLowRow");
+                break;
+            case R.id.llSuspensionTrainSingleArmRow:
+                openExerciseDetail("SuspensionTrainSingleArmRow");
+                break;
+            case R.id.llSuspensionTrainBiceps:
+                openExerciseDetail("SuspensionTrainBiceps");
+                break;
+
         }
     }
 

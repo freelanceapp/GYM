@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     android:orientation="vertical">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -18,199 +18,152 @@
             <RelativeLayout
                 android:id="@+id/llExcerciseGuide"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_height="180dp"
+                android:background="@drawable/layout_back_image_a"
                 android:clickable="true"
                 android:gravity="center"
                 android:orientation="vertical">
-                <View
-                    android:elevation="4dp"
-                    android:background="@color/transparent_c"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-
-                <ImageView
-                    android:scaleType="fitXY"
-                    android:adjustViewBounds="true"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ic_home_exercise_guide"
-                    />
 
                 <TextView
-                    android:textSize="18dp"
-                    android:layout_centerInParent="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
                     android:padding="8dp"
                     android:text="Excercise guide"
-                    android:textColor="@color/lightWhite" />
+                    android:textColor="@color/lightWhite"
+                    android:textSize="18dp" />
             </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
             <RelativeLayout
                 android:id="@+id/llWorkout"
-                android:layout_marginTop="1dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_height="180dp"
+                android:background="@drawable/layout_back_image_b"
                 android:clickable="true"
                 android:gravity="center"
                 android:orientation="vertical">
-                <View
-                    android:elevation="4dp"
-                    android:background="@color/transparent_c"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
 
-                <ImageView
-                    android:scaleType="fitXY"
-                    android:adjustViewBounds="true"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ic_home_workout"
-                    />
                 <TextView
-                    android:layout_centerInParent="true"
-                    android:textSize="18dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
                     android:padding="8dp"
                     android:text="Workouts"
-                    android:textColor="@color/lightWhite" />
+                    android:textColor="@color/lightWhite"
+                    android:textSize="18dp" />
+
             </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
             <RelativeLayout
                 android:id="@+id/llMyWorkOut"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginTop="1dp"
-                android:background="?attr/selectableItemBackground"
+                android:layout_height="180dp"
+                android:background="@drawable/layout_back_image_c"
                 android:clickable="true"
                 android:gravity="center"
                 android:orientation="vertical">
-                <View
-                    android:elevation="4dp"
-                    android:background="@color/transparent_c"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-
-                <ImageView
-                    android:scaleType="fitXY"
-                    android:adjustViewBounds="true"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ic_home_my_workout" />
 
                 <TextView
-                    android:layout_centerInParent="true"
-                    android:textSize="18dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
                     android:padding="8dp"
                     android:text="My Workouts"
-                    android:textColor="@color/lightWhite" />
+                    android:textColor="@color/lightWhite"
+                    android:textSize="18dp" />
+
             </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
             <RelativeLayout
                 android:id="@+id/llNutrition"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="1dp"
-                android:layout_weight="1"
-                android:background="?attr/selectableItemBackground"
+                android:layout_height="180dp"
+                android:background="@drawable/layout_back_image_d"
                 android:clickable="true"
                 android:gravity="center"
                 android:orientation="vertical">
-                <View
-                    android:elevation="4dp"
-                    android:background="@color/transparent_c"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-
-                <ImageView
-                    android:scaleType="fitXY"
-                    android:adjustViewBounds="true"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ic_home_nutrition" />
 
                 <TextView
-                    android:textSize="18dp"
-                    android:layout_centerInParent="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
                     android:layout_marginTop="10dp"
                     android:padding="8dp"
                     android:text="Nutrition"
-                    android:textColor="@color/lightWhite" />
+                    android:textColor="@color/lightWhite"
+                    android:textSize="18dp" />
+
             </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
             <RelativeLayout
                 android:id="@+id/llStretching"
                 android:layout_width="match_parent"
-                android:layout_marginTop="1dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="?attr/selectableItemBackground"
+                android:layout_height="180dp"
+                android:background="@drawable/layout_back_image_e"
                 android:clickable="true"
                 android:gravity="center"
                 android:orientation="vertical">
-                <View
-                    android:elevation="4dp"
-                    android:background="@color/transparent_c"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-
-                <ImageView
-                    android:scaleType="fitXY"
-                    android:adjustViewBounds="true"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ic_home_stretching" />
 
                 <TextView
-                    android:layout_centerInParent="true"
-                    android:textSize="18dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
                     android:padding="8dp"
                     android:text="Stretching"
-                    android:textColor="@color/lightWhite" />
+                    android:textColor="@color/lightWhite"
+                    android:textSize="18dp" />
+
             </RelativeLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
             <RelativeLayout
-                android:layout_marginTop="1dp"
                 android:id="@+id/llTips"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="?attr/selectableItemBackground"
+                android:layout_height="180dp"
+                android:background="@drawable/layout_back_image_f"
                 android:clickable="true"
                 android:gravity="center"
                 android:orientation="vertical">
-                <View
-                    android:elevation="4dp"
-                    android:background="@color/transparent_c"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-
-                <ImageView
-                    android:scaleType="fitXY"
-                    android:adjustViewBounds="true"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ic_home_tips" />
 
                 <TextView
-                    android:textSize="18dp"
-                    android:layout_centerInParent="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
                     android:padding="8dp"
                     android:text="Tips"
-                    android:textColor="@color/lightWhite" />
+                    android:textColor="@color/lightWhite"
+                    android:textSize="18dp" />
+
             </RelativeLayout>
-            <!--   <View
-                   android:layout_width="match_parent"
-                   android:layout_height="0.5dp"
-                   android:background="@color/white" />-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

@@ -23,7 +23,7 @@
     <color name="transparent_white">#6effffff</color>
     <color name="transparent_white_b">#6effffff</color>
     <color name="transparent_white_c">#ECECEC</color>
-    <color name="transparent_red_b">#41AC1817</color>
+    <color name="transparent_red_b">#31AC1817</color>
     <color name="transparent">#00AC1817</color>
 
     <color name="maroon_stretcing">#fc5d81</color>
@@ -70,5 +70,4 @@
     <color name="gray_g">#dadada</color>
     <color name="gray_h">#e6e5e5</color>
     <color name="gray_i">#f2f0f0</color>
-    <color name="transparent_c">#abac1817</color>
 </resources>

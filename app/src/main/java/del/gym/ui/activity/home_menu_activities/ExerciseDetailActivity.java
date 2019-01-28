@@ -7,10 +7,8 @@ import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +24,7 @@ public class ExerciseDetailActivity extends BaseActivity implements View.OnClick
 
     private String strName = "";
     private GifImageView gifImage;
+    private ImageView imgExercise;
     private ExerciseTextAdapter exerciseTextAdapter;
     private List<String> stringList = new ArrayList<>();
     private CountDownTimer cTimer;
@@ -44,11 +43,12 @@ public class ExerciseDetailActivity extends BaseActivity implements View.OnClick
         if (getIntent() == null)
             return;
 
-        tvMinute = (TextView) findViewById(R.id.tvMinute);
-        ((ImageView) findViewById(R.id.imgBack)).setOnClickListener(this);
-        ((Button) findViewById(R.id.btnStart)).setOnClickListener(this);
-        ((Button) findViewById(R.id.btnCancel)).setOnClickListener(this);
-        gifImage = (GifImageView) findViewById(R.id.gifImage);
+        tvMinute = findViewById(R.id.tvMinute);
+        findViewById(R.id.imgBack).setOnClickListener(this);
+        findViewById(R.id.btnStart).setOnClickListener(this);
+        findViewById(R.id.btnCancel).setOnClickListener(this);
+        gifImage = findViewById(R.id.gifImage);
+        imgExercise = findViewById(R.id.imgExercise);
         strName = getIntent().getStringExtra("name");
         stringList.clear();
 
@@ -159,51 +159,51 @@ public class ExerciseDetailActivity extends BaseActivity implements View.OnClick
 
         /* Bodyweight */
         else if (strName.equals("Squats")) {
-            ((LinearLayout) findViewById(R.id.llData)).setVisibility(View.GONE);
+            findViewById(R.id.llData).setVisibility(View.GONE);
             stringList.clear();
             gifImage.setImageResource(R.drawable.ic_bw_benchdip);
         } else if (strName.equals("Crunch")) {
             stringList.clear();
-            ((LinearLayout) findViewById(R.id.llData)).setVisibility(View.GONE);
+            findViewById(R.id.llData).setVisibility(View.GONE);
             gifImage.setImageResource(R.drawable.ic_bw_boxjump);
         } else if (strName.equals("PullUps")) {
             stringList.clear();
-            ((LinearLayout) findViewById(R.id.llData)).setVisibility(View.GONE);
+            findViewById(R.id.llData).setVisibility(View.GONE);
             gifImage.setImageResource(R.drawable.ic_bw_jump);
         } else if (strName.equals("ClapPushups")) {
             stringList.clear();
-            ((LinearLayout) findViewById(R.id.llData)).setVisibility(View.GONE);
+            findViewById(R.id.llData).setVisibility(View.GONE);
             gifImage.setImageResource(R.drawable.ic_bw_plank);
         } else if (strName.equals("Handstand")) {
             stringList.clear();
-            ((LinearLayout) findViewById(R.id.llData)).setVisibility(View.GONE);
+            findViewById(R.id.llData).setVisibility(View.GONE);
             gifImage.setImageResource(R.drawable.ic_bw_pushup);
         }
 
         /*Battlerope*/
         else if (strName.equals("AlternatingWaves")) {
             stringList.clear();
-            ((RecyclerView) findViewById(R.id.recyclerViewData)).setVisibility(View.GONE);
+            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText("");
             gifImage.setImageResource(R.drawable.ic_leg_b);
         } else if (strName.equals("DoubleArmWaves")) {
             stringList.clear();
-            ((RecyclerView) findViewById(R.id.recyclerViewData)).setVisibility(View.GONE);
+            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText("");
             gifImage.setImageResource(R.drawable.ic_leg_b);
         } else if (strName.equals("DoubleArmSlam")) {
             stringList.clear();
-            ((RecyclerView) findViewById(R.id.recyclerViewData)).setVisibility(View.GONE);
+            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText("");
             gifImage.setImageResource(R.drawable.ic_leg_b);
         } else if (strName.equals("DoubleArmSlamJump")) {
             stringList.clear();
-            ((RecyclerView) findViewById(R.id.recyclerViewData)).setVisibility(View.GONE);
+            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText("");
             gifImage.setImageResource(R.drawable.ic_leg_b);
         } else if (strName.equals("Snakes")) {
             stringList.clear();
-            ((RecyclerView) findViewById(R.id.recyclerViewData)).setVisibility(View.GONE);
+            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText("");
             gifImage.setImageResource(R.drawable.ic_leg_b);
         }
@@ -211,27 +211,27 @@ public class ExerciseDetailActivity extends BaseActivity implements View.OnClick
         /*Box*/
         else if (strName.equals("StepUpJumps")) {
             stringList.clear();
-            ((RecyclerView) findViewById(R.id.recyclerViewData)).setVisibility(View.GONE);
+            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.box_string_a));
             gifImage.setImageResource(R.drawable.ic_box_hurdel_jump);
         } else if (strName.equals("SingleLegJumps")) {
             stringList.clear();
-            ((RecyclerView) findViewById(R.id.recyclerViewData)).setVisibility(View.GONE);
+            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.box_string_b));
             gifImage.setImageResource(R.drawable.ic_box_jump);
         } else if (strName.equals("LateralJumps")) {
             stringList.clear();
-            ((RecyclerView) findViewById(R.id.recyclerViewData)).setVisibility(View.GONE);
+            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.box_string_c));
             gifImage.setImageResource(R.drawable.ic_box_lateral_jump);
         } else if (strName.equals("DepthJumps")) {
             stringList.clear();
-            ((RecyclerView) findViewById(R.id.recyclerViewData)).setVisibility(View.GONE);
+            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.box_string_d));
             gifImage.setImageResource(R.drawable.ic_box_depth_jump);
         } else if (strName.equals("StepUps")) {
             stringList.clear();
-            ((RecyclerView) findViewById(R.id.recyclerViewData)).setVisibility(View.GONE);
+            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.box_string_e));
             gifImage.setImageResource(R.drawable.ic_box_lateral_push_off);
         }
@@ -239,76 +239,189 @@ public class ExerciseDetailActivity extends BaseActivity implements View.OnClick
         /*Suspension*/
         else if (strName.equals("SuspensionSquat")) {
             stringList.clear();
-            ((LinearLayout) findViewById(R.id.llData)).setVisibility(View.GONE);
-            ((RecyclerView) findViewById(R.id.recyclerViewData)).setVisibility(View.GONE);
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText("");
             gifImage.setImageResource(R.drawable.ic_suspension_biseps);
         } else if (strName.equals("SuspensionChestPress")) {
             stringList.clear();
-            ((LinearLayout) findViewById(R.id.llData)).setVisibility(View.GONE);
-            ((RecyclerView) findViewById(R.id.recyclerViewData)).setVisibility(View.GONE);
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText("");
             gifImage.setImageResource(R.drawable.ic_suspension_crossing_balance);
         } else if (strName.equals("SuspensionTricepsPress")) {
             stringList.clear();
-            ((LinearLayout) findViewById(R.id.llData)).setVisibility(View.GONE);
-            ((RecyclerView) findViewById(R.id.recyclerViewData)).setVisibility(View.GONE);
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText("");
             gifImage.setImageResource(R.drawable.ic_suspension_hamstring_curl);
             gifImage.setImageResource(R.drawable.ic_suspension_hamstring_curl);
         } else if (strName.equals("SuspensionPowerPull")) {
             stringList.clear();
-            ((LinearLayout) findViewById(R.id.llData)).setVisibility(View.GONE);
-            ((RecyclerView) findViewById(R.id.recyclerViewData)).setVisibility(View.GONE);
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText("");
             gifImage.setImageResource(R.drawable.ic_suspension_legs);
         } else if (strName.equals("SuspensionLunge")) {
             stringList.clear();
-            ((LinearLayout) findViewById(R.id.llData)).setVisibility(View.GONE);
-            ((RecyclerView) findViewById(R.id.recyclerViewData)).setVisibility(View.GONE);
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText("");
             gifImage.setImageResource(R.drawable.ic_suspension_pendulum);
         }
 
-
         /*Cardio*/
         else if (strName.equals("CardioClamshell")) {
             stringList.clear();
-            ((LinearLayout) findViewById(R.id.llData)).setVisibility(View.GONE);
-            ((RecyclerView) findViewById(R.id.recyclerViewData)).setVisibility(View.GONE);
-            ((TextView) findViewById(R.id.tvExerciseDetail)).setVisibility(View.GONE);
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
+            findViewById(R.id.tvExerciseDetail).setVisibility(View.GONE);
             gifImage.setImageResource(R.drawable.ic_cardio_clamshell);
         } else if (strName.equals("CardioFireHydrant")) {
             stringList.clear();
-            ((LinearLayout) findViewById(R.id.llData)).setVisibility(View.GONE);
-            ((RecyclerView) findViewById(R.id.recyclerViewData)).setVisibility(View.GONE);
-            ((TextView) findViewById(R.id.tvExerciseDetail)).setVisibility(View.GONE);
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
+            findViewById(R.id.tvExerciseDetail).setVisibility(View.GONE);
             gifImage.setImageResource(R.drawable.ic_cardio_fire_hydrant);
         } else if (strName.equals("CardioSideKick")) {
             stringList.clear();
-            ((LinearLayout) findViewById(R.id.llData)).setVisibility(View.GONE);
-            ((RecyclerView) findViewById(R.id.recyclerViewData)).setVisibility(View.GONE);
-            ((TextView) findViewById(R.id.tvExerciseDetail)).setVisibility(View.GONE);
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
+            findViewById(R.id.tvExerciseDetail).setVisibility(View.GONE);
             gifImage.setImageResource(R.drawable.ic_cardio_side_kick);
         } else if (strName.equals("CardioSidePlankHip")) {
             stringList.clear();
-            ((LinearLayout) findViewById(R.id.llData)).setVisibility(View.GONE);
-            ((RecyclerView) findViewById(R.id.recyclerViewData)).setVisibility(View.GONE);
-            ((TextView) findViewById(R.id.tvExerciseDetail)).setVisibility(View.GONE);
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
+            findViewById(R.id.tvExerciseDetail).setVisibility(View.GONE);
             gifImage.setImageResource(R.drawable.ic_cardio_side_plank_hip);
         } else if (strName.equals("CardioStandingOpenGate")) {
             stringList.clear();
-            ((LinearLayout) findViewById(R.id.llData)).setVisibility(View.GONE);
-            ((RecyclerView) findViewById(R.id.recyclerViewData)).setVisibility(View.GONE);
-            ((TextView) findViewById(R.id.tvExerciseDetail)).setVisibility(View.GONE);
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            findViewById(R.id.recyclerViewData).setVisibility(View.GONE);
+            findViewById(R.id.tvExerciseDetail).setVisibility(View.GONE);
             gifImage.setImageResource(R.drawable.ic_cardio_standing_open_gate);
         }
 
+        /*Home exercise*/
+        else if (strName.equals("ScissorCrunches")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            imgExercise.setImageResource(R.drawable.ic_home_ex_scissors_crunches);
+        } else if (strName.equals("RopeJump")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            imgExercise.setImageResource(R.drawable.ic_home_ex_rope_jump);
+        } else if (strName.equals("InclinePushUp")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            imgExercise.setImageResource(R.drawable.ic_home_ex_push_up);
+        } else if (strName.equals("HandstandAssist")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            imgExercise.setImageResource(R.drawable.ic_home_ex_handstand);
+        } else if (strName.equals("MountainClimber")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            imgExercise.setImageResource(R.drawable.ic_home_ex_mountain_climbing);
+        }
+
+        /*Calisthenics*/
+        else if (strName.equals("CalisthenicsPushUps")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            imgExercise.setImageResource(R.drawable.ic_calisthenics_push_ups);
+        } else if (strName.equals("CalisthenicsBicycleCrunches")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            imgExercise.setImageResource(R.drawable.ic_calisthenics_bicycle_crunches);
+        } else if (strName.equals("CalisthenicsChinUps")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            imgExercise.setImageResource(R.drawable.ic_calisthenics_chin_ups);
+        } else if (strName.equals("CalisthenicsSitUps")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            imgExercise.setImageResource(R.drawable.ic_calisthenics_sit_ups);
+        } else if (strName.equals("CalisthenicsWidePushups")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            imgExercise.setImageResource(R.drawable.ic_calisthenics_wide_pushups);
+        }
+
+        /*Calisthenics*/
+        else if (strName.equals("CalisthenicsPushUps")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            imgExercise.setImageResource(R.drawable.ic_calisthenics_push_ups);
+        } else if (strName.equals("CalisthenicsBicycleCrunches")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            imgExercise.setImageResource(R.drawable.ic_calisthenics_bicycle_crunches);
+        } else if (strName.equals("CalisthenicsChinUps")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            imgExercise.setImageResource(R.drawable.ic_calisthenics_chin_ups);
+        } else if (strName.equals("CalisthenicsSitUps")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            imgExercise.setImageResource(R.drawable.ic_calisthenics_sit_ups);
+        } else if (strName.equals("CalisthenicsWidePushups")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            imgExercise.setImageResource(R.drawable.ic_calisthenics_wide_pushups);
+        }
+
+        /*FunctionalTraining*/
+        else if (strName.equals("FunctionalStepsUpJump")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            imgExercise.setImageResource(R.drawable.ic_functional_step_jumps);
+        } else if (strName.equals("FunctionalAlternatingWaves")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            imgExercise.setImageResource(R.drawable.ic_functional_alternating_waves);
+        } else if (strName.equals("FunctionalBurpees")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            imgExercise.setImageResource(R.drawable.ic_functional_burpees);
+        } else if (strName.equals("FunctionalDoubleArmWaves")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            imgExercise.setImageResource(R.drawable.ic_functional_double_arm_waves);
+        } else if (strName.equals("FunctionalJumpingJacks")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            imgExercise.setImageResource(R.drawable.ic_functional_jumping_jacks);
+        }
+
+        /*SuspensionTraining*/
+        else if (strName.equals("SuspensionTrainPushUp")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView)findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_suspension_push_up);
+        } else if (strName.equals("SuspensionTrainChestPress")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView)findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_suspension_chest_press);
+        } else if (strName.equals("SuspensionTrainLowRow")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView)findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_suspension_low_row);
+        } else if (strName.equals("SuspensionTrainSingleArmRow")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView)findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_suspension_single_arm);
+        } else if (strName.equals("SuspensionTrainBiceps")) {
+            stringList.clear();
+            findViewById(R.id.llData).setVisibility(View.GONE);
+            ((ImageView)findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_suspension_biceps);
+        }
         setExerciseData();
     }
 
     private void setExerciseData() {
-        RecyclerView recyclerViewData = (RecyclerView) findViewById(R.id.recyclerViewData);
+        RecyclerView recyclerViewData = findViewById(R.id.recyclerViewData);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerViewData.setLayoutManager(mLayoutManager);
         recyclerViewData.setItemAnimator(new DefaultItemAnimator());

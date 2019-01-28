@@ -4,8 +4,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 
 import del.gym.R;
 import del.gym.utils.BaseFragment;
@@ -13,6 +11,8 @@ import del.gym.utils.ConstantData;
 
 import static del.gym.ui.activity.NavigationLibraryActivity.fragmentManager;
 import static del.gym.ui.activity.NavigationLibraryActivity.tooltext;
+
+
 public class HomeFragment extends BaseFragment implements View.OnClickListener {
 
     private View rootView;
@@ -26,19 +26,34 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
 
     private void init() {
         mContext = getActivity();
-        ((RelativeLayout) rootView.findViewById(R.id.llExcerciseGuide)).setOnClickListener(this);
-        ((RelativeLayout) rootView.findViewById(R.id.llWorkout)).setOnClickListener(this);
-        ((RelativeLayout) rootView.findViewById(R.id.llMyWorkOut)).setOnClickListener(this);
-        ((RelativeLayout) rootView.findViewById(R.id.llNutrition)).setOnClickListener(this);
-        ((RelativeLayout) rootView.findViewById(R.id.llStretching)).setOnClickListener(this);
-        ((RelativeLayout) rootView.findViewById(R.id.llTips)).setOnClickListener(this);
+        rootView.findViewById(R.id.llExcerciseGuide).setOnClickListener(this);
+        rootView.findViewById(R.id.llWorkout).setOnClickListener(this);
+        rootView.findViewById(R.id.llMyWorkOut).setOnClickListener(this);
+        rootView.findViewById(R.id.llNutrition).setOnClickListener(this);
+        rootView.findViewById(R.id.llStretching).setOnClickListener(this);
+        rootView.findViewById(R.id.llTips).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.llExcerciseGuide:
-                changeFragment("Exercise", ConstantData.HomeMenuDetailFragment);
+                changeFragment("ExerciseGuide", ConstantData.HomeMenuDetailFragment);
+                break;
+            case R.id.llWorkout:
+                changeFragment("Workout", ConstantData.HomeMenuDetailFragment);
+                break;
+            case R.id.llMyWorkOut:
+                changeFragment("MyWorkOut", ConstantData.HomeMenuDetailFragment);
+                break;
+            case R.id.llNutrition:
+                changeFragment("Nutrition", ConstantData.HomeMenuDetailFragment);
+                break;
+            case R.id.llStretching:
+                changeFragment("Stretching", ConstantData.HomeMenuDetailFragment);
+                break;
+            case R.id.llTips:
+                changeFragment("Tips", ConstantData.HomeMenuDetailFragment);
                 break;
         }
     }

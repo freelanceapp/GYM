@@ -25,7 +25,8 @@
                 android:id="@+id/llExcerciseGuideData"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:visibility="gone">
 
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
@@ -124,6 +125,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="16dp"
                     android:layout_marginBottom="8dp"
+                    android:visibility="gone"
                     app:cardBackgroundColor="@color/transparent"
                     app:cardCornerRadius="6dp"
                     app:cardElevation="0dp"
@@ -160,7 +162,8 @@
                     android:layout_width="180dp"
                     android:layout_height="0.5dp"
                     android:layout_gravity="right"
-                    android:background="@color/gray_b" />
+                    android:background="@color/gray_b"
+                    android:visibility="gone" />
 
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
@@ -259,6 +262,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="16dp"
                     android:layout_marginBottom="8dp"
+                    android:visibility="gone"
                     app:cardBackgroundColor="@color/transparent"
                     app:cardCornerRadius="6dp"
                     app:cardElevation="0dp"
@@ -296,7 +300,8 @@
                     android:layout_width="180dp"
                     android:layout_height="0.5dp"
                     android:layout_gravity="right"
-                    android:background="@color/gray_b" />
+                    android:background="@color/gray_b"
+                    android:visibility="gone" />
 
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
@@ -345,6 +350,219 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/llWorkout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="0dp"
+                    app:contentPadding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/llHome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/img_home_exercise"
+                            app:civ_border_color="@color/brown"
+                            app:civ_border_width="1dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:paddingLeft="36dp"
+                            android:text="Home exercise"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <View
+                    android:layout_width="180dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="right"
+                    android:background="@color/gray_b" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="0dp"
+                    app:contentPadding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/llCalisthenics"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/img_calisthenics_exercise"
+                            app:civ_border_color="@color/brown"
+                            app:civ_border_width="1dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:paddingLeft="36dp"
+                            android:text="Calisthenics"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <View
+                    android:layout_width="180dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="right"
+                    android:background="@color/gray_b" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="0dp"
+                    app:contentPadding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/llFunctionalTraining"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/img_functional_training"
+                            app:civ_border_color="@color/brown"
+                            app:civ_border_width="1dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:paddingLeft="36dp"
+                            android:text="Functional training"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <View
+                    android:layout_width="180dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="right"
+                    android:background="@color/gray_b" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="0dp"
+                    app:contentPadding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/llSuspensionTraining"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/img_suspension_training"
+                            app:civ_border_color="@color/brown"
+                            app:civ_border_width="1dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:paddingLeft="36dp"
+                            android:text="Suspension training"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <View
+                    android:layout_width="180dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="right"
+                    android:background="@color/gray_b" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMyWorkout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llNutrition"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llStretching"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTips"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
