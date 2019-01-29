@@ -388,6 +388,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:visibility="gone"
                 android:id="@+id/llic_bw_muscle_up"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -422,6 +423,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:visibility="gone"
                 android:id="@+id/llic_bw_crunch"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -456,6 +458,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:visibility="gone"
                 android:id="@+id/llic_bw_pull_ups"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -490,6 +493,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:visibility="gone"
                 android:id="@+id/llic_bw_squats"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

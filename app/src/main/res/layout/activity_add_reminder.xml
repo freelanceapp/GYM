@@ -54,12 +54,19 @@
         android:layout_centerVertical="true"
         android:orientation="vertical">
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_reminder"
+            android:tint="@color/lightWhite" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_margin="20dp"
             android:gravity="center"
-            android:text="Remind Me To"
+            android:text="Remind Me For"
             android:textColor="@color/lightWhite"
             android:textSize="20sp" />
 
@@ -69,9 +76,9 @@
             android:layout_height="160dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:background="@drawable/rounded_corners_background"
+            android:background="@drawable/layout_bg_d"
             android:gravity="top|left"
-            android:hint="Exercise"
+            android:hint="Enter Exercise Name"
             android:imeOptions="actionDone"
             android:padding="16dp"
             android:textColor="#ffffff"
@@ -84,21 +91,39 @@
             android:gravity="center"
             android:text="At"
             android:textColor="@color/lightWhite"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:visibility="gone" />
 
-        <EditText
-            android:id="@+id/time"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="26dp"
             android:layout_marginRight="16dp"
-            android:background="@drawable/rounded_corners_background"
-            android:focusable="false"
-            android:gravity="center"
-            android:textColor="#ffffff"
-            android:textColorHint="#ffffff"
-            android:textIsSelectable="true" />
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_time" />
+
+            <EditText
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/layout_bg_d"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="Select time"
+                android:padding="8dp"
+                android:textColor="#ffffff"
+                android:textColorHint="@color/gray_f"
+                android:textIsSelectable="true" />
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
@@ -107,22 +132,39 @@
             android:gravity="center"
             android:text="On"
             android:textColor="@color/lightWhite"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:visibility="gone" />
 
-        <EditText
-            android:id="@+id/date"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="26dp"
             android:layout_marginRight="16dp"
-            android:background="@drawable/rounded_corners_background"
-            android:focusable="false"
-            android:gravity="center"
-            android:textColor="#ffffff"
-            android:textColorHint="#ffffff"
-            android:textIsSelectable="true" />
+            android:orientation="horizontal">
 
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_vertical"
+                android:padding="4dp"
+                android:src="@drawable/ic_calendar" />
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/layout_bg_d"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="Select date"
+                android:padding="8dp"
+                android:textColor="#ffffff"
+                android:textColorHint="@color/gray_f"
+                android:textIsSelectable="true" />
+        </LinearLayout>
     </LinearLayout>
 
     <Button
@@ -134,7 +176,7 @@
         android:layout_alignParentBottom="true"
         android:background="@color/colorPrimary"
         android:gravity="center"
-        android:text="Done"
+        android:text="Add"
         android:textColor="#ffffff"
         android:textSize="20sp" />
 
