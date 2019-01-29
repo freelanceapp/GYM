@@ -66,10 +66,6 @@ public class HomeContentAdapter extends RecyclerView.Adapter<HomeContentAdapter.
                             Intent intent1 = new Intent(ctx, WorkoutActivity.class);
                             ctx.startActivity(intent1);
                             break;
-                        case 2:
-                            Intent intent2 = new Intent(ctx, MyWorkoutActivity.class);
-                            ctx.startActivity(intent2);
-                            break;
                         case 3:
                             Intent intent3 = new Intent(ctx, NutritionActivity.class);
                             ctx.startActivity(intent3);

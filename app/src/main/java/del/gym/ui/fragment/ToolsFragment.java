@@ -40,8 +40,8 @@ public class ToolsFragment extends BaseFragment implements View.OnClickListener 
                 Toast.makeText(mContext, "in Process...", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.llChronometer:
-                Toast.makeText(mContext, "in Process...", Toast.LENGTH_SHORT).show();
-                //setIntentData("chronometer");
+                //Toast.makeText(mContext, "in Process...", Toast.LENGTH_SHORT).show();
+                setIntentData("chronometer");
                 break;
             case R.id.llMyRoutine:
                 setIntentData("my_routine");

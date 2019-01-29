@@ -1,5 +1,6 @@
 package del.gym.ui.activity;
 
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -23,6 +24,7 @@ import del.gym.menu.DrawerAdapter;
 import del.gym.menu.DrawerItem;
 import del.gym.menu.SimpleItem;
 import del.gym.ui.fragment.HomeFragment;
+import del.gym.ui.fragment.HomeMenuDetailFragment;
 import del.gym.ui.fragment.ToolsFragment;
 import del.gym.utils.BaseActivity;
 import del.gym.utils.ConstantData;
@@ -125,7 +127,11 @@ public class NavigationLibraryActivity extends BaseActivity implements DrawerAda
         } else if (position == NAV2) {
             changeFragment("Tools", new ToolsFragment(), ConstantData.TOOLS);
         } else if (position == NAV3) {
-            //setFragment(new ToolsFragment(), ConstantData.TOOLS);
+            changeFragment("ExerciseGuide", ConstantData.HomeMenuDetailFragment);
+        } else if (position == NAV4) {
+            changeFragment("Workout", ConstantData.HomeMenuDetailFragment);
+        } else if (position == NAV5) {
+            setIntentData("MyWorkout");
         }
         slidingRootNav.closeMenu();
     }
@@ -161,5 +167,23 @@ public class NavigationLibraryActivity extends BaseActivity implements DrawerAda
                 .beginTransaction()
                 .replace(R.id.home_frame, fragment,
                         strTag).commit();
+    }
+
+    private void changeFragment(String strName, String strTag) {
+        HomeMenuDetailFragment homeMenuDetailFragment = new HomeMenuDetailFragment();
+        Bundle bundle = new Bundle();
+        bundle.putString("name", strName);
+        homeMenuDetailFragment.setArguments(bundle);
+        tooltext.setText(strName);
+        fragmentManager
+                .beginTransaction()
+                .replace(R.id.home_frame, homeMenuDetailFragment,
+                        strTag).commit();
+    }
+
+    private void setIntentData(String data) {
+        Intent intent = new Intent(mContext, MyWorkOutActivity.class);
+        intent.putExtra("name", data);
+        startActivity(intent);
     }
 }

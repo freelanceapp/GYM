@@ -2,6 +2,7 @@ package del.gym.ui.activity;
 
 import android.app.Dialog;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
@@ -11,12 +12,16 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.Window;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,8 +45,15 @@ public class ToolsActivity extends BaseActivity implements View.OnClickListener 
     /* My routine */
     private MyRoutineListAdapter routineListAdapter;
     private DatabaseHandler databaseHandler;
+    private String DATABASE_NAME = "my_routine.db";
     private List<MyRoutineModal> myRoutineList = new ArrayList<>();
     private Dialog dialogRoutine;
+    private String strDays = "";
+
+    /* CountdownTimer */
+    private CountDownTimer cTimer;
+    private boolean isTimerStart = false;
+    private TextView tvChronoMinute;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -55,6 +67,7 @@ public class ToolsActivity extends BaseActivity implements View.OnClickListener 
     private void getIntentData() {
         if (getIntent() == null)
             return;
+        tvChronoMinute = (TextView) findViewById(R.id.tvChronoMinute);
         ((ImageView) findViewById(R.id.imgBack)).setOnClickListener(this);
         ((Button) findViewById(R.id.btnStart)).setOnClickListener(this);
         ((Button) findViewById(R.id.btnPause)).setOnClickListener(this);
@@ -93,11 +106,10 @@ public class ToolsActivity extends BaseActivity implements View.OnClickListener 
     }
 
     private void getMyRoutineData() {
-        databaseHandler = new DatabaseHandler(mContext);
+        databaseHandler = new DatabaseHandler(mContext, DATABASE_NAME);
         if (databaseHandler.getContactsCount()) {
             myRoutineList = databaseHandler.getAllUrlList();
         }
-
         setMyRoutineList();
     }
 
@@ -111,6 +123,23 @@ public class ToolsActivity extends BaseActivity implements View.OnClickListener 
         if (dialogRoutine.getWindow() != null)
             dialogRoutine.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
 
+        String[] daysList = {"Select days", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+        Spinner spinnerDays = (Spinner) dialogRoutine.findViewById(R.id.spinnerDays);
+        ArrayAdapter aa = new ArrayAdapter(this, android.R.layout.simple_spinner_item, daysList);
+        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerDays.setAdapter(aa);
+        spinnerDays.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                strDays = parent.getItemAtPosition(position).toString();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
         ((Button) dialogRoutine.findViewById(R.id.btnSave)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -119,14 +148,17 @@ public class ToolsActivity extends BaseActivity implements View.OnClickListener 
                 String strSet = ((EditText) dialogRoutine.findViewById(R.id.edtSet)).getText().toString();
                 String strWeight = ((EditText) dialogRoutine.findViewById(R.id.edtWeight)).getText().toString();
 
-                databaseHandler.addItemCart(new MyRoutineModal(strExercise, strRepetition, strSet, strWeight));
-
-                if (databaseHandler.getContactsCount()) {
-                    myRoutineList = databaseHandler.getAllUrlList();
+                if (strDays.equals("Select days")) {
+                    Toast.makeText(mContext, "Please select day!!", Toast.LENGTH_SHORT).show();
+                } else {
+                    databaseHandler.addItemCart(new MyRoutineModal(strExercise, strRepetition, strSet, strWeight, strDays));
+                    if (databaseHandler.getContactsCount()) {
+                        myRoutineList = databaseHandler.getAllUrlList();
+                    }
+                    setMyRoutineList();
+                    routineListAdapter.notifyDataSetChanged();
+                    dialogRoutine.dismiss();
                 }
-                setMyRoutineList();
-                routineListAdapter.notifyDataSetChanged();
-                dialogRoutine.dismiss();
             }
         });
 
@@ -141,7 +173,6 @@ public class ToolsActivity extends BaseActivity implements View.OnClickListener 
         window.setLayout(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
         dialogRoutine.show();
     }
-
 
     private void setLapList() {
         RecyclerView recyclerViewLap = (RecyclerView) findViewById(R.id.recyclerViewLap);
@@ -159,7 +190,7 @@ public class ToolsActivity extends BaseActivity implements View.OnClickListener 
         recyclerViewMyRoutine.setLayoutManager(mLayoutManager);
         recyclerViewMyRoutine.setItemAnimator(new DefaultItemAnimator());
         recyclerViewMyRoutine.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
-        routineListAdapter = new MyRoutineListAdapter(mContext, myRoutineList);
+        routineListAdapter = new MyRoutineListAdapter(mContext, myRoutineList, this);
         recyclerViewMyRoutine.setAdapter(routineListAdapter);
         routineListAdapter.notifyDataSetChanged();
     }
@@ -169,6 +200,24 @@ public class ToolsActivity extends BaseActivity implements View.OnClickListener 
         switch (v.getId()) {
             case R.id.imgBack:
                 finish();
+                break;
+            case R.id.btnChronoStart:
+                String strMinutes = ((EditText) findViewById(R.id.edtMinutes)).getText().toString();
+                if (strMinutes.isEmpty()) {
+                    Toast.makeText(mContext, "Please enter minutes", Toast.LENGTH_SHORT).show();
+                } else if (strMinutes.equals("0")) {
+                    Toast.makeText(mContext, "Please enter minutes", Toast.LENGTH_SHORT).show();
+                } else {
+                    isTimerStart = true;
+                    startTimer();
+                }
+                break;
+            case R.id.btnChronoCancel:
+                if (isTimerStart) {
+                    cTimer.cancel();
+                    tvChronoMinute.setText("00:00");
+                    isTimerStart = false;
+                }
                 break;
             case R.id.btnStart:
                 intervalTimer();
@@ -182,7 +231,40 @@ public class ToolsActivity extends BaseActivity implements View.OnClickListener 
             case R.id.fabAddMyRoutine:
                 reviewDialog();
                 break;
+            case R.id.cardviewMyRoutine:
+                int pos = Integer.parseInt(v.getTag().toString());
+                MyRoutineModal myRoutineModal = myRoutineList.get(pos);
+                viewMyWorkOutData(myRoutineModal);
+                break;
         }
+    }
+
+    private void viewMyWorkOutData(MyRoutineModal myRoutineModal) {
+        dialogRoutine = new Dialog(mContext);
+        dialogRoutine.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialogRoutine.setContentView(R.layout.dialog_view_my_routine);
+
+        dialogRoutine.setCanceledOnTouchOutside(true);
+        dialogRoutine.setCancelable(true);
+        if (dialogRoutine.getWindow() != null)
+            dialogRoutine.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+
+        ((EditText) dialogRoutine.findViewById(R.id.edtExercise)).setText(myRoutineModal.getExercise());
+        ((EditText) dialogRoutine.findViewById(R.id.edtRepetitions)).setText(myRoutineModal.getRepetition());
+        ((EditText) dialogRoutine.findViewById(R.id.edtSet)).setText(myRoutineModal.getCountSet());
+        ((EditText) dialogRoutine.findViewById(R.id.edtWeight)).setText(myRoutineModal.getWeight());
+        ((EditText) dialogRoutine.findViewById(R.id.edtDay)).setText(myRoutineModal.getDays());
+
+        ((Button) dialogRoutine.findViewById(R.id.btnOk)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialogRoutine.dismiss();
+            }
+        });
+
+        Window window = dialogRoutine.getWindow();
+        window.setLayout(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+        dialogRoutine.show();
     }
 
     private void intervalTimer() {
@@ -244,4 +326,28 @@ public class ToolsActivity extends BaseActivity implements View.OnClickListener 
         lapTimeList.add(timeModal);
         lapTimeListAdapter.notifyDataSetChanged();
     }
+
+    /*Timer*/
+    private void startTimer() {
+        String strMinutes = ((EditText) findViewById(R.id.edtMinutes)).getText().toString();
+        long minutes = 0;
+        if (strMinutes.isEmpty() || strMinutes.equals("0")) {
+            minutes = 0;
+        } else {
+            minutes = Long.parseLong(strMinutes);
+        }
+
+        minutes = minutes * 60000;
+        cTimer = new CountDownTimer(minutes, 1000) {
+            public void onTick(long millisUntilFinished) {
+                tvChronoMinute.setText((millisUntilFinished / 60000) + ":" + (millisUntilFinished % 60000 / 1000));
+            }
+
+            public void onFinish() {
+                tvChronoMinute.setText((00));
+            }
+        };
+        cTimer.start();
+    }
+
 }

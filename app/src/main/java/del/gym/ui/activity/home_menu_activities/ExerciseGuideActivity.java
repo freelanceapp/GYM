@@ -74,6 +74,10 @@ public class ExerciseGuideActivity extends BaseActivity implements View.OnClickL
         findViewById(R.id.llPullUps).setOnClickListener(this);
         findViewById(R.id.llClapPushups).setOnClickListener(this);
         findViewById(R.id.llHandstand).setOnClickListener(this);
+        findViewById(R.id.llic_bw_muscle_up).setOnClickListener(this);
+        findViewById(R.id.llic_bw_crunch).setOnClickListener(this);
+        findViewById(R.id.llic_bw_pull_ups).setOnClickListener(this);
+        findViewById(R.id.llic_bw_squats).setOnClickListener(this);
 
         /*Battlerope*/
         findViewById(R.id.llAlternatingWaves).setOnClickListener(this);
@@ -174,7 +178,20 @@ public class ExerciseGuideActivity extends BaseActivity implements View.OnClickL
             case R.id.llHandstand:
                 openExerciseDetail("Handstand");
                 break;
+            case R.id.llic_bw_muscle_up:
+                openExerciseDetail("llic_bw_muscle_up");
+                break;
+            case R.id.llic_bw_crunch:
+                openExerciseDetail("llic_bw_crunch");
+                break;
+            case R.id.llic_bw_pull_ups:
+                openExerciseDetail("llic_bw_pull_ups");
+                break;
+            case R.id.llic_bw_squats:
+                openExerciseDetail("llic_bw_squats");
+                break;
 
+                
             /*Battlerope*/
             case R.id.llAlternatingWaves:
                 openExerciseDetail("AlternatingWaves");

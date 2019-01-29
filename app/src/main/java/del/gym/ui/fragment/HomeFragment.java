@@ -1,17 +1,18 @@
 package del.gym.ui.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import del.gym.R;
+import del.gym.ui.activity.MyWorkOutActivity;
 import del.gym.utils.BaseFragment;
 import del.gym.utils.ConstantData;
 
 import static del.gym.ui.activity.NavigationLibraryActivity.fragmentManager;
 import static del.gym.ui.activity.NavigationLibraryActivity.tooltext;
-
 
 public class HomeFragment extends BaseFragment implements View.OnClickListener {
 
@@ -44,7 +45,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
                 changeFragment("Workout", ConstantData.HomeMenuDetailFragment);
                 break;
             case R.id.llMyWorkOut:
-                changeFragment("MyWorkOut", ConstantData.HomeMenuDetailFragment);
+                setIntentData("MyWorkout");
                 break;
             case R.id.llNutrition:
                 changeFragment("Nutrition", ConstantData.HomeMenuDetailFragment);
@@ -68,5 +69,11 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
                 .beginTransaction()
                 .replace(R.id.home_frame, homeMenuDetailFragment,
                         strTag).commit();
+    }
+
+    private void setIntentData(String data) {
+        Intent intent = new Intent(mContext, MyWorkOutActivity.class);
+        intent.putExtra("name", data);
+        startActivity(intent);
     }
 }

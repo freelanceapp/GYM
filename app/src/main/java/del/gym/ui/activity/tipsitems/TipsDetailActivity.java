@@ -15,7 +15,6 @@ public class TipsDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tips2);
 
-
         getIntentData();
     }
 
