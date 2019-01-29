@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -40,6 +41,9 @@ public class MyRoutineListAdapter extends RecyclerView.Adapter<MyRoutineListAdap
 
         holder.cardviewMyRoutine.setTag(position);
         holder.cardviewMyRoutine.setOnClickListener(onClickListener);
+
+        holder.imgDelete.setTag(position);
+        holder.imgDelete.setOnClickListener(onClickListener);
     }
 
     @Override
@@ -49,11 +53,13 @@ public class MyRoutineListAdapter extends RecyclerView.Adapter<MyRoutineListAdap
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
+        private ImageView imgDelete;
         private TextView tvExercise, tvWeight, tvDays;
         private CardView cardviewMyRoutine;
 
         public MyViewHolder(View view) {
             super(view);
+            imgDelete = view.findViewById(R.id.imgDelete);
             cardviewMyRoutine = view.findViewById(R.id.cardviewMyRoutine);
             tvExercise = view.findViewById(R.id.tvExercise);
             tvWeight = view.findViewById(R.id.tvWeight);

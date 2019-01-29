@@ -6,9 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import del.gym.R;
+import del.gym.ui.activity.ReminderActivity;
 import del.gym.ui.activity.ToolsActivity;
 import del.gym.utils.BaseFragment;
 
@@ -36,11 +36,9 @@ public class ToolsFragment extends BaseFragment implements View.OnClickListener 
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.llReminder:
-                //setIntentData("reminder");
-                Toast.makeText(mContext, "in Process...", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(mContext, ReminderActivity.class));
                 break;
             case R.id.llChronometer:
-                //Toast.makeText(mContext, "in Process...", Toast.LENGTH_SHORT).show();
                 setIntentData("chronometer");
                 break;
             case R.id.llMyRoutine:

@@ -161,6 +161,18 @@ public class MyWorkOutActivity extends BaseActivity implements View.OnClickListe
             case R.id.fabAddMyRoutine:
                 reviewDialog();
                 break;
+            case R.id.imgDelete:
+                int position = Integer.parseInt(v.getTag().toString());
+                MyRoutineModal myRoutine = myRoutineList.get(position);
+                databaseHandler.deleteWorkout(myRoutine);
+                if (databaseHandler.getContactsCount()) {
+                    myRoutineList = databaseHandler.getAllUrlList();
+                } else {
+                    myRoutineList.clear();
+                }
+                setMyRoutineList();
+                routineListAdapter.notifyDataSetChanged();
+                break;
             case R.id.cardviewMyRoutine:
                 int pos = Integer.parseInt(v.getTag().toString());
                 MyRoutineModal myRoutineModal = myRoutineList.get(pos);

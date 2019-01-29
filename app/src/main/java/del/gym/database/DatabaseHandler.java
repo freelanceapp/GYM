@@ -120,7 +120,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
 
     // Deleting single url
-    public void deleteContact(MyRoutineModal urlModal) {
+    public void deleteWorkout(MyRoutineModal urlModal) {
         SQLiteDatabase db = this.getWritableDatabase();
         db.delete(TABLE_URL, KEY_ID + " = ?",
                 new String[]{String.valueOf(urlModal.get_id())});
