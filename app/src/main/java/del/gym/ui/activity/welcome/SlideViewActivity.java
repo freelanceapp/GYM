@@ -19,6 +19,7 @@ import android.widget.TextView;
 
 import del.gym.R;
 import del.gym.constant.Constant;
+import del.gym.ui.activity.NavigationLibraryActivity;
 import del.gym.utils.AppPreference;
 import del.gym.utils.BaseActivity;
 
@@ -106,7 +107,7 @@ public class SlideViewActivity extends BaseActivity {
 
     private void launchHomeScreen() {
         AppPreference.setBooleanPreference(mContext, Constant.IsFirstTime, true);
-        startActivity(new Intent(SlideViewActivity.this, SplashScreenActivity.class));
+        startActivity(new Intent(SlideViewActivity.this, NavigationLibraryActivity.class));
         finish();
     }
 

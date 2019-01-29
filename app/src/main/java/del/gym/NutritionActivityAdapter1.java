@@ -36,16 +36,16 @@ class NutritionActivityAdapter1 extends RecyclerView.Adapter<NutritionActivityAd
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, final int i) {
-        StretcingModel nutritionData1 = nutritionDataA1.get(i);
+        final StretcingModel nutritionData1 = nutritionDataA1.get(i);
 
         viewHolder.image.setImageDrawable(ctx.getResources().getDrawable(nutritionData1.getImage1()));
         viewHolder.textView1.setText(nutritionData1.getName());
         viewHolder.dietOnclick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                        Intent intent = new Intent(ctx, NutDietA1.class);
-                        ctx.startActivity(intent);
+                Intent intent = new Intent(ctx, NutDietA1.class);
+                intent.putExtra("Calories", nutritionData1.getName());
+                ctx.startActivity(intent);
             }
         });
 

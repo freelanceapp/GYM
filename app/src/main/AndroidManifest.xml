@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ui.activity.welcome.SlideViewActivity">
+        <activity android:name=".ui.activity.tipsitems.TipsDetailActivity"></activity>
+        <activity android:name=".ui.activity.welcome.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".ui.activity.welcome.SplashScreenActivity" />
+        <activity android:name=".ui.activity.welcome.SlideViewActivity" />
         <activity
             android:name=".NavigationMainActivity"
             android:label="@string/title_activity_navigation_main"

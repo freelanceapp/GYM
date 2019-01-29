@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/app_background_image"
     android:orientation="vertical">
 
     <View
@@ -552,6 +552,233 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:visibility="gone">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="0dp"
+                    app:contentPadding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/llNutritionDietPlans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/img_home_exercise"
+                            app:civ_border_color="@color/brown"
+                            app:civ_border_width="1dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:paddingLeft="36dp"
+                            android:text="Diet Plans"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <View
+                    android:layout_width="180dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="right"
+                    android:background="@color/gray_b" />
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="0dp"
+                    app:contentPadding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/llNutritionsupplements"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/img_functional_training"
+                            app:civ_border_color="@color/brown"
+                            app:civ_border_width="1dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:paddingLeft="36dp"
+                            android:text="Supplements"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <View
+                    android:layout_width="180dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="right"
+                    android:background="@color/gray_b" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="0dp"
+                    app:contentPadding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/llNutritionSuspensionTraining"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/img_suspension_training"
+                            app:civ_border_color="@color/brown"
+                            app:civ_border_width="1dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:paddingLeft="36dp"
+                            android:text="Macronutrient Meter"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <View
+                    android:layout_width="180dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="right"
+                    android:background="@color/gray_b" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="0dp"
+                    app:contentPadding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/llNutritionTips"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/img_suspension_training"
+                            app:civ_border_color="@color/brown"
+                            app:civ_border_width="1dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:paddingLeft="36dp"
+                            android:text="Tips"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <View
+                    android:layout_width="180dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="right"
+                    android:background="@color/gray_b" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="0dp"
+                    app:contentPadding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/llNutritionFoods"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/img_calisthenics_exercise"
+                            app:civ_border_color="@color/brown"
+                            app:civ_border_width="1dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:paddingLeft="36dp"
+                            android:text="Ketogenic Diet"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <View
+                    android:layout_width="180dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="right"
+                    android:background="@color/gray_b" />
 
             </LinearLayout>
 
@@ -1287,8 +1514,397 @@
                 android:id="@+id/llTips"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:visibility="gone">
 
+                <RelativeLayout
+                    android:id="@+id/rlitem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/tipsimg1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tips1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tipsimg1"
+                        android:background="@color/transparent_red"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="How to accelerate your metabolism to lose weight fast"
+                        android:textAlignment="center"
+                        android:textColor="@color/lightWhite"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlitem2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/tipsimg2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tips2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tipsimg2"
+                        android:background="@color/transparent_red"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/whey_protein"
+                        android:textAlignment="center"
+                        android:textColor="@color/lightWhite"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlitem3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/tipsimg3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tips3" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tipsimg3"
+                        android:background="@color/transparent_red"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/the_4_supplements"
+                        android:textAlignment="center"
+                        android:textColor="@color/lightWhite"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlitem4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/tipsimg4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tips4" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tipsimg4"
+                        android:background="@color/transparent_red"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/how_to_recognize"
+                        android:textAlignment="center"
+                        android:textColor="@color/lightWhite"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlitem5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/tipsimg5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tips5" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tipsimg5"
+                        android:background="@color/transparent_red"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/guide_to_choose_your_sepplement"
+                        android:textAlignment="center"
+                        android:textColor="@color/lightWhite"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlitem6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/tipsimg6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tips6" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tipsimg6"
+                        android:background="@color/transparent_red"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/do_not"
+                        android:textAlignment="center"
+                        android:textColor="@color/lightWhite"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlitem7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/tipsimg7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tips7" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tipsimg7"
+                        android:background="@color/transparent_red"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/take_some"
+                        android:textAlignment="center"
+                        android:textColor="@color/lightWhite"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlitem8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/tipsimg8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tips12" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tipsimg8"
+                        android:background="@color/transparent_red"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/go_to_market"
+                        android:textAlignment="center"
+                        android:textColor="@color/lightWhite"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlitem9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/tipsimg9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tips8" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tipsimg9"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/transparent_red"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/sign_up"
+                        android:textAlignment="center"
+                        android:textColor="@color/lightWhite"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlitem10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/tipsimg10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tips9" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tipsimg10"
+                        android:background="@color/transparent_red"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/balanced_diet"
+                        android:textAlignment="center"
+                        android:textColor="@color/lightWhite"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlitem11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/tipsimg11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tips10" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tipsimg11"
+                        android:background="@color/transparent_red"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/enjoy_your_food"
+                        android:textAlignment="center"
+                        android:textColor="@color/lightWhite"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlitem12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/tipsimg12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tips11" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tipsimg12"
+                        android:gravity="center"
+                        android:text="@string/in_your"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlitem13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/tipsimg13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tips13" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tipsimg13"
+                        android:background="@color/transparent_red"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/improve_your_enviroment"
+                        android:textAlignment="center"
+                        android:textColor="@color/lightWhite"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlitem14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/tipsimg14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tips14" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tipsimg14"
+                        android:background="@color/transparent_red"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/eat_consciously"
+                        android:textAlignment="center"
+                        android:textColor="@color/lightWhite"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlitem15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/tipsimg15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tips15" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tipsimg15"
+                        android:background="@color/transparent_red"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/he_chef"
+                        android:textAlignment="center"
+                        android:textColor="@color/lightWhite"
+                        android:textStyle="bold" />
+                </RelativeLayout>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
+<LinearLayout
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,7 +7,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CratinineActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/tablayout_background">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4sp"
+            android:id="@+id/tvProBack"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_margin="6sp"
+            android:textColor="@color/lightWhite"
+            android:id="@+id/tvTitle"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tablayout_background">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+            <ImageView
+                android:layout_width="150sp"
+                android:layout_height="120sp"
+                android:layout_gravity="center"
+                android:id="@+id/ivProImg"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="as"
+                android:textColor="@color/lightWhite"
+                android:layout_margin="6sp"
+                android:id="@+id/tvProDetail"/>
+        </LinearLayout>
+    </ScrollView>
 
-    <include layout="@layout/allsupplements_layout"/>
-
-</android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -48,6 +48,7 @@ class NutritionActivityAdapter3 extends RecyclerView.Adapter<NutritionActivityAd
             public void onClick(View v) {
                 Intent intent = new Intent(ctx,CratinineActivity.class);
                 intent.putExtra("StringData", nutritionDataA3.get(i).getName());
+                intent.putExtra("StringImg", nutritionDataA3.get(i).getImage1());
                 ctx.startActivity(intent);
             }
         });

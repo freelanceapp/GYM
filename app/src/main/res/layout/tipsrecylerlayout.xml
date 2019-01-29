@@ -11,6 +11,7 @@
 
 
         <ImageView
+            android:src="@drawable/tips1"
             android:id="@+id/img_tips"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
