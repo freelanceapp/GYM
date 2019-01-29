@@ -11,7 +11,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ui.activity.tipsitems.TipsDetailActivity"></activity>
+
+        <receiver android:name=".utils.TimeAlarm" />
+
+        <receiver
+            android:name=".utils.BootUpReceiver"
+            android:enabled="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".ui.activity.tipsitems.TipsDetailActivity" />
         <activity android:name=".ui.activity.welcome.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -99,6 +112,9 @@
             android:windowSoftInputMode="adjustNothing" />
         <activity android:name=".ui.activity.home_menu_activities.ExerciseListActivity" />
         <activity android:name=".ui.activity.MyWorkOutActivity" />
+        <activity android:name=".ui.activity.ReminderActivity" />
+        <activity android:name=".ui.activity.ShowReminderMessage" />
+        <activity android:name=".ui.activity.AddReminderActivity" />
     </application>
 
 </manifest>

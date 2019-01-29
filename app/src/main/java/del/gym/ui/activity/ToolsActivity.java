@@ -49,6 +49,7 @@ public class ToolsActivity extends BaseActivity implements View.OnClickListener 
     private List<MyRoutineModal> myRoutineList = new ArrayList<>();
     private Dialog dialogRoutine;
     private String strDays = "";
+    private RecyclerView recyclerViewMyRoutine;
 
     /* CountdownTimer */
     private CountDownTimer cTimer;
@@ -69,6 +70,8 @@ public class ToolsActivity extends BaseActivity implements View.OnClickListener 
             return;
         tvChronoMinute = (TextView) findViewById(R.id.tvChronoMinute);
         ((ImageView) findViewById(R.id.imgBack)).setOnClickListener(this);
+        ((Button) findViewById(R.id.btnChronoCancel)).setOnClickListener(this);
+        ((Button) findViewById(R.id.btnChronoStart)).setOnClickListener(this);
         ((Button) findViewById(R.id.btnStart)).setOnClickListener(this);
         ((Button) findViewById(R.id.btnPause)).setOnClickListener(this);
         ((Button) findViewById(R.id.btnLap)).setOnClickListener(this);
@@ -185,7 +188,7 @@ public class ToolsActivity extends BaseActivity implements View.OnClickListener 
     }
 
     private void setMyRoutineList() {
-        RecyclerView recyclerViewMyRoutine = (RecyclerView) findViewById(R.id.recyclerViewMyRoutine);
+        recyclerViewMyRoutine = (RecyclerView) findViewById(R.id.recyclerViewMyRoutine);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerViewMyRoutine.setLayoutManager(mLayoutManager);
         recyclerViewMyRoutine.setItemAnimator(new DefaultItemAnimator());
@@ -200,6 +203,18 @@ public class ToolsActivity extends BaseActivity implements View.OnClickListener 
         switch (v.getId()) {
             case R.id.imgBack:
                 finish();
+                break;
+            case R.id.imgDelete:
+                int position = Integer.parseInt(v.getTag().toString());
+                MyRoutineModal myRoutine = myRoutineList.get(position);
+                databaseHandler.deleteWorkout(myRoutine);
+                if (databaseHandler.getContactsCount()) {
+                    myRoutineList = databaseHandler.getAllUrlList();
+                } else {
+                    myRoutineList.clear();
+                }
+                setMyRoutineList();
+                routineListAdapter.notifyDataSetChanged();
                 break;
             case R.id.btnChronoStart:
                 String strMinutes = ((EditText) findViewById(R.id.edtMinutes)).getText().toString();

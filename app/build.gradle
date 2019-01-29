@@ -34,4 +34,6 @@ dependencies {
     implementation 'com.yarolegovich:sliding-root-nav:1.1.0'
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.16'
 
+    annotationProcessor 'io.realm:realm-android:0.84.1'
+    implementation 'io.realm:realm-android:0.84.1'
 }

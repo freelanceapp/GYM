@@ -10,6 +10,7 @@ import del.gym.NutritionActivit1;
 import del.gym.NutritionActivity3;
 import del.gym.NutritionActivity6;
 import del.gym.R;
+import del.gym.Tips;
 import del.gym.ui.activity.home_menu_activities.ExerciseDetailActivity;
 import del.gym.ui.activity.home_menu_activities.ExerciseGuideActivity;
 import del.gym.ui.activity.tipsitems.TipsDetailActivity;
@@ -214,7 +215,16 @@ public class HomeMenuDetailFragment extends BaseFragment implements View.OnClick
                 openDetailActivity("SuspensionTraining");
                 break;
             case R.id.llNutritionTips:
-                openTipsDetailActivity("SuspensionTraining");
+                /*openTipsDetailActivity("SuspensionTraining");
+                Intent intent3 = new Intent(mContext, Tips.class);
+                startActivity(intent3);*/
+                rootView.findViewById(R.id.llTips).setVisibility(View.VISIBLE);
+                rootView.findViewById(R.id.llWorkout).setVisibility(View.GONE);
+                rootView.findViewById(R.id.llExcerciseGuideData).setVisibility(View.GONE);
+                rootView.findViewById(R.id.llMyWorkout).setVisibility(View.GONE);
+                rootView.findViewById(R.id.llNutrition).setVisibility(View.GONE);
+                rootView.findViewById(R.id.llStretching).setVisibility(View.GONE);
+
                 break;
 
 
