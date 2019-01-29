@@ -1,5 +1,6 @@
 package del.gym.ui.activity.tipsitems;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -7,18 +8,22 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import del.gym.R;
+import del.gym.ui.activity.home_menu_activities.ExerciseDetailActivity;
+import del.gym.ui.fragment.HomeMenuDetailFragment;
 
-public class TipsDetailActivity extends AppCompatActivity {
+public class TipsDetailActivity extends AppCompatActivity implements View.OnClickListener{
+
     private String strName = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tips2);
-
+       findViewById(R.id.ic_back).setOnClickListener(this);
         getIntentData();
     }
 
     private void getIntentData() {
+
         strName = getIntent().getStringExtra("name");
 
         if (strName.equals(getString(R.string.how_to_acclerate))) {
@@ -66,6 +71,15 @@ public class TipsDetailActivity extends AppCompatActivity {
         }else if (strName.equals(getString(R.string.he_chef))) {
             findViewById(R.id.tldata15).setVisibility(View.VISIBLE);
             ((ImageView) findViewById(R.id.image1)).setImageDrawable(getResources().getDrawable(R.drawable.tips15));
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.ic_back:
+            finish();
+
         }
     }
 }
