@@ -627,9 +627,13 @@ public class NutDietA1 extends AppCompatActivity implements View.OnClickListener
                     }
                 } else if (strCalories.equals("2400 Calories")) {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                        textDayData.setText(Html.fromHtml("<h2>Title</h2><br><p>Description here</p>", Html.FROM_HTML_MODE_COMPACT));
+                        textDayData.setText(Html.fromHtml("<p><strong>Meal 1</strong><br /><br />Oat Bran1/2 cup <br />Banana 1 <br />Eggs EGG YOLK 1 <br />Hardboiled Eggs 6.<br /><br /><strong> Meal 2</strong><br /><br />Yogurt 1 cup Cottage <br />Cheese 1 cup <br />Grapes 1 <br />Flaxseed 1 tbsp. <br /><br /><strong> Meal 3</strong><br /><br />Spinach 3 cups<br />Turkey Bacon 2 strips<br />Mushrooms 1/2 cup <br />Carrots 1 cup <br />Grilled Chicken 3 oz <br />Balsamic Vinegar.<br/><br/><strong> Meal 4</strong><br /><br />Apple1 <br />Walnuts 1/2 oz <br />Protein 1 scoop.<br/><br/> <strong> Meal 5</strong> <br /><br />Salmon3 oz <br/>Rice 1/4 cup <br/> Swiss Chard <br/> 2 cups Steamed.<br/><br/>\n" +
+                                "<strong> Meal 6</strong>\n" +
+                                "<br/><br/>Cottage Cheese1 cup<br/> Almonds 1 oz <br/>Tomato 1/3 cup<br/> Basil Leaves<br/> Balsamic Vinegar.</p>", Html.FROM_HTML_MODE_COMPACT));
                     } else {
-                        textDayData.setText(Html.fromHtml("<h2>Title</h2><br><p>Description here</p>"));
+                        textDayData.setText(Html.fromHtml("<p><strong>Meal 1</strong><br /><br />Oat Bran1/2 cup <br />Banana 1 <br />Eggs EGG YOLK 1 <br />Hardboiled Eggs 6.<br /><br /><strong> Meal 2</strong><br /><br />Yogurt 1 cup Cottage <br />Cheese 1 cup <br />Grapes 1 <br />Flaxseed 1 tbsp. <br /><br /><strong> Meal 3</strong><br /><br />Spinach 3 cups<br />Turkey Bacon 2 strips<br />Mushrooms 1/2 cup <br />Carrots 1 cup <br />Grilled Chicken 3 oz <br />Balsamic Vinegar.<br/><br/><strong> Meal 4</strong><br /><br />Apple1 <br />Walnuts 1/2 oz <br />Protein 1 scoop.<br/><br/> <strong> Meal 5</strong> <br /><br />Salmon3 oz <br/>Rice 1/4 cup <br/> Swiss Chard <br/> 2 cups Steamed.<br/><br/>\n" +
+                                "<strong> Meal 6</strong>\n" +
+                                "<br/><br/>Cottage Cheese1 cup<br/> Almonds 1 oz <br/>Tomato 1/3 cup<br/> Basil Leaves<br/> Balsamic Vinegar.</p>"));
                     }
                 } else if (strCalories.equals("2800 Calories")) {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
@@ -707,9 +711,13 @@ public class NutDietA1 extends AppCompatActivity implements View.OnClickListener
                     }
                 } else if (strCalories.equals("2400 Calories")) {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                        textDayData.setText(Html.fromHtml("<h2>Title</h2><br><p>Description here</p>", Html.FROM_HTML_MODE_COMPACT));
+                        textDayData.setText(Html.fromHtml("<p><strong>Meal 1</strong><br /><br />Oat Bran1/2 cup <br />Banana 1 <br />Eggs EGG YOLK 1 <br />Hardboiled Eggs 6.<br /><br /><strong> Meal 2</strong><br /><br />Yogurt 1 cup Cottage <br />Cheese 1 cup <br />Grapes 1 <br />Flaxseed 1 tbsp. <br /><br /><strong> Meal 3</strong><br /><br />Spinach 3 cups<br />Turkey Bacon 2 strips<br />Mushrooms 1/2 cup <br />Carrots 1 cup <br />Grilled Chicken 3 oz <br />Balsamic Vinegar.<br/><br/><strong> Meal 4</strong><br /><br />Apple1 <br />Walnuts 1/2 oz <br />Protein 1 scoop.<br/><br/> <strong> Meal 5</strong> <br /><br />Salmon3 oz <br/>Rice 1/4 cup <br/> Swiss Chard <br/> 2 cups Steamed.<br/><br/>\n" +
+                                "<strong> Meal 6</strong>\n" +
+                                "<br/><br/>Cottage Cheese1 cup<br/> Almonds 1 oz <br/>Tomato 1/3 cup<br/> Basil Leaves<br/> Balsamic Vinegar.</p>", Html.FROM_HTML_MODE_COMPACT));
                     } else {
-                        textDayData.setText(Html.fromHtml("<h2>Title</h2><br><p>Description here</p>"));
+                        textDayData.setText(Html.fromHtml("<p><strong>Meal 1</strong><br /><br />Oat Bran1/2 cup <br />Banana 1 <br />Eggs EGG YOLK 1 <br />Hardboiled Eggs 6.<br /><br /><strong> Meal 2</strong><br /><br />Yogurt 1 cup Cottage <br />Cheese 1 cup <br />Grapes 1 <br />Flaxseed 1 tbsp. <br /><br /><strong> Meal 3</strong><br /><br />Spinach 3 cups<br />Turkey Bacon 2 strips<br />Mushrooms 1/2 cup <br />Carrots 1 cup <br />Grilled Chicken 3 oz <br />Balsamic Vinegar.<br/><br/><strong> Meal 4</strong><br /><br />Apple1 <br />Walnuts 1/2 oz <br />Protein 1 scoop.<br/><br/> <strong> Meal 5</strong> <br /><br />Salmon3 oz <br/>Rice 1/4 cup <br/> Swiss Chard <br/> 2 cups Steamed.<br/><br/>\n" +
+                                "<strong> Meal 6</strong>\n" +
+                                "<br/><br/>Cottage Cheese1 cup<br/> Almonds 1 oz <br/>Tomato 1/3 cup<br/> Basil Leaves<br/> Balsamic Vinegar.</p>"));
                     }
                 } else if (strCalories.equals("2800 Calories")) {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
@@ -784,9 +792,13 @@ public class NutDietA1 extends AppCompatActivity implements View.OnClickListener
                 } else if (strCalories.equals("2400 Calories"))
                 {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                        textDayData.setText(Html.fromHtml("<h2>Title</h2><br><p>Description here</p>", Html.FROM_HTML_MODE_COMPACT));
+                        textDayData.setText(Html.fromHtml("<p><strong>Meal 1</strong><br /><br />Oat Bran1/2 cup <br />Banana 1 <br />Eggs EGG YOLK 1 <br />Hardboiled Eggs 6.<br /><br /><strong> Meal 2</strong><br /><br />Yogurt 1 cup Cottage <br />Cheese 1 cup <br />Grapes 1 <br />Flaxseed 1 tbsp. <br /><br /><strong> Meal 3</strong><br /><br />Spinach 3 cups<br />Turkey Bacon 2 strips<br />Mushrooms 1/2 cup <br />Carrots 1 cup <br />Grilled Chicken 3 oz <br />Balsamic Vinegar.<br/><br/><strong> Meal 4</strong><br /><br />Apple1 <br />Walnuts 1/2 oz <br />Protein 1 scoop.<br/><br/> <strong> Meal 5</strong> <br /><br />Salmon3 oz <br/>Rice 1/4 cup <br/> Swiss Chard <br/> 2 cups Steamed.<br/><br/>\n" +
+                                "<strong> Meal 6</strong>\n" +
+                                "<br/><br/>Cottage Cheese1 cup<br/> Almonds 1 oz <br/>Tomato 1/3 cup<br/> Basil Leaves<br/> Balsamic Vinegar.</p>", Html.FROM_HTML_MODE_COMPACT));
                     } else {
-                        textDayData.setText(Html.fromHtml("<h2>Title</h2><br><p>Description here</p>"));
+                        textDayData.setText(Html.fromHtml("<p><strong>Meal 1</strong><br /><br />Oat Bran1/2 cup <br />Banana 1 <br />Eggs EGG YOLK 1 <br />Hardboiled Eggs 6.<br /><br /><strong> Meal 2</strong><br /><br />Yogurt 1 cup Cottage <br />Cheese 1 cup <br />Grapes 1 <br />Flaxseed 1 tbsp. <br /><br /><strong> Meal 3</strong><br /><br />Spinach 3 cups<br />Turkey Bacon 2 strips<br />Mushrooms 1/2 cup <br />Carrots 1 cup <br />Grilled Chicken 3 oz <br />Balsamic Vinegar.<br/><br/><strong> Meal 4</strong><br /><br />Apple1 <br />Walnuts 1/2 oz <br />Protein 1 scoop.<br/><br/> <strong> Meal 5</strong> <br /><br />Salmon3 oz <br/>Rice 1/4 cup <br/> Swiss Chard <br/> 2 cups Steamed.<br/><br/>\n" +
+                                "<strong> Meal 6</strong>\n" +
+                                "<br/><br/>Cottage Cheese1 cup<br/> Almonds 1 oz <br/>Tomato 1/3 cup<br/> Basil Leaves<br/> Balsamic Vinegar.</p>"));
                     }
                 }
                 else if (strCalories.equals("2800 Calories"))

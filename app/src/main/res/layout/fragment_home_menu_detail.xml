@@ -620,7 +620,7 @@
                         <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
                             android:layout_width="120dp"
                             android:layout_height="120dp"
-                            android:src="@drawable/img_functional_training"
+                            android:src="@drawable/notsup"
                             app:civ_border_color="@color/brown"
                             app:civ_border_width="1dp" />
 
@@ -665,7 +665,7 @@
                         <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
                             android:layout_width="120dp"
                             android:layout_height="120dp"
-                            android:src="@drawable/img_suspension_training"
+                            android:src="@drawable/images"
                             app:civ_border_color="@color/brown"
                             app:civ_border_width="1dp" />
 
@@ -710,7 +710,7 @@
                         <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
                             android:layout_width="120dp"
                             android:layout_height="120dp"
-                            android:src="@drawable/img_suspension_training"
+                            android:src="@drawable/tips1"
                             app:civ_border_color="@color/brown"
                             app:civ_border_width="1dp" />
 
