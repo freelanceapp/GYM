@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 import del.gym.R;
 import del.gym.ui.activity.ReminderActivity;
 import del.gym.ui.activity.ToolsActivity;
+import del.gym.ui.activity.WeekdaysActivity;
 import del.gym.utils.BaseFragment;
 
 public class ToolsFragment extends BaseFragment implements View.OnClickListener {
@@ -42,7 +43,7 @@ public class ToolsFragment extends BaseFragment implements View.OnClickListener 
                 setIntentData("chronometer");
                 break;
             case R.id.llMyRoutine:
-                setIntentData("my_routine");
+                setIntentData();
                 break;
             case R.id.llIntervalTime:
                 setIntentData("interval_timer");
@@ -53,6 +54,12 @@ public class ToolsFragment extends BaseFragment implements View.OnClickListener 
     private void setIntentData(String data) {
         Intent intent = new Intent(mContext, ToolsActivity.class);
         intent.putExtra("name", data);
+        startActivity(intent);
+    }
+
+    private void setIntentData() {
+        Intent intent = new Intent(mContext, WeekdaysActivity.class);
+        intent.putExtra("from", "tools");
         startActivity(intent);
     }
 }

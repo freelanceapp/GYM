@@ -115,6 +115,7 @@
         <activity android:name=".ui.activity.ReminderActivity" />
         <activity android:name=".ui.activity.ShowReminderMessage" />
         <activity android:name=".ui.activity.AddReminderActivity" />
+        <activity android:name=".ui.activity.WeekdaysActivity" />
     </application>
 
 </manifest>

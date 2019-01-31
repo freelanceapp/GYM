@@ -50,6 +50,7 @@
                     android:textSize="16sp" />
 
                 <TextView
+                    android:visibility="gone"
                     android:id="@+id/tvDays"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

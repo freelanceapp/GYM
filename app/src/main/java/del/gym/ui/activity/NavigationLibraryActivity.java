@@ -131,7 +131,7 @@ public class NavigationLibraryActivity extends BaseActivity implements DrawerAda
         } else if (position == NAV4) {
             changeFragment("Workout", ConstantData.HomeMenuDetailFragment);
         } else if (position == NAV5) {
-            setIntentData("MyWorkout");
+            setIntentData();
         }
         slidingRootNav.closeMenu();
     }
@@ -181,9 +181,9 @@ public class NavigationLibraryActivity extends BaseActivity implements DrawerAda
                         strTag).commit();
     }
 
-    private void setIntentData(String data) {
-        Intent intent = new Intent(mContext, MyWorkOutActivity.class);
-        intent.putExtra("name", data);
+    private void setIntentData() {
+        Intent intent = new Intent(mContext, WeekdaysActivity.class);
+        intent.putExtra("from", "home");
         startActivity(intent);
     }
 }

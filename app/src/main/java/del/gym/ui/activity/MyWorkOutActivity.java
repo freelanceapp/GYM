@@ -33,6 +33,7 @@ import del.gym.utils.BaseActivity;
 public class MyWorkOutActivity extends BaseActivity implements View.OnClickListener {
 
     /* My routine */
+    private String strName;
     private String DATABASE_NAME = "routine.db";
     private MyRoutineListAdapter routineListAdapter;
     private DatabaseHandler databaseHandler;
@@ -57,22 +58,20 @@ public class MyWorkOutActivity extends BaseActivity implements View.OnClickListe
         ((Button) findViewById(R.id.btnPause)).setOnClickListener(this);
         ((Button) findViewById(R.id.btnLap)).setOnClickListener(this);
 
-        String strName = getIntent().getStringExtra("name");
+        strName = getIntent().getStringExtra("day");
 
-        if (strName.equals("MyWorkout")) {
-            ((TextView) findViewById(R.id.tvTitle)).setText("My Workout");
-            ((FloatingActionButton) findViewById(R.id.fabAddMyRoutine)).setOnClickListener(this);
-            ((FloatingActionButton) findViewById(R.id.fabAddMyRoutine)).show();
-            ((LinearLayout) findViewById(R.id.llMyRoutine)).setVisibility(View.VISIBLE);
-            ((LinearLayout) findViewById(R.id.llIntervalTime)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llReminder)).setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.llChronometer)).setVisibility(View.GONE);
-            getMyRoutineData();
-        }
+        ((TextView) findViewById(R.id.tvTitle)).setText("My Workout");
+        ((FloatingActionButton) findViewById(R.id.fabAddMyRoutine)).setOnClickListener(this);
+        ((FloatingActionButton) findViewById(R.id.fabAddMyRoutine)).show();
+        ((LinearLayout) findViewById(R.id.llMyRoutine)).setVisibility(View.VISIBLE);
+        ((LinearLayout) findViewById(R.id.llIntervalTime)).setVisibility(View.GONE);
+        ((LinearLayout) findViewById(R.id.llReminder)).setVisibility(View.GONE);
+        ((LinearLayout) findViewById(R.id.llChronometer)).setVisibility(View.GONE);
+        getMyRoutineData();
     }
 
     private void getMyRoutineData() {
-        databaseHandler = new DatabaseHandler(mContext, DATABASE_NAME);
+        databaseHandler = new DatabaseHandler(mContext, strName + DATABASE_NAME);
         if (databaseHandler.getContactsCount()) {
             myRoutineList = databaseHandler.getAllUrlList();
         }
@@ -90,7 +89,7 @@ public class MyWorkOutActivity extends BaseActivity implements View.OnClickListe
         if (dialogRoutine.getWindow() != null)
             dialogRoutine.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
 
-        String[] daysList = {"Select days", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+        String[] daysList = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
         Spinner spinnerDays = (Spinner) dialogRoutine.findViewById(R.id.spinnerDays);
         ArrayAdapter aa = new ArrayAdapter(this, android.R.layout.simple_spinner_item, daysList);
         aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -115,8 +114,14 @@ public class MyWorkOutActivity extends BaseActivity implements View.OnClickListe
                 String strSet = ((EditText) dialogRoutine.findViewById(R.id.edtSet)).getText().toString();
                 String strWeight = ((EditText) dialogRoutine.findViewById(R.id.edtWeight)).getText().toString();
 
-                if (strDays.equals("Select days")) {
-                    Toast.makeText(mContext, "Please select day!!", Toast.LENGTH_SHORT).show();
+                if (strExercise.isEmpty()) {
+                    Toast.makeText(mContext, "Please enter exercise name!!", Toast.LENGTH_SHORT).show();
+                } else if (strRepetition.isEmpty()) {
+                    Toast.makeText(mContext, "Please enter repetition!!", Toast.LENGTH_SHORT).show();
+                } else if (strSet.isEmpty()) {
+                    Toast.makeText(mContext, "Please enter set!!", Toast.LENGTH_SHORT).show();
+                } else if (strWeight.isEmpty()) {
+                    Toast.makeText(mContext, "Please enter weight!!", Toast.LENGTH_SHORT).show();
                 } else {
                     databaseHandler.addItemCart(new MyRoutineModal(strExercise, strRepetition, strSet, strWeight, strDays));
                     if (databaseHandler.getContactsCount()) {
