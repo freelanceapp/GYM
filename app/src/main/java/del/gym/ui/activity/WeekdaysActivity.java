@@ -102,5 +102,4 @@ public class WeekdaysActivity extends BaseActivity implements View.OnClickListen
         intent.putExtra("day", data);
         startActivity(intent);
     }
-
 }

@@ -10,7 +10,6 @@ import del.gym.NutritionActivit1;
 import del.gym.NutritionActivity3;
 import del.gym.NutritionActivity6;
 import del.gym.R;
-import del.gym.Tips;
 import del.gym.ui.activity.home_menu_activities.ExerciseDetailActivity;
 import del.gym.ui.activity.home_menu_activities.ExerciseGuideActivity;
 import del.gym.ui.activity.tipsitems.TipsDetailActivity;
@@ -118,13 +117,13 @@ public class HomeMenuDetailFragment extends BaseFragment implements View.OnClick
         rootView.findViewById(R.id.llFrontLegF).setOnClickListener(this);
         rootView.findViewById(R.id.llBicepA).setOnClickListener(this);
         rootView.findViewById(R.id.llChestA).setOnClickListener(this);
-        rootView.findViewById(R.id.llBackD).setOnClickListener(this);
+        // rootView.findViewById(R.id.llBackD).setOnClickListener(this);
         rootView.findViewById(R.id.llTricepsA).setOnClickListener(this);
         rootView.findViewById(R.id.llShoulderA).setOnClickListener(this);
         rootView.findViewById(R.id.llShoulderB).setOnClickListener(this);
         rootView.findViewById(R.id.llShoulderC).setOnClickListener(this);
         rootView.findViewById(R.id.llBackE).setOnClickListener(this);
-        rootView.findViewById(R.id.llBackF).setOnClickListener(this);
+        // rootView.findViewById(R.id.llBackF).setOnClickListener(this);
         rootView.findViewById(R.id.llBackG).setOnClickListener(this);
 
         /*Nutrition*/
@@ -312,9 +311,9 @@ public class HomeMenuDetailFragment extends BaseFragment implements View.OnClick
             case R.id.llBackC:
                 openExerciseDetail("llBackC");
                 break;
-            case R.id.llFrontLegD:
+            /*case R.id.llFrontLegD:
                 openExerciseDetail("llFrontLegD");
-                break;
+                break;*/
             case R.id.llFrontLegE:
                 openExerciseDetail("llFrontLegE");
                 break;
@@ -327,9 +326,9 @@ public class HomeMenuDetailFragment extends BaseFragment implements View.OnClick
             case R.id.llChestA:
                 openExerciseDetail("llChestA");
                 break;
-            case R.id.llBackD:
+           /* case R.id.llBackD:
                 openExerciseDetail("llBackD");
-                break;
+                break;*/
             case R.id.llTricepsA:
                 openExerciseDetail("llTricepsA");
                 break;
@@ -345,9 +344,9 @@ public class HomeMenuDetailFragment extends BaseFragment implements View.OnClick
             case R.id.llBackE:
                 openExerciseDetail("llBackE");
                 break;
-            case R.id.llBackF:
+           /* case R.id.llBackF:
                 openExerciseDetail("llBackF");
-                break;
+                break;*/
             case R.id.llBackG:
                 openExerciseDetail("llBackG");
                 break;

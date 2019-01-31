@@ -5,7 +5,6 @@ import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -277,19 +276,15 @@ public class ExerciseDetailActivity extends BaseActivity implements View.OnClick
             findViewById(R.id.llData).setVisibility(View.GONE);
             gifImage.setImageResource(R.drawable.ic_bw_pushup);
         } else if (strName.equals("llic_bw_muscle_up")) {
-            ((RelativeLayout)findViewById(R.id.rlImage)).setBackground(getResources().getDrawable(R.drawable.layout_bg_circle_c));
             findViewById(R.id.llData).setVisibility(View.GONE);
             gifImage.setImageResource(R.drawable.ic_bw_muscle_up);
         } else if (strName.equals("llic_bw_crunch")) {
-            ((RelativeLayout)findViewById(R.id.rlImage)).setBackground(getResources().getDrawable(R.drawable.layout_bg_circle_c));
             findViewById(R.id.llData).setVisibility(View.GONE);
             gifImage.setImageResource(R.drawable.ic_bw_crunch);
         } else if (strName.equals("llic_bw_pull_ups")) {
-            ((RelativeLayout)findViewById(R.id.rlImage)).setBackground(getResources().getDrawable(R.drawable.layout_bg_circle_c));
             findViewById(R.id.llData).setVisibility(View.GONE);
             gifImage.setImageResource(R.drawable.ic_bw_pull_ups);
         } else if (strName.equals("llic_bw_squats")) {
-            ((RelativeLayout)findViewById(R.id.rlImage)).setBackground(getResources().getDrawable(R.drawable.layout_bg_circle_c));
             findViewById(R.id.llData).setVisibility(View.GONE);
             gifImage.setImageResource(R.drawable.ic_bw_squats);
         }
@@ -384,48 +379,58 @@ public class ExerciseDetailActivity extends BaseActivity implements View.OnClick
 
         /*Home exercise*/
         else if (strName.equals("ScissorCrunches")) {
-
             findViewById(R.id.llData).setVisibility(View.GONE);
-            imgExercise.setImageResource(R.drawable.ic_home_ex_scissors_crunches);
+            gifImage.setVisibility(View.VISIBLE);
+            imgExercise.setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_home_ex_scissors_crunches);
         } else if (strName.equals("RopeJump")) {
-
             findViewById(R.id.llData).setVisibility(View.GONE);
-            imgExercise.setImageResource(R.drawable.ic_home_ex_rope_jump);
+            imgExercise.setVisibility(View.GONE);
+            gifImage.setVisibility(View.VISIBLE);
+            gifImage.setImageResource(R.drawable.ic_home_ex_rope_jump);
         } else if (strName.equals("InclinePushUp")) {
-
             findViewById(R.id.llData).setVisibility(View.GONE);
-            imgExercise.setImageResource(R.drawable.ic_home_ex_push_up);
+            imgExercise.setVisibility(View.GONE);
+            gifImage.setVisibility(View.VISIBLE);
+            gifImage.setImageResource(R.drawable.ic_home_ex_push_up);
         } else if (strName.equals("HandstandAssist")) {
-
             findViewById(R.id.llData).setVisibility(View.GONE);
-            imgExercise.setImageResource(R.drawable.ic_home_ex_handstand);
+            imgExercise.setVisibility(View.GONE);
+            gifImage.setVisibility(View.VISIBLE);
+            gifImage.setImageResource(R.drawable.ic_home_ex_handstand);
         } else if (strName.equals("MountainClimber")) {
-
             findViewById(R.id.llData).setVisibility(View.GONE);
-            imgExercise.setImageResource(R.drawable.ic_home_ex_mountain_climbing);
+            imgExercise.setVisibility(View.GONE);
+            gifImage.setVisibility(View.VISIBLE);
+            gifImage.setImageResource(R.drawable.ic_home_ex_mountain_climbing);
         }
 
         /*Calisthenics*/
         else if (strName.equals("CalisthenicsPushUps")) {
-
             findViewById(R.id.llData).setVisibility(View.GONE);
-            imgExercise.setImageResource(R.drawable.ic_calisthenics_push_ups);
+            imgExercise.setVisibility(View.GONE);
+            gifImage.setVisibility(View.VISIBLE);
+            gifImage.setImageResource(R.drawable.ic_calisthenics_push_ups);
         } else if (strName.equals("CalisthenicsBicycleCrunches")) {
-
             findViewById(R.id.llData).setVisibility(View.GONE);
-            imgExercise.setImageResource(R.drawable.ic_calisthenics_bicycle_crunches);
+            imgExercise.setVisibility(View.GONE);
+            gifImage.setVisibility(View.VISIBLE);
+            gifImage.setImageResource(R.drawable.ic_calisthenics_bicycle_crunches);
         } else if (strName.equals("CalisthenicsChinUps")) {
-
             findViewById(R.id.llData).setVisibility(View.GONE);
-            imgExercise.setImageResource(R.drawable.ic_calisthenics_chin_ups);
+            imgExercise.setVisibility(View.GONE);
+            gifImage.setVisibility(View.VISIBLE);
+            gifImage.setImageResource(R.drawable.ic_calisthenics_chin_ups);
         } else if (strName.equals("CalisthenicsSitUps")) {
-
             findViewById(R.id.llData).setVisibility(View.GONE);
-            imgExercise.setImageResource(R.drawable.ic_calisthenics_sit_ups);
+            imgExercise.setVisibility(View.GONE);
+            gifImage.setVisibility(View.VISIBLE);
+            gifImage.setImageResource(R.drawable.ic_calisthenics_sit_ups);
         } else if (strName.equals("CalisthenicsWidePushups")) {
-
             findViewById(R.id.llData).setVisibility(View.GONE);
-            imgExercise.setImageResource(R.drawable.ic_calisthenics_wide_pushups);
+            imgExercise.setVisibility(View.GONE);
+            gifImage.setVisibility(View.VISIBLE);
+            gifImage.setImageResource(R.drawable.ic_calisthenics_wide_pushups);
         }
 
         /*Calisthenics*/
@@ -455,116 +460,160 @@ public class ExerciseDetailActivity extends BaseActivity implements View.OnClick
         else if (strName.equals("FunctionalStepsUpJump")) {
 
             findViewById(R.id.llData).setVisibility(View.GONE);
-            imgExercise.setImageResource(R.drawable.ic_functional_step_jumps);
+            imgExercise.setVisibility(View.GONE);
+            gifImage.setVisibility(View.VISIBLE);
+            gifImage.setImageResource(R.drawable.ic_functional_step_jumps);
         } else if (strName.equals("FunctionalAlternatingWaves")) {
 
             findViewById(R.id.llData).setVisibility(View.GONE);
-            imgExercise.setImageResource(R.drawable.ic_functional_alternating_waves);
+            imgExercise.setVisibility(View.GONE);
+            gifImage.setVisibility(View.VISIBLE);
+            gifImage.setImageResource(R.drawable.ic_functional_alternating_waves);
         } else if (strName.equals("FunctionalBurpees")) {
 
             findViewById(R.id.llData).setVisibility(View.GONE);
-            imgExercise.setImageResource(R.drawable.ic_functional_burpees);
+            imgExercise.setVisibility(View.GONE);
+            gifImage.setVisibility(View.VISIBLE);
+            gifImage.setImageResource(R.drawable.ic_functional_burpees);
         } else if (strName.equals("FunctionalDoubleArmWaves")) {
 
             findViewById(R.id.llData).setVisibility(View.GONE);
-            imgExercise.setImageResource(R.drawable.ic_functional_double_arm_waves);
+            imgExercise.setVisibility(View.GONE);
+            gifImage.setVisibility(View.VISIBLE);
+            gifImage.setImageResource(R.drawable.ic_functional_double_arm_waves);
         } else if (strName.equals("FunctionalJumpingJacks")) {
 
             findViewById(R.id.llData).setVisibility(View.GONE);
-            imgExercise.setImageResource(R.drawable.ic_functional_jumping_jacks);
+            imgExercise.setVisibility(View.GONE);
+            gifImage.setVisibility(View.VISIBLE);
+            gifImage.setImageResource(R.drawable.ic_functional_jumping_jacks);
         }
 
         /*SuspensionTraining*/
         else if (strName.equals("SuspensionTrainPushUp")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_suspension_push_up);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setVisibility(View.VISIBLE);
+            gifImage.setImageResource(R.drawable.ic_suspension_push_up);
         } else if (strName.equals("SuspensionTrainChestPress")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_suspension_chest_press);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setVisibility(View.VISIBLE);
+            gifImage.setImageResource(R.drawable.ic_suspension_chest_press);
         } else if (strName.equals("SuspensionTrainLowRow")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_suspension_low_row);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setVisibility(View.VISIBLE);
+            gifImage.setImageResource(R.drawable.ic_suspension_low_row);
         } else if (strName.equals("SuspensionTrainSingleArmRow")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_suspension_single_arm);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setVisibility(View.VISIBLE);
+            gifImage.setImageResource(R.drawable.ic_suspension_single_arm);
         } else if (strName.equals("SuspensionTrainBiceps")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_suspension_biceps);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setVisibility(View.VISIBLE);
+            gifImage.setImageResource(R.drawable.ic_suspension_biceps);
         }
 
         /* Stretching */
         else if (strName.equals("llBackLegA")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_1);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_stretch_estiramiento_1);
         } else if (strName.equals("llBackLegB")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_2);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_stretch_estiramiento_2);
         } else if (strName.equals("llBackLegC")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_3);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_stretch_estiramiento_3);
         } else if (strName.equals("llBackLegD")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_4);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_stretch_estiramiento_4);
         } else if (strName.equals("llFrontLegA")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_5);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_stretch_estiramiento_5);
         } else if (strName.equals("llBackLegE")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_6);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_stretch_estiramiento_6);
         } else if (strName.equals("llFrontLegB")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_7);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_stretch_estiramiento_7);
         } else if (strName.equals("llFrontLegC")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_8);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_stretch_estiramiento_8);
         } else if (strName.equals("llBackA")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_9);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_stretch_estiramiento_9);
         } else if (strName.equals("llBackB")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_10);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_stretch_estiramiento_10);
         } else if (strName.equals("llBackC")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_11);
-        } else if (strName.equals("llFrontLegD")) {
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_stretch_estiramiento_11);
+        }/* else if (strName.equals("llFrontLegD")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_12);
-        } else if (strName.equals("llFrontLegE")) {
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_stretch_estiramiento_12);
+        } */ else if (strName.equals("llFrontLegE")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_13);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_stretch_estiramiento_13);
         } else if (strName.equals("llFrontLegF")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_14);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_stretch_estiramiento_14);
         } else if (strName.equals("llBicepA")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_15);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_stretch_estiramiento_15);
         } else if (strName.equals("llChestA")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_16);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_stretch_estiramiento_16);
         } else if (strName.equals("llBackD")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_17);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_stretch_estiramiento_17);
         } else if (strName.equals("llTricepsA")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_18);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_stretch_estiramiento_18);
         } else if (strName.equals("llShoulderA")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_19);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_stretch_estiramiento_19);
         } else if (strName.equals("llShoulderB")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_20);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_stretch_estiramiento_20);
         } else if (strName.equals("llShoulderC")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_21);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_stretch_estiramiento_21);
         } else if (strName.equals("llBackE")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_22);
-        } else if (strName.equals("llBackF")) {
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_stretch_estiramiento_22);
+        } /*else if (strName.equals("llBackF")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_23);
-        } else if (strName.equals("llBackG")) {
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_stretch_estiramiento_23);
+        }*/ else if (strName.equals("llBackG")) {
             findViewById(R.id.llData).setVisibility(View.GONE);
-            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setImageResource(R.drawable.ic_stretch_estiramiento_24);
+            ((ImageView) findViewById(R.id.imgSuspensionExercise)).setVisibility(View.GONE);
+            gifImage.setImageResource(R.drawable.ic_stretch_estiramiento_24);
         }
     }
 

@@ -645,13 +645,13 @@
                     android:background="@color/gray_b" />
 
                 <android.support.v7.widget.CardView
-                    android:visibility="gone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginRight="16dp"
                     android:layout_marginBottom="8dp"
+                    android:visibility="gone"
                     app:cardBackgroundColor="@color/transparent"
                     app:cardCornerRadius="6dp"
                     app:cardElevation="0dp"
@@ -791,257 +791,47 @@
                 android:visibility="gone">
 
                 <LinearLayout
-                    android:id="@+id/llBackLegA"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="130dp"
-                        android:layout_height="130dp"
-                        android:padding="8dp"
-                        android:src="@drawable/ic_stretch_estiramiento_1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_margin="16dp"
-                        android:text="Back leg"
-                        android:textColor="@color/lightWhite"
-                        android:textSize="18sp" />
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_marginTop="4dp"
-                    android:layout_marginBottom="4dp"
-                    android:background="@color/gray_c" />
-
-                <LinearLayout
-                    android:id="@+id/llBackLegB"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="130dp"
-                        android:layout_height="130dp"
-                        android:padding="8dp"
-                        android:src="@drawable/ic_stretch_estiramiento_2" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_margin="16dp"
-                        android:text="Back leg"
-                        android:textColor="@color/lightWhite"
-                        android:textSize="18sp" />
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_marginTop="4dp"
-                    android:layout_marginBottom="4dp"
-                    android:background="@color/gray_c" />
-
-                <LinearLayout
-                    android:id="@+id/llBackLegC"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="130dp"
-                        android:layout_height="130dp"
-                        android:padding="8dp"
-                        android:src="@drawable/ic_stretch_estiramiento_3" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_margin="16dp"
-                        android:text="Back leg"
-                        android:textColor="@color/lightWhite"
-                        android:textSize="18sp" />
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_marginTop="4dp"
-                    android:layout_marginBottom="4dp"
-                    android:background="@color/gray_c" />
-
-                <LinearLayout
-                    android:id="@+id/llBackLegD"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="130dp"
-                        android:layout_height="130dp"
-                        android:padding="8dp"
-                        android:src="@drawable/ic_stretch_estiramiento_4" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_margin="16dp"
-                        android:text="Back leg"
-                        android:textColor="@color/lightWhite"
-                        android:textSize="18sp" />
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_marginTop="4dp"
-                    android:layout_marginBottom="4dp"
-                    android:background="@color/gray_c" />
-
-                <LinearLayout
-                    android:id="@+id/llFrontLegA"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="130dp"
-                        android:layout_height="130dp"
-                        android:padding="8dp"
-                        android:src="@drawable/ic_stretch_estiramiento_5" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_margin="16dp"
-                        android:text="Front leg"
-                        android:textColor="@color/lightWhite"
-                        android:textSize="18sp" />
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_marginTop="4dp"
-                    android:layout_marginBottom="4dp"
-                    android:background="@color/gray_c" />
-
-                <LinearLayout
-                    android:id="@+id/llBackLegE"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="130dp"
-                        android:layout_height="130dp"
-                        android:padding="8dp"
-                        android:src="@drawable/ic_stretch_estiramiento_6" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_margin="16dp"
-                        android:text="Back leg"
-                        android:textColor="@color/lightWhite"
-                        android:textSize="18sp" />
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_marginTop="4dp"
-                    android:layout_marginBottom="4dp"
-                    android:background="@color/gray_c" />
-
-                <LinearLayout
-                    android:id="@+id/llFrontLegB"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="130dp"
-                        android:layout_height="130dp"
-                        android:padding="8dp"
-                        android:src="@drawable/ic_stretch_estiramiento_7" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_margin="16dp"
-                        android:text="Front leg"
-                        android:textColor="@color/lightWhite"
-                        android:textSize="18sp" />
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_marginTop="4dp"
-                    android:layout_marginBottom="4dp"
-                    android:background="@color/gray_c" />
-
-                <LinearLayout
-                    android:id="@+id/llFrontLegC"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="130dp"
-                        android:layout_height="130dp"
-                        android:padding="8dp"
-                        android:src="@drawable/ic_stretch_estiramiento_8" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_margin="16dp"
-                        android:text="Front leg"
-                        android:textColor="@color/lightWhite"
-                        android:textSize="18sp" />
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_marginTop="4dp"
-                    android:layout_marginBottom="4dp"
-                    android:background="@color/gray_c" />
-
-                <LinearLayout
                     android:id="@+id/llBackA"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:orientation="horizontal">
 
-                    <ImageView
+                    <pl.droidsonroids.gif.GifImageView
                         android:layout_width="130dp"
                         android:layout_height="130dp"
                         android:padding="8dp"
                         android:src="@drawable/ic_stretch_estiramiento_9" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="16dp"
+                        android:text="Back"
+                        android:textColor="@color/lightWhite"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/gray_c" />
+
+                <LinearLayout
+                    android:id="@+id/llBackE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:orientation="horizontal">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_stretch_estiramiento_22" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -1067,7 +857,7 @@
                     android:layout_marginLeft="8dp"
                     android:orientation="horizontal">
 
-                    <ImageView
+                    <pl.droidsonroids.gif.GifImageView
                         android:layout_width="130dp"
                         android:layout_height="130dp"
                         android:padding="8dp"
@@ -1097,7 +887,7 @@
                     android:layout_marginLeft="8dp"
                     android:orientation="horizontal">
 
-                    <ImageView
+                    <pl.droidsonroids.gif.GifImageView
                         android:layout_width="130dp"
                         android:layout_height="130dp"
                         android:padding="8dp"
@@ -1121,24 +911,204 @@
                     android:background="@color/gray_c" />
 
                 <LinearLayout
-                    android:id="@+id/llFrontLegD"
+                    android:id="@+id/llBackG"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:orientation="horizontal">
 
-                    <ImageView
+                    <pl.droidsonroids.gif.GifImageView
                         android:layout_width="130dp"
                         android:layout_height="130dp"
                         android:padding="8dp"
-                        android:src="@drawable/ic_stretch_estiramiento_12" />
+                        android:src="@drawable/ic_stretch_estiramiento_24" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="16dp"
-                        android:text="Front Leg"
+                        android:text="Back"
+                        android:textColor="@color/lightWhite"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/gray_c" />
+
+                <LinearLayout
+                    android:id="@+id/llBackLegA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:orientation="horizontal">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_stretch_estiramiento_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="16dp"
+                        android:text="Back leg"
+                        android:textColor="@color/lightWhite"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/gray_c" />
+
+                <LinearLayout
+                    android:id="@+id/llBackLegB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:orientation="horizontal">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_stretch_estiramiento_2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="16dp"
+                        android:text="Back leg"
+                        android:textColor="@color/lightWhite"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/gray_c" />
+
+                <LinearLayout
+                    android:id="@+id/llBackLegC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:orientation="horizontal">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_stretch_estiramiento_3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="16dp"
+                        android:text="Back leg"
+                        android:textColor="@color/lightWhite"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/gray_c" />
+
+                <LinearLayout
+                    android:id="@+id/llBackLegD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:orientation="horizontal">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_stretch_estiramiento_4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="16dp"
+                        android:text="Back leg"
+                        android:textColor="@color/lightWhite"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/gray_c" />
+
+                <LinearLayout
+                    android:id="@+id/llBackLegE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:orientation="horizontal">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_stretch_estiramiento_6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="16dp"
+                        android:text="Back leg"
+                        android:textColor="@color/lightWhite"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/gray_c" />
+
+                <LinearLayout
+                    android:id="@+id/llFrontLegA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:orientation="horizontal">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_stretch_estiramiento_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="16dp"
+                        android:text="Front leg"
                         android:textColor="@color/lightWhite"
                         android:textSize="18sp" />
                 </LinearLayout>
@@ -1157,7 +1127,7 @@
                     android:layout_marginLeft="8dp"
                     android:orientation="horizontal">
 
-                    <ImageView
+                    <pl.droidsonroids.gif.GifImageView
                         android:layout_width="130dp"
                         android:layout_height="130dp"
                         android:padding="8dp"
@@ -1187,7 +1157,7 @@
                     android:layout_marginLeft="8dp"
                     android:orientation="horizontal">
 
-                    <ImageView
+                    <pl.droidsonroids.gif.GifImageView
                         android:layout_width="130dp"
                         android:layout_height="130dp"
                         android:padding="8dp"
@@ -1211,24 +1181,24 @@
                     android:background="@color/gray_c" />
 
                 <LinearLayout
-                    android:id="@+id/llBicepA"
+                    android:id="@+id/llFrontLegB"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:orientation="horizontal">
 
-                    <ImageView
+                    <pl.droidsonroids.gif.GifImageView
                         android:layout_width="130dp"
                         android:layout_height="130dp"
                         android:padding="8dp"
-                        android:src="@drawable/ic_stretch_estiramiento_15" />
+                        android:src="@drawable/ic_stretch_estiramiento_7" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="16dp"
-                        android:text="Biceps"
+                        android:text="Front leg"
                         android:textColor="@color/lightWhite"
                         android:textSize="18sp" />
                 </LinearLayout>
@@ -1241,24 +1211,24 @@
                     android:background="@color/gray_c" />
 
                 <LinearLayout
-                    android:id="@+id/llChestA"
+                    android:id="@+id/llFrontLegC"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:orientation="horizontal">
 
-                    <ImageView
+                    <pl.droidsonroids.gif.GifImageView
                         android:layout_width="130dp"
                         android:layout_height="130dp"
                         android:padding="8dp"
-                        android:src="@drawable/ic_stretch_estiramiento_16" />
+                        android:src="@drawable/ic_stretch_estiramiento_8" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="16dp"
-                        android:text="Chest"
+                        android:text="Front leg"
                         android:textColor="@color/lightWhite"
                         android:textSize="18sp" />
                 </LinearLayout>
@@ -1271,24 +1241,25 @@
                     android:background="@color/gray_c" />
 
                 <LinearLayout
-                    android:id="@+id/llBackD"
+                    android:id="@+id/llFrontLegD"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:visibility="gone">
 
-                    <ImageView
+                    <pl.droidsonroids.gif.GifImageView
                         android:layout_width="130dp"
                         android:layout_height="130dp"
                         android:padding="8dp"
-                        android:src="@drawable/ic_stretch_estiramiento_17" />
+                        android:src="@drawable/ic_stretch_estiramiento_12" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="16dp"
-                        android:text="Back"
+                        android:text="Front Leg"
                         android:textColor="@color/lightWhite"
                         android:textSize="18sp" />
                 </LinearLayout>
@@ -1299,29 +1270,6 @@
                     android:layout_marginTop="4dp"
                     android:layout_marginBottom="4dp"
                     android:background="@color/gray_c" />
-
-                <LinearLayout
-                    android:id="@+id/llTricepsA"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="130dp"
-                        android:layout_height="130dp"
-                        android:padding="8dp"
-                        android:src="@drawable/ic_stretch_estiramiento_18" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_margin="16dp"
-                        android:text="Triceps"
-                        android:textColor="@color/lightWhite"
-                        android:textSize="18sp" />
-                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
@@ -1337,7 +1285,7 @@
                     android:layout_marginLeft="8dp"
                     android:orientation="horizontal">
 
-                    <ImageView
+                    <pl.droidsonroids.gif.GifImageView
                         android:layout_width="130dp"
                         android:layout_height="130dp"
                         android:padding="8dp"
@@ -1367,7 +1315,7 @@
                     android:layout_marginLeft="8dp"
                     android:orientation="horizontal">
 
-                    <ImageView
+                    <pl.droidsonroids.gif.GifImageView
                         android:layout_width="130dp"
                         android:layout_height="130dp"
                         android:padding="8dp"
@@ -1397,7 +1345,7 @@
                     android:layout_marginLeft="8dp"
                     android:orientation="horizontal">
 
-                    <ImageView
+                    <pl.droidsonroids.gif.GifImageView
                         android:layout_width="130dp"
                         android:layout_height="130dp"
                         android:padding="8dp"
@@ -1421,24 +1369,24 @@
                     android:background="@color/gray_c" />
 
                 <LinearLayout
-                    android:id="@+id/llBackE"
+                    android:id="@+id/llBicepA"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:orientation="horizontal">
 
-                    <ImageView
+                    <pl.droidsonroids.gif.GifImageView
                         android:layout_width="130dp"
                         android:layout_height="130dp"
                         android:padding="8dp"
-                        android:src="@drawable/ic_stretch_estiramiento_22" />
+                        android:src="@drawable/ic_stretch_estiramiento_15" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="16dp"
-                        android:text="Back"
+                        android:text="Biceps"
                         android:textColor="@color/lightWhite"
                         android:textSize="18sp" />
                 </LinearLayout>
@@ -1451,24 +1399,24 @@
                     android:background="@color/gray_c" />
 
                 <LinearLayout
-                    android:id="@+id/llBackF"
+                    android:id="@+id/llChestA"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:orientation="horizontal">
 
-                    <ImageView
+                    <pl.droidsonroids.gif.GifImageView
                         android:layout_width="130dp"
                         android:layout_height="130dp"
                         android:padding="8dp"
-                        android:src="@drawable/ic_stretch_estiramiento_23" />
+                        android:src="@drawable/ic_stretch_estiramiento_16" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="16dp"
-                        android:text="Back"
+                        android:text="Chest"
                         android:textColor="@color/lightWhite"
                         android:textSize="18sp" />
                 </LinearLayout>
@@ -1481,24 +1429,24 @@
                     android:background="@color/gray_c" />
 
                 <LinearLayout
-                    android:id="@+id/llBackG"
+                    android:id="@+id/llTricepsA"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:orientation="horizontal">
 
-                    <ImageView
+                    <pl.droidsonroids.gif.GifImageView
                         android:layout_width="130dp"
                         android:layout_height="130dp"
                         android:padding="8dp"
-                        android:src="@drawable/ic_stretch_estiramiento_24" />
+                        android:src="@drawable/ic_stretch_estiramiento_18" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="16dp"
-                        android:text="Back"
+                        android:text="Triceps"
                         android:textColor="@color/lightWhite"
                         android:textSize="18sp" />
                 </LinearLayout>
