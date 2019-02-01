@@ -126,7 +126,6 @@ public class ExerciseDetailActivity extends BaseActivity implements View.OnClick
             gifImage.setImageResource(R.drawable.ic_back_espaldal);
         }
 
-
         /*Shoulders*/
         else if (strName.equals("ShoulderPress")) {
             ((TextView) findViewById(R.id.tvExerciseDetail)).setText(getString(R.string.HOM1));

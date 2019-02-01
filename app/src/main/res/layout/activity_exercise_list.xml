@@ -63,7 +63,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_chest_pechoa" />
 
@@ -90,7 +90,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_chest_pechob" />
 
@@ -117,7 +117,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_chest_pechoc" />
 
@@ -144,7 +144,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_chest_pechod" />
 
@@ -171,7 +171,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_chest_pechoe" />
 
@@ -198,7 +198,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_chest_pechof" />
 
@@ -225,7 +225,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_chest_pechog" />
 
@@ -246,13 +246,14 @@
                 android:layout_marginTop="16dp"
                 android:orientation="horizontal"
                 android:paddingLeft="16dp"
-                android:paddingRight="16dp">
+                android:paddingRight="16dp"
+                android:visibility="gone">
 
                 <pl.droidsonroids.gif.GifImageView
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_chest_pechoh" />
 
@@ -279,7 +280,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_chest_pechoi" />
 
@@ -306,7 +307,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_chest_pechoj" />
 
@@ -333,7 +334,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_chest_pechok" />
 
@@ -360,7 +361,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_chest_pechol" />
 
@@ -387,7 +388,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_chest_pechom" />
 
@@ -414,7 +415,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_chest_pechon" />
 
@@ -441,7 +442,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_chest_pechoo" />
 
@@ -476,7 +477,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_back_espaldaa" />
 
@@ -503,7 +504,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_back_espaldab" />
 
@@ -530,7 +531,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_back_espaldac" />
 
@@ -557,7 +558,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_back_espaldad" />
 
@@ -584,7 +585,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_back_espaldae" />
 
@@ -611,7 +612,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_back_espaldaf" />
 
@@ -638,7 +639,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_back_espaldag" />
 
@@ -665,7 +666,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_back_espaldah" />
 
@@ -692,7 +693,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_back_espaldai" />
 
@@ -719,7 +720,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_back_espaldaj" />
 
@@ -746,7 +747,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_back_espaldak" />
 
@@ -773,7 +774,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_back_espaldal" />
 
@@ -808,7 +809,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_bicepsa" />
 
@@ -835,7 +836,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_bicepsb" />
 
@@ -862,7 +863,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_bicepsc" />
 
@@ -889,7 +890,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_bicepsd" />
 
@@ -916,7 +917,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_bicepse" />
 
@@ -943,7 +944,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_bicepsf" />
 
@@ -970,7 +971,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_bicepsg" />
 
@@ -997,7 +998,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_bicepsh" />
 
@@ -1024,7 +1025,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_bicepsi" />
 
@@ -1051,7 +1052,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_bicepsj" />
 
@@ -1086,7 +1087,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_shoulder_hombrosa" />
 
@@ -1113,7 +1114,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_shoulder_hombrosb" />
 
@@ -1140,7 +1141,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_shoulder_hombrosc" />
 
@@ -1167,7 +1168,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_shoulder_hombrosd" />
 
@@ -1194,7 +1195,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_shoulder_hombrose" />
 
@@ -1221,7 +1222,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_shoulder_hombrosf" />
 
@@ -1248,7 +1249,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_shoulder_hombrosg" />
 
@@ -1275,7 +1276,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_shoulder_hombrosh" />
 
@@ -1302,7 +1303,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_shoulder_hombrosi" />
 
@@ -1329,7 +1330,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_shoulder_hombrosj" />
 
@@ -1356,7 +1357,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_shoulder_hombrosk" />
 
@@ -1383,7 +1384,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_shoulder_hombrosl" />
 
@@ -1418,7 +1419,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_tricepsa" />
 
@@ -1445,7 +1446,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_tricepsb" />
 
@@ -1472,7 +1473,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_tricepsc" />
 
@@ -1499,7 +1500,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_tricepsd" />
 
@@ -1526,7 +1527,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_tricepse" />
 
@@ -1553,7 +1554,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_tricepsf" />
 
@@ -1580,7 +1581,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_tricepsg" />
 
@@ -1607,7 +1608,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_tricepsh" />
 
@@ -1634,7 +1635,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_tricepsi" />
 
@@ -1661,7 +1662,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_tricepsj" />
 
@@ -1696,7 +1697,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_leg_piernasa" />
 
@@ -1723,7 +1724,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_leg_piernasb" />
 
@@ -1750,7 +1751,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_leg_piernasc" />
 
@@ -1777,7 +1778,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_leg_piernasd" />
 
@@ -1804,7 +1805,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_leg_piernase" />
 
@@ -1831,7 +1832,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_leg_piernasf" />
 
@@ -1858,7 +1859,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_leg_piernasg" />
 
@@ -1885,7 +1886,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/layout_bg_circle_c"
+                    android:background="@drawable/layout_bg_circle"
                     android:padding="20dp"
                     android:src="@drawable/ic_leg_piernash" />
 
