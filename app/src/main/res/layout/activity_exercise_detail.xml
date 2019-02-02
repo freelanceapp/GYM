@@ -57,7 +57,7 @@
                     android:layout_centerHorizontal="true"
                     android:background="@drawable/layout_bg_circle"
                     android:elevation="8dp"
-                    android:padding="8dp">
+                    android:padding="26dp">
 
                     <pl.droidsonroids.gif.GifImageView
                         android:id="@+id/gifImage"
