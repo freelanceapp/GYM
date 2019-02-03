@@ -64,7 +64,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_chest_pechoa" />
 
                 <TextView
@@ -91,7 +91,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_chest_pechob" />
 
                 <TextView
@@ -118,7 +118,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_chest_pechoc" />
 
                 <TextView
@@ -145,7 +145,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_chest_pechod" />
 
                 <TextView
@@ -172,7 +172,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_chest_pechoe" />
 
                 <TextView
@@ -199,7 +199,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_chest_pechof" />
 
                 <TextView
@@ -226,7 +226,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_chest_pechog" />
 
                 <TextView
@@ -254,7 +254,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_chest_pechoh" />
 
                 <TextView
@@ -281,7 +281,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_chest_pechoi" />
 
                 <TextView
@@ -308,7 +308,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_chest_pechoj" />
 
                 <TextView
@@ -335,7 +335,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_chest_pechok" />
 
                 <TextView
@@ -362,7 +362,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_chest_pechol" />
 
                 <TextView
@@ -389,7 +389,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_chest_pechom" />
 
                 <TextView
@@ -416,7 +416,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_chest_pechon" />
 
                 <TextView
@@ -443,7 +443,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_chest_pechoo" />
 
                 <TextView
@@ -478,7 +478,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_back_espaldaa" />
 
                 <TextView
@@ -505,7 +505,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_back_espaldab" />
 
                 <TextView
@@ -532,7 +532,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_back_espaldac" />
 
                 <TextView
@@ -559,7 +559,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_back_espaldad" />
 
                 <TextView
@@ -586,7 +586,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_back_espaldae" />
 
                 <TextView
@@ -613,7 +613,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_back_espaldaf" />
 
                 <TextView
@@ -640,7 +640,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_back_espaldag" />
 
                 <TextView
@@ -667,7 +667,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_back_espaldah" />
 
                 <TextView
@@ -694,7 +694,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_back_espaldai" />
 
                 <TextView
@@ -721,7 +721,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_back_espaldaj" />
 
                 <TextView
@@ -748,7 +748,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_back_espaldak" />
 
                 <TextView
@@ -775,7 +775,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_back_espaldal" />
 
                 <TextView
@@ -810,7 +810,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_bicepsa" />
 
                 <TextView
@@ -837,7 +837,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_bicepsb" />
 
                 <TextView
@@ -864,7 +864,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_bicepsc" />
 
                 <TextView
@@ -891,7 +891,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_bicepsd" />
 
                 <TextView
@@ -918,7 +918,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_bicepse" />
 
                 <TextView
@@ -945,7 +945,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_bicepsf" />
 
                 <TextView
@@ -972,7 +972,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_bicepsg" />
 
                 <TextView
@@ -999,7 +999,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_bicepsh" />
 
                 <TextView
@@ -1026,7 +1026,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_bicepsi" />
 
                 <TextView
@@ -1053,7 +1053,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_bicepsj" />
 
                 <TextView
@@ -1088,7 +1088,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_shoulder_hombrosa" />
 
                 <TextView
@@ -1115,7 +1115,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_shoulder_hombrosb" />
 
                 <TextView
@@ -1142,7 +1142,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_shoulder_hombrosc" />
 
                 <TextView
@@ -1169,7 +1169,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_shoulder_hombrosd" />
 
                 <TextView
@@ -1196,7 +1196,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_shoulder_hombrose" />
 
                 <TextView
@@ -1223,7 +1223,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_shoulder_hombrosf" />
 
                 <TextView
@@ -1250,7 +1250,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_shoulder_hombrosg" />
 
                 <TextView
@@ -1277,7 +1277,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_shoulder_hombrosh" />
 
                 <TextView
@@ -1304,7 +1304,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_shoulder_hombrosi" />
 
                 <TextView
@@ -1331,7 +1331,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_shoulder_hombrosj" />
 
                 <TextView
@@ -1358,7 +1358,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_shoulder_hombrosk" />
 
                 <TextView
@@ -1385,7 +1385,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_shoulder_hombrosl" />
 
                 <TextView
@@ -1420,7 +1420,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_tricepsa" />
 
                 <TextView
@@ -1447,7 +1447,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_tricepsb" />
 
                 <TextView
@@ -1474,7 +1474,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_tricepsc" />
 
                 <TextView
@@ -1501,7 +1501,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_tricepsd" />
 
                 <TextView
@@ -1528,7 +1528,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_tricepse" />
 
                 <TextView
@@ -1555,7 +1555,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_tricepsf" />
 
                 <TextView
@@ -1582,7 +1582,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_tricepsg" />
 
                 <TextView
@@ -1609,7 +1609,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_tricepsh" />
 
                 <TextView
@@ -1636,7 +1636,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_tricepsi" />
 
                 <TextView
@@ -1663,7 +1663,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_tricepsj" />
 
                 <TextView
@@ -1698,7 +1698,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_leg_piernasa" />
 
                 <TextView
@@ -1725,7 +1725,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_leg_piernasb" />
 
                 <TextView
@@ -1752,7 +1752,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_leg_piernasc" />
 
                 <TextView
@@ -1779,7 +1779,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_leg_piernasd" />
 
                 <TextView
@@ -1806,7 +1806,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_leg_piernase" />
 
                 <TextView
@@ -1833,7 +1833,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_leg_piernasf" />
 
                 <TextView
@@ -1860,7 +1860,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_leg_piernasg" />
 
                 <TextView
@@ -1887,7 +1887,7 @@
                     android:layout_height="120dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/layout_bg_circle"
-                    android:padding="20dp"
+                    android:padding="18dp"
                     android:src="@drawable/ic_leg_piernash" />
 
                 <TextView
